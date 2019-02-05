@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  background-color: #F66263;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #FFFFFF;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.introContainer {
+  display: inline-block;
+  width: 454px;
+  margin-top: 60px;
+  margin-left: 80px;
+  color: #FFFFFF;
+  font-family: 'Circular Std Bold';
+  position: static;
+}
+
+p.introHello {
+  line-height: 82px;
+  font-size: 65px;
+}
+p.introBody{
+  line-height: 44px;
+  font-size: 35px;
+}
+
+img.me {
+  margin-left: 174px;
+  margin-top: 137px;
+  position: flex;
+  display: inline-block;
+}
+
+p.labels {
+  margin-bottom: 0;
+  font-family: 'Circular Std Book';
+  color: #9CA5B0;
+  font-size: 14px;
+}
+
+section.home {
+  height: 100vh;
+  width: 100vw;
+}
+
+section.content {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+nav {
+  text-align: right;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav ul {
+  margin-right: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-left: 30px;
+  position: relative;
+}
+
+nav li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Circular Std Book';
+}
+
+nav a::before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  transform: scale(0,1);
+  transition: transform ease-in-out 250ms;
+}
+
+nav a.current::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 28px;
+  background-color: #FFFFFF;
+}
+
+nav a:hover::before {
+  transform: scale(1,1);
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #E95B5C !important;
+  border-bottom: 2px solid #E65957;
+  transition: background-color 200ms ease-in-out
+}
+
+/*.navbar-fixed-top.scrolled .nav-link {
+  color: black;
+}*/
+
+.navbar-fixed-top { 
+  transition: background-color 200ms ease-in-out; 
+}
+
+/*@media screen and (max-width: 768px) {
+  nav {
+    text-align: left;
+    background-color: #E95B5C;
+    width: 100%;
+  }
+
+  nav ul {
+    margin-right: 80px;
+  }
+
+  nav ul li {
+    display: block;
+/*    padding-top: 35px;
+    padding-bottom: 35px;*/
+
+
+  nav a:hover::before {
+  transform: scale(1,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  .navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    padding-top: 35px;
+    padding-bottom: 35px;s
+    margin-left: 30px;
+
+    height: 100%;
+    background-color: #E95B5C;
+}*/
+}
+
+
+
+
+/*body {
+  margin: 0;
+  background-color: #F66263;
+}
+
+header {
+  z-index: 999;
+  width: 100%;
+}
+
+nav {
+  text-align: right;
+  background-color: #E95B5C;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-left: 30px;
+  position: relative;
+}
+
+nav li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Circular Std Book';
+}
+
+nav a::before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  transform: scale(0,1);
+  transition: transform ease-in-out 250ms;
+}
+
+nav a.current::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 28px;
+  background-color: #FFFFFF;
+}
+
+nav a:hover::before {
+  transform: scale(1,1);
+}
+
+/*.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.introContainer {
+  display: inline-block;
+  background-color: black;
+  width: 454px;
+  margin-top: -30px;
+  margin-left: 80px;
+  color: #FFFFFF;
+  font-family: 'Circular Std Bold';
+  position: static;
+}
+
+p.introHello {
+  line-height: 82px;
+  font-size: 65px;
+}
+p.introBody{
+  line-height: 44px;
+  font-size: 35px;
+}
+
+img {
+  margin-left: 174px;
+  margin-top: 137px;
+  display: inline-block;
+}
