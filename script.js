@@ -6,6 +6,8 @@ $(function () {
   });
 });
 
+document.getElementById('scrollTo').scrollIntoView({block: 'start', behavior: 'smooth'});
+
 // $(function() {
 //   $('a[href*=#]').on('click', function(e) {
 //     e.preventDefault();
@@ -25,10 +27,11 @@ $(function () {
 //         }
 //     });
 // });
-
-$('a[href*=#]').click(function(event){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000, "ease-in-out");
-    event.preventDefault();
-});
+// console.log("Hi Hana")
+// $('a[href*="#"]:not([href="#"])').click(function(event){
+// 	console.log("Hi Hana")
+//     $('html, body').animate({
+//         scrollTop: $( $.attr(this, 'href') ).offset().top
+//     }, 1000, "ease-in-out");
+//     event.preventDefault();
+// });

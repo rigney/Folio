@@ -1,23 +1,63 @@
-body {
+body.home {
   margin: 0;
   background-color: #F66263;
 }
 
+body.content {
+  margin: 0;
+  background-color: #E1DDDD;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+#cardHover {
+  position: relative;
+  top: 0;
+  transition: top ease-in-out 0.3s;
+}
+#cardHover:hover {
+  top: -20px;
+  box-shadow: 0 15px 20px 0 rgba(0,0,0,0.20);
+  transition: color ease-in-out .2s;
+}
+
 .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  box-shadow: 0 15px 20px 0 rgba(0,0,0,0.10);
+  width: 250px;
+  border-radius: 8px;
+  height: 350px;
   background-color: #FFFFFF;
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+/*.card:hover {
+  box-shadow: 0 15px 20px 0 rgba(0,0,0,0.20);
+  transition: color ease-in-out .2s;
+}*/
+
+.skipTo {
+  position: relative;
+  left: -2000px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Circular Std Book';
 }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
+a:focus{
+  border: 1px, solid black;
+}
+
+a.skipTo:focus{
+  left: 80px;
+  top: 35px;
+  border: 2px, solid black
 }
 
 .introContainer {
@@ -39,6 +79,30 @@ p.introBody{
   font-size: 35px;
 }
 
+p.cardName {
+  margin-left: 28px;
+  margin-top: 28px;
+  font-family: 'Circular Std Medium';
+  color: #575757;
+  font-size: 19px;
+}
+
+p.cardType {
+  margin-bottom: 0;
+  margin-top: 5px;
+  margin-left: 28px;
+  font-family: 'Circular Std Book';
+  color: #9CA5B0;
+  font-size: 15px;
+}
+
+p.footer {
+  margin-bottom: 0;
+  font-family: 'Circular Std Book';
+  color: #9CA5B0;
+  font-size: 14px;
+}
+
 img.me {
   margin-left: 174px;
   margin-top: 137px;
@@ -46,21 +110,14 @@ img.me {
   display: inline-block;
 }
 
-p.labels {
-  margin-bottom: 0;
-  font-family: 'Circular Std Book';
-  color: #9CA5B0;
-  font-size: 14px;
-}
-
 section.home {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 section.content {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: white;
 }
 
@@ -132,6 +189,10 @@ nav a:hover::before {
   transition: background-color 200ms ease-in-out; 
 }
 
+nav a:hover::before {
+  transform: scale(1,1);
+}
+
 /*@media screen and (max-width: 768px) {
   nav {
     text-align: left;
@@ -149,9 +210,7 @@ nav a:hover::before {
     padding-bottom: 35px;*/
 
 
-  nav a:hover::before {
-  transform: scale(1,1);
-}
+
 
 
 
