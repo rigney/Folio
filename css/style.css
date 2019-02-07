@@ -95,6 +95,7 @@ a {
 
 .skipTo {
   position: relative;
+  z-index: 1000;
   left: -2000px;
   color: #FFFFFF;
   text-decoration: none;
