@@ -13,9 +13,9 @@ html {
   overflow: scroll;
 }
 
-footer {
+/*footer {
   width: 870px;
-}
+}*/
 
 hr {
   background-color: #ECE8E8
@@ -79,7 +79,7 @@ a.skipTo:focus{
 
 .introContainer {
   display: inline-block;
-  width: 454px;
+/*  width: 454px;*/
   margin-top: 60px;
   margin-left: 80px;
   color: #FFFFFF;
