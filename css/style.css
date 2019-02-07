@@ -13,6 +13,14 @@ html {
   overflow: scroll;
 }
 
+footer {
+  width: 870px;
+}
+
+hr {
+  background-color: #ECE8E8
+}
+
 a {
   text-decoration: none;
 }
@@ -20,12 +28,23 @@ a {
 #cardHover {
   position: relative;
   top: 0;
-  transition: top ease-in-out 0.3s;
+  transition: all ease-in-out 0.25s;
 }
 #cardHover:hover {
   top: -20px;
-  box-shadow: 0 15px 20px 0 rgba(0,0,0,0.20);
-  transition: color ease-in-out .2s;
+}
+
+.card:hover {
+  box-shadow: 0 30px 40px 0 rgba(0,0,0,0.15);
+  transition: all .3s;
+}
+
+.contentGrid {
+  margin-top: 60px;
+  display: inline-grid;
+  grid-template-rows: auto;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-gap: 60px 40px;
 }
 
 .card {
@@ -34,12 +53,10 @@ a {
   border-radius: 8px;
   height: 350px;
   background-color: #FFFFFF;
+  display: inline-block;
+  transition: all .3s;
+  text-align: left;
 }
-
-/*.card:hover {
-  box-shadow: 0 15px 20px 0 rgba(0,0,0,0.20);
-  transition: color ease-in-out .2s;
-}*/
 
 .skipTo {
   position: relative;
@@ -119,6 +136,9 @@ section.content {
   min-height: 100vh;
   min-width: 100vw;
   background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 nav {
@@ -193,21 +213,31 @@ nav a:hover::before {
   transform: scale(1,1);
 }
 
-/*@media screen and (max-width: 768px) {
-  nav {
-    text-align: left;
-    background-color: #E95B5C;
-    width: 100%;
-  }
+@media only screen and (max-width: 1200px) {
+  .contentGrid {
+    grid-template-columns: 250px 250px 250px;
+  }  
+}
 
-  nav ul {
-    margin-right: 80px;
-  }
+@media only screen and (max-width: 910px) {
+  .contentGrid {
+    grid-template-columns: 250px 250px;
+  }  
+}
 
-  nav ul li {
-    display: block;
-/*    padding-top: 35px;
-    padding-bottom: 35px;*/
+@media only screen and (max-width: 660px) {
+  .contentGrid {
+    grid-template-columns: 250px 250px;
+    grid-gap: 60px 30px;
+  }  
+}
+
+@media only screen and (max-width: 620px) {
+  .contentGrid {
+    grid-template-columns: 250px;
+  }  
+}
+
 
 
 
