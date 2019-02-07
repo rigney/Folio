@@ -17,6 +17,41 @@ html {
   width: 870px;
 }*/
 
+.introContainer {
+  display: inline-block;
+  text-align: left;
+/*  width: 454px;*/
+/*  margin-top: 60px;
+  margin-left: 80px;*/
+  color: #FFFFFF;
+  font-family: 'Circular Std Bold';
+/*  position: static;*/
+}
+
+p.introHello {
+  line-height: 82px;
+  font-size: 65px;
+}
+p.introBody{
+  line-height: 44px;
+  font-size: 35px;
+}
+
+img.me {
+/*  margin-left: 174px;
+  margin-top: 137px;*/
+/*  position: flex;*/
+  display: inline-block;
+}
+
+.homeGrid {
+  margin-top: 60px;
+  display: inline-grid;
+  grid-template-rows: auto;
+  grid-template-columns: 454px 454px;
+  grid-gap: 174px;
+}
+
 hr {
   background-color: #ECE8E8
 }
@@ -39,7 +74,7 @@ a {
   transition: all .3s;
 }
 
-.contentGrid {
+.cardGrid {
   margin-top: 60px;
   display: inline-grid;
   grid-template-rows: auto;
@@ -77,25 +112,6 @@ a.skipTo:focus{
   border: 2px, solid black
 }
 
-.introContainer {
-  display: inline-block;
-/*  width: 454px;*/
-  margin-top: 60px;
-  margin-left: 80px;
-  color: #FFFFFF;
-  font-family: 'Circular Std Bold';
-  position: static;
-}
-
-p.introHello {
-  line-height: 82px;
-  font-size: 65px;
-}
-p.introBody{
-  line-height: 44px;
-  font-size: 35px;
-}
-
 p.cardName {
   margin-left: 28px;
   margin-top: 28px;
@@ -120,32 +136,29 @@ p.footer {
   font-size: 14px;
 }
 
-img.me {
-  margin-left: 174px;
-  margin-top: 137px;
-  position: flex;
-  display: inline-block;
-}
-
 section.home {
   min-height: 100vh;
   min-width: 100vw;
+  text-align: center;
 }
 
 section.content {
   min-height: 100vh;
   min-width: 100vw;
   background-color: white;
-  margin-right: auto;
-  margin-left: auto;
   text-align: center;
 }
+
+/*#scroll {
+  top:-250px;
+}*/
 
 nav {
   text-align: right;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 nav ul {
@@ -214,26 +227,26 @@ nav a:hover::before {
 }
 
 @media only screen and (max-width: 1200px) {
-  .contentGrid {
+  .cardGrid {
     grid-template-columns: 250px 250px 250px;
   }  
 }
 
 @media only screen and (max-width: 910px) {
-  .contentGrid {
+  .cardGrid {
     grid-template-columns: 250px 250px;
   }  
 }
 
 @media only screen and (max-width: 660px) {
-  .contentGrid {
+  .cardGrid {
     grid-template-columns: 250px 250px;
     grid-gap: 60px 30px;
   }  
 }
 
 @media only screen and (max-width: 620px) {
-  .contentGrid {
+  .cardGrid {
     grid-template-columns: 250px;
   }  
 }
