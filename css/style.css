@@ -20,12 +20,8 @@ html {
 .introContainer {
   display: inline-block;
   text-align: left;
-/*  width: 454px;*/
-/*  margin-top: 60px;
-  margin-left: 80px;*/
   color: #FFFFFF;
   font-family: 'Circular Std Bold';
-/*  position: static;*/
 }
 
 p.introHello {
@@ -38,9 +34,7 @@ p.introBody{
 }
 
 img.me {
-/*  margin-left: 174px;
-  margin-top: 137px;*/
-/*  position: flex;*/
+  margin-top: 45px;
   display: inline-block;
 }
 
@@ -48,9 +42,16 @@ img.me {
   margin-top: 60px;
   display: inline-grid;
   grid-template-rows: auto;
-  grid-template-columns: 454px 454px;
-  grid-gap: 174px;
+  grid-template-columns: 450px 300px;
+  grid-gap: 170px;
 }
+
+.downIndicator {
+  display: block;
+  position: center;
+  background-color: black;
+}
+
 
 hr {
   background-color: #ECE8E8
@@ -95,7 +96,7 @@ a {
 
 .skipTo {
   position: relative;
-  z-index: 1000;
+  z-index: 1000; 
   left: -2000px;
   color: #FFFFFF;
   text-decoration: none;
@@ -150,8 +151,8 @@ section.content {
   text-align: center;
 }
 
-/*#scroll {
-  top:-250px;
+/*#scroll nav {
+  top=:-87px;
 }*/
 
 nav {
@@ -230,7 +231,25 @@ nav a:hover::before {
 @media only screen and (max-width: 1200px) {
   .cardGrid {
     grid-template-columns: 250px 250px 250px;
-  }  
+  } 
+}
+
+@media only screen and (max-width: 1080px) {
+  .homeGrid {
+    grid-template-columns: 450px 300px;
+    grid-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .homeGrid {
+    grid-template-columns: 450px;
+    grid-gap: 0px;
+  }
+
+  img.me {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 910px) {
@@ -250,6 +269,16 @@ nav a:hover::before {
   .cardGrid {
     grid-template-columns: 250px;
   }  
+}
+
+@media only screen and (max-width: 610px) {
+  .homeGrid {
+    grid-template-columns: auto;
+  }
+  .introContainer {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }
 
 

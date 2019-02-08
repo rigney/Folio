@@ -1,18 +1,54 @@
 $(function () {
-// console.log("Hi Hana")
   $(document).scroll(function () {
     var $nav = $(".navbar-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
 
+// $('.scroll').click(function(event) {
+//     // Preventing default action of the event
+//     event.preventDefault();
+//     // Getting the height of the document
+//     var n = $(document).height();
+//     $('html, body').animate({ scrollTop: n }, 50);
 
-// document.getElementById('scroll').scrollIntoView({block: 'start', behavior: 'smooth'});
+// $('#scroll').on('click', function(e) {
+// 	e.preventDefault();
+// 	console.log("hi")
+// 	var target = $(this).attr('href');
+// 	var offset = 0;
+// 	if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+// 	$.scrollTo(target, 300, { offset: -offset });
+// });
 
-// $('#scroll').click(
-// 	function (e) {
+// $('a[href*="#"]').on('click', function (el) {
+//   el.preventDefault();
+
+//   $('html, body').animate({
+//     scrollTop: $($(this).attr('href')).offset().top
+//   }, 500, 'swing');
+// });
+
+
+// $('#scroll').click(function () {
+// 	$('html, body').animate({
+// 	    scrollTop: ($('#scroll').offset().top)
+// 	},3000);
+// }
+
+// $('#scroll').click(function () {
+// 	$('html, body').animate({
+// 	    scrollTop: ($('#scroll').offset().top)
+// 	},200);
+// }
+
+// $('#scroll').click(function () {
 // 		console.log("Hi")
-// 		$('html, body').animate({scrollTop: $elem.height()}, 800;
+// 		exit()
+// 		$('html, body').animate({scrollTop: 0}, );
 // 	}
 // );
-  
+
+
+
+// document.getElementById('scroll').scrollIntoView({block: 'start', behavior: 'smooth'});
