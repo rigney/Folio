@@ -5,12 +5,13 @@ $(function () {
   });
 });
 
-// $('.scroll').click(function(event) {
-//     // Preventing default action of the event
-//     event.preventDefault();
-//     // Getting the height of the document
-//     var n = $(document).height();
-//     $('html, body').animate({ scrollTop: n }, 50);
+let mainNav = document.getElementById('jsMenu');
+let navBarToggle = document.getElementById('jsNavbarToggle');
+
+navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+});
+
 
 // $('#scroll').on('click', function(e) {
 // 	e.preventDefault();
