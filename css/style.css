@@ -53,10 +53,6 @@ img.me {
   z-index: 998;
 }
 
-hr {
-  background-color: #ECE8E8
-}
-
 a {
   text-decoration: none;
 }
@@ -83,9 +79,35 @@ a {
   grid-gap: 60px 40px;
 }
 
+hr {
+  background-color: #ECE8E8
+}
+
 footer {
-/*  width: 870px;
-  text-align: center;*/
+  max-width: 870px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.reachOut {
+  width: 133px;
+  height: 42px;
+  background-color: #F66263;
+  border-radius: 12px;
+  font-family: 'Circular Std Book';
+  color: #FFFFFF;
+  margin-top: -45px;
+}
+
+.reachOut:hover {
+  margin-top: -42px;
+}
+
+.buttonShadow {
+  width: 133px;
+  height: 45px;
+  background-color: #E95B5C;
+  border-radius: 12px;
 }
 
 .card {
@@ -153,6 +175,7 @@ nav {
 nav li a {
   color: #FFFFFF;
   text-decoration: none;
+  position: relative;
   font-size: 16px;
   font-family: 'Circular Std Book';
 }
@@ -209,7 +232,7 @@ a.skipTo:focus{
   top: 32px;
 }
 
-/*.underlineOnHover::before {
+.underlineOnHover::before {
   content: " ";
   display: block;
   height: 2px;
@@ -223,19 +246,33 @@ a.skipTo:focus{
   transition: transform ease-in-out 250ms;
 }
 
-nav a.current::after {
+nav a.current::before {
   content: " ";
   display: block;
   height: 2px;
   width: 100%;
+  background: #FFFFFF;
   position: absolute;
-  bottom: 28px;
-  background-color: #FFFFFF;
+  margin-top: 22px;
+  left: 0;
+  right: 0;
+  transform: scale(1,1);
 }
+
+/*nav a.current::after {
+  content: " ";
+  display: block;
+  margin-left: 40px;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 24px;
+  background-color: #FFFFFF;
+}*/
 
 .underlineOnHover:hover::before {
   transform: scale(1,1);
-}*/
+}
 
 .navbar-fixed-top.scrolled {
   background-color: #E95B5C !important;
