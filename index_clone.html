@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD  -->
+	<head>
+		<title>Michael Rigney's ‘Folio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
+		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/png" href="imgs/favIcon.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+
+    <!-- BODY -->
+	<body id="particles-js">
+		<a href="#skipTo" class="skipTo underlineOnHover">Skip to content</a>
+		<header>	
+			<nav class="navbarFixedTop">
+				<span class="navbarToggle" id="jsNavbarToggle">
+            <i class="fas fa-bars"></i>
+        </span>
+      	<div class="logo"></div>
+	   		<ul id="jsMenu">
+	   			<li><a href="index.html" class="current underlineOnHover">Home</a></li>
+	   			<li><a href="about.html" class="underlineOnHover">About</a></li>
+					<li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank" class="underlineOnHover">Resume</a></li>
+					<li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael," class="underlineOnHover">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="intro"> 
+				<div class="introGrid" id="skipTo">
+					<div class="introText">
+						<p class="helloText">Hello!</p>
+						<p class="bioText">I’m Michael Rigney, a digital product designer focused on creating experiences made for humans, not machines.</p>
+					</div>
+					<img src="imgs/me.svg" class="me" alt="Illustration of Michael Rigney">
+				</div>
+
+				<a href="#scrollTo" class="downIndicator"><img src="imgs/downIndicator.svg" alt="Down Indicator"></a>
+			</div>	
+
+			<div class="cards" id="scrollTo">
+				<div class="cardGrid">
+					<a href="lyrical.html" id="cardHover"><div class="card">
+						<img src="imgs/greyFill.png">
+						<p class="cardName">Lyrical</p>
+						<p class="cardType">Product</p>
+					</div></a>
+
+					<a href="tableau.html" id="cardHover"><div class="card">
+						<img src="imgs/greyFill.png">
+						<p class="cardName">Tableau</p>
+						<p class="cardType">UX Design Intern</p>
+					</div></a>
+
+					<a href="serendipity.html" id="cardHover"><div class="card">
+						<img src="imgs/greyFill.png">
+						<p class="cardName">Serendipity</p>
+						<p class="cardType">Concept</p>
+					</div></a>
+
+					<a href="lilypad.html" id="cardHover"><div class="card">
+						<img src="imgs/greyFill.png">
+						<p class="cardName">Lilypad</p>
+						<p class="cardType">Concept</p>
+					</div></a>
+
+					<a href="rookieRoad.html" id="cardHover"><div class="card">
+						<img src="imgs/greyFill.png">
+						<p class="cardName">Rookie Road</p>
+						<p class="cardType">Design Intern</p>
+					</div></a>
+
+					<a href="larky.html" id="cardHover"><div class="card">
+						<img src="imgs/greyFill.png">
+						<p class="cardName">Larky</p>
+						<p class="cardType">Heuristic Evaluation</p>
+					</div></a>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<hr>
+			<a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael,"><div class="reachOut">Reach Out</div></a>
+			<div class="footerLabels">
+				<div class="leftLabel">Michael Rigney - ©2019</div>
+				<div class="rightLabel">Made with<span style="color: #F66263"> ❤ </span>in Ann Arbor</div>
+			</div>
+        </footer>
+
+        <script>
+            particlesJS.load('particles-js', 'particles.json');
+         </script>
+        
+	</body>
+</html>
