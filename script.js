@@ -1,15 +1,15 @@
 $(function () {
   $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    var $nav = $(".navbarFixedTop");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
   });
 });
 
-let mainNav = document.getElementById('jsMenu');
+let mainNav = document.getElementById("jsMenu");
 let navBarToggle = document.getElementById('jsNavbarToggle');
 
-navBarToggle.addEventListener('click', function () {
-    mainNav.classList.toggle('active');
+navBarToggle.addEventListener("click", function () {
+    mainNav.classList.toggle("active");
 });
 
 // $(document).ready(function () {
