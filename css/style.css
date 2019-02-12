@@ -19,7 +19,7 @@ html {
 }
 
 .introContainer {
-  display: inline-block;
+/*  display: none;*/
   text-align: left;
   color: #FFFFFF;
   font-family: 'Circular Std Bold';
@@ -38,12 +38,13 @@ p.introBody{
 
 img.me {
   margin-top: 155px;
-  display: inline-block;
+ /* display: none;*/
 }
 
 .downIndicator {
   width: 35px;
   height: 20px;
+/*  display: none;*/
 /*  background-color: black;*/
   position: absolute;
   margin: 0 auto;
@@ -80,34 +81,63 @@ a {
 }
 
 hr {
-  background-color: #ECE8E8
+  color: #ECE8E8;
+  margin-top: 122px;
+  margin-bottom: 0px;
 }
 
 footer {
-  max-width: 870px;
-  text-align: center;
+  margin-bottom: 100px;
+  display: block;
+  max-width: 995px;
   margin: 0 auto;
 }
 
+.reachOutLabels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightFooterLabel {
+  font-family: 'Circular Std Book';
+  color: #9CA5B0;
+  font-size: 14px;
+  margin-top: 58px;
+  margin-bottom: 100px;
+}
+
+.leftFooterLabel {
+  font-family: 'Circular Std Book';
+  color: #9CA5B0;
+  font-size: 14px;
+  margin-top: 58px;
+  margin-bottom: 100px;
+}
+
 .reachOut {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -24px;
+  background-color: black;
   width: 133px;
-  height: 42px;
+  height: 45px;
   background-color: #F66263;
   border-radius: 12px;
   font-family: 'Circular Std Book';
   color: #FFFFFF;
-  margin-top: -45px;
+  transition: all .1s linear;
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
 }
 
 .reachOut:hover {
-  margin-top: -42px;
-}
-
-.buttonShadow {
-  width: 133px;
-  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #E95B5C;
-  border-radius: 12px;
+/*  width: 135px;
+  height: 46px;*/
+  transition: all .1s linear;
 }
 
 .card {
@@ -116,7 +146,6 @@ footer {
   border-radius: 8px;
   height: 350px;
   background-color: #FFFFFF;
-  display: inline-block;
   transition: all .3s;
   text-align: left;
 }
@@ -138,13 +167,6 @@ p.cardType {
   font-size: 15px;
 }
 
-p.footer {
-  margin-bottom: 0;
-  font-family: 'Circular Std Book';
-  color: #9CA5B0;
-  font-size: 14px;
-}
-
 .homeGrid {
   display: inline-grid;
   grid-template-rows: auto;
@@ -164,6 +186,10 @@ section.content {
   background-color: white;
   text-align: center;
 }
+
+/*nav.fade {
+  display: none;
+}*/
 
 nav {
   position: fixed;
@@ -342,6 +368,11 @@ nav a.current::before {
   .cardGrid {
     grid-template-columns: 250px 250px 250px;
   }
+
+  footer {
+    width: 705px;
+
+  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -365,6 +396,11 @@ nav a.current::before {
   .cardGrid {
     grid-template-columns: 250px 250px;
   }
+
+  footer {
+    width: 415px;
+
+  }
 }
 
 @media only screen and (max-width: 660px) {
@@ -377,6 +413,22 @@ nav a.current::before {
 @media only screen and (max-width: 620px) {
   .cardGrid {
     grid-template-columns: 250px;
+  }
+
+  footer {
+    width: 250px;
+  }
+
+  .reachOutLabels {
+    display: inline-block;
+  }
+
+  .leftFooterLabel {
+    margin-bottom: 0px;
+  }
+
+  .rightFooterLabel {
+    margin-top: 5px;
   }
 
   nav ul li {

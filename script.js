@@ -12,6 +12,21 @@ navBarToggle.addEventListener('click', function () {
     mainNav.classList.toggle('active');
 });
 
+// $(document).ready(function () {
+//     $('div.introContainer').delay(300).fadeIn(2200, "swing");
+// });
+
+// $(document).ready(function () {
+//     $('img.me').delay(600).fadeIn(2200);
+// });
+
+// $(document).ready(function () {
+//     $('a.downIndicator').delay(300).fadeIn(2200);
+// });
+
+// $(document).ready(function () {
+//     $('nav').delay(300).fadeIn(2200);
+// });
 
 // $('#scroll').on('click', function(e) {
 // 	e.preventDefault();
