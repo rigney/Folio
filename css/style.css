@@ -184,14 +184,31 @@ hr {
 
 /*nav*/
 
+.container {
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
 nav {
-  width: 100%;
-  min-height: 80px;
-  position: fixed;
+  background: #E95B5C;
+  height: 70px;
   z-index: 1;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-left: 80px;
+  background-color: white;
+  display: inline-block;
 }
 
 nav li a {
+  margin-left: 40px;
   position: relative;
   color: #FFFFFF;
   font-size: 16px;
@@ -199,36 +216,152 @@ nav li a {
 }
 
 nav ul {
-  display: none;
-}
-
-nav ul li {
-  text-align: left;
-  margin: 20px auto;
-  margin-left: 80px;
-  color: #FFFFFF;
-}
-
-.logo {
-  height: 40px;
-  width: 40px;
-  margin: 20px 0px 0px 80px;
-  border-radius: 50px;
-  background-color: white;
-}
-
-.navbarToggle {
-  top: 28px;
   right: 80px;
-  position: absolute;
-  color: #FFFFFF;
-  align-items: center;
-  cursor: pointer;
-  font-size: 24px;
+  float: right;
+  position: relative;
 }
 
-.active {
-  display: block;
+nav #menu li {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 70px;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+nav #menu li a {
+  color: #fff;
+}
+
+.underlineOnHover::before {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: #FFFFFF;
+  transform: scale(0,1);
+  transition: transform ease-in-out 250ms;
+}
+
+.underlineOnHover:hover::before {
+  transform: scale(1,1);
+}
+
+#menu li a.current::before {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  background: #FFFFFF;
+  transform: scale(1,1);
+}
+
+#toggle {
+  width: 25px;
+  height: 17px;
+  right: 80px;
+  top: 26.5px;
+  position: fixed;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle .span {
+  height: 3px;
+  margin-bottom: 4px;
+  background: #333;
+  backface-visibility: hidden;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease-out
+}
+
+#toggle.on #one {
+  background-color: #000000;
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+#toggle.on #two {
+  opacity: 0;
+}
+
+/*up*/
+#toggle.on #three {
+  background-color: #000000;
+  transform: rotate(-45deg) translateX(4px) translateY(-4px);
+}
+
+#resize {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: table;
+  position: absolute;
+  z-index: 1;
+  background: #FFFFFF;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+#resize ul {
+  height: 50px;
+  display: table-cell;
+  padding-top: 100px;
+  /*vertical-align: middle;*/
+}
+
+#resize li {
+  margin-left: 80px;
+  margin-top: 40px;
+  min-height: 50px;
+  position: relative;
+  font-family: 'Circular Std Book';
+  display: table;
+  text-align: left;
+  font-size: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#resize #menu li a {
+  color: #212121;
+}
+
+#resize.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#resize li a::before {
+  content: " ";
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: #000000;
+  transform: scale(0,1);
+  transition: transform ease-in-out 250ms;
+}
+
+#resize li a:hover::before {
+  transform: scale(1,1);
+}
+
+#resize li a.current::before {
+  content: " ";
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  background: #000000;
+  transform: scale(1,1);
 }
 
 .skipTo {
@@ -242,39 +375,25 @@ nav ul li {
 }
 
 a.skipTo:focus{
-  top: 32px;
-  left: 160px;
+  top: 26.5px;
+  left: 12.5%;
 }
 
-.underlineOnHover::before {
-  content: " ";
-  width: 100%;
-  height: 2px;
-  margin-top: 22px;
-  left: 0;
-  right: 0;
-  display: block;
-  position: absolute;
-  background: #FFFFFF;
-  transform: scale(0,1);
-  transition: transform ease-in-out 250ms;
+@media (max-width: 768px) {
+  #toggle {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  nav #menu {
+    display: none;
+  }
 }
 
-.underlineOnHover:hover::before {
-  transform: scale(1,1);
-}
-
-nav a.current::before {
-  content: " ";
-  width: 100%;
-  height: 2px;
-  margin-top: 22px;
-  left: 0;
-  right: 0;
-  display: block;
-  position: absolute;
-  background: #FFFFFF;
-  transform: scale(1,1);
+@media (min-width: 768px) {
+  #resize {
+    visibility: hidden !important;
+  }
 }
 
 .navbarFixedTop.scrolled {
@@ -285,40 +404,6 @@ nav a.current::before {
 
 .navbarFixedTop { 
   transition: background-color 200ms ease-in-out; 
-}
-
-/*toggle navbar off*/
-
-@media screen and (min-width: 1200px) {
-  nav {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      align-items: center;
-  }
-
-  nav ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      margin-right: 80px;
-  }
-
-  nav ul li {
-      margin: 0;
-  }
-
-  nav ul li a {
-    margin-left: 40px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbarToggle {
-      display: none;
-  }
 }
 
 /*accounting for different screen sizes*/

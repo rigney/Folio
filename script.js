@@ -5,12 +5,13 @@ $(function () {
   });
 });
 
-let mainNav = document.getElementById("jsMenu");
-let navBarToggle = document.getElementById('jsNavbarToggle');
+$(function() {
+  $("#toggle").click(function() {
+    $(this).toggleClass("on");
+    $("#resize").toggleClass("active");
+  });
+});
 
-// navBarToggle.addEventListener("click", function () {
-//     mainNav.classList.toggle("active");
-// });
 
 // $(document).ready(function () {
 //     $('div.introContainer').delay(300).fadeIn(2200, "swing");
