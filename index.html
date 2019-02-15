@@ -16,7 +16,7 @@
 	<body>
 		<a href="#skipTo" class="skipTo underlineOnHover">Skip to content</a>
 		<header>
-	    <nav>
+	    <nav class="navbarFixedTop">
 	      <div class="container"> 
 	        <a href="index.html"><div class="logo"></div></a>
 	        <ul id="menu">
@@ -44,19 +44,21 @@
 	  </div>
 
 		<main>
-			<div class="intro" id="particles-js"> 
-				<div class="introGrid" id="skipTo">
-					<div class="introText">
-						<p class="helloText">Hello!</p>
-						<p class="bioText">I’m Michael Rigney, a digital product designer focused on creating experiences made for humans, not machines.</p>
+			<div id="particle">
+				<div class="intro" id="overlay"> 
+					<div class="introGrid" id="skipTo">
+						<div class="introText">
+							<p class="helloText">Hello!</p>
+							<p class="bioText">I’m Michael Rigney, a digital product designer focused on creating experiences made for humans, not machines.</p>
+						</div>
+						<img src="imgs/me.svg" class="me" alt="Illustration of Michael Rigney">
 					</div>
-					<img src="imgs/me.svg" class="me" alt="Illustration of Michael Rigney">
-				</div>
 
-				<a href="#scrollTo" class="downIndicator"><img src="imgs/downIndicator.svg" alt="Down Indicator"></a>
-			</div>	
+					<a href="#scrollTo" class="downIndicator"><img src="imgs/downIndicator.svg" alt="Down Indicator"></a>
+				</div>	
+			</div>
 
-			<div class="cards" id="scrollTo">
+			<div class="cards avoidParticles" id="scrollTo">
 				<div class="cardGrid">
 					<a href="lyrical.html" id="cardHover"><div class="card">
 						<img src="imgs/greyFill.png">
@@ -97,7 +99,7 @@
 			</div>
 		</main>
 
-		<footer>
+		<footer class="avoidParticles">
 			<hr>
 			<a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael,"><div class="reachOut">Reach Out</div></a>
 			<div class="footerLabels">
@@ -108,7 +110,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="script.js"></script>
-		<script src="script.json"></script>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 		<script src="particles.js"></script>
 	</body>
 </html>
