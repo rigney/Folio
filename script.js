@@ -12,6 +12,13 @@ $(function() {
   });
 });
 
+$(function () {
+  $('#scrollTo').click(function() {
+  $('html, body').animate({
+    scrollTop: $("#scrolledTo").offset().top - 70
+  }, 10)
+})});
+
 
 // $(document).ready(function () {
 //     $('div.introContainer').delay(300).fadeIn(2200, "swing");

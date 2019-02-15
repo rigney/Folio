@@ -69,6 +69,10 @@ img.me {
   margin-top: 155px;
 }
 
+#scrollTo {
+  cursor: pointer;
+}
+
 .downIndicator {
   width: 35px;
   height: 20px;
