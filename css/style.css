@@ -182,7 +182,7 @@ hr {
   right: 0;
   display: inline-block;
   position: absolute;
-  border-radius: 12px;
+  border-radius: 15px;
   background-color: #F66263;
   color: #FFFFFF;
   text-align: center;
@@ -192,11 +192,9 @@ hr {
 }
 
 .reachOut:hover {
-  background-color: #E95B5C;
   transition: all .1s linear;
   margin-top: -26px;
   box-shadow: 0 4px 15px 0 rgba(0,0,0,0.20);
-  transition: all .1s;
 }
 
 /*nav*/
@@ -506,6 +504,10 @@ a.skipTo:focus{
     right: 30px;
   }
 
+  #resize li {
+    margin-left: 30px;
+  }
+
   .introGrid {
     grid-template-columns: 100%;
   }
@@ -536,5 +538,11 @@ a.skipTo:focus{
   .rightLabel {
     margin-top: 10px;
     margin-right: 0px;
+  }
+
+  .reachOut:hover {
+    transition: none;
+    margin-top: -24px;
+    box-shadow: none;
   }
 }
