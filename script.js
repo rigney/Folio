@@ -18,3 +18,10 @@ $(function () {
     scrollTop: $("#scrolledTo").offset().top - 70
   }, 10)
 })});
+
+$(function () {
+  $('#skipTo').click(function() {
+  $('html, body').animate({
+    scrollTop: $("#scrolledTo").offset().top - 70
+  }, 10)
+})});

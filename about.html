@@ -1,47 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
-		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
-		<link rel="icon" type="image/png" href="imgs/favIcon.png">
 		<title>Michael Rigney's ‘Folio</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/png" href="imgs/favIcon.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
-	<body class="content">
-		<section class="home"> 
-			<a href="#skipTo" class="skipTo">Skip to content</a>
-			<header>
-				<nav class = "navbar-fixed-top">
-				<ul>
-					<li><a href="index.html" class ="current, nav-link">Home</a></li>
-					<li><a href="about.html" class="nav-link">About</a></li>
-						<li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank" class="nav-link">Resume</a></li>
-						<li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael," class="nav-link">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
 
-			<p id="content">Hello! I’m Michael Rigney, a digital product designer focused on creating experiences that are made for humans, not machines. I design for how humans think and behave, rather than how they’re expected or to think and behave. When I’m not designing, I’m likely helping others build out their ideas at the creator space I co-direct, buried in yet another book, or jamming on the guitar. If you’re interested in chatting feel free to reach out! Also here are the design adventures I’ve had so far.</p>
+	<body>
+		<header>
+	    <nav class="navbarFixedTop">
+	      <div class="container"> 
+	        <a href="index.html" class="logo scrolledLogo"><div></div></a>
+	        <a href="#" id="skipTo" class="skipTo underlineOnHover scrolledItem">Skip to content</a>
+	        <ul id="menu">
+	          <li><a href="index.html" class="current underlineOnHover scrolledItem">Home</a></li>
+	          <li><a href="about.html" class="underlineOnHover scrolledItem">About</a></li>
+	          <li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank" class="underlineOnHover scrolledItem">Resume</a></li>
+	          <li><a href="mailto:mrigs@umich.edu?subject=Reaching%20Out&body=Hi%20Michael," class="underlineOnHover scrolledItem">Contact</a></li>
+	        </ul>
+	      </div>
+	    </nav>
 
-			<ul>
-				<li>Rookie Road:  June - Dec 2018</li>
-				<li>Tableau: May - Aug 2019</li>
-			</ul>
+	    <div id="toggle">
+		    <div class="span" id="one"></div>
+		    <div class="span" id="two"></div>
+		    <div class="span" id="three"></div>
+	    </div>
+  	</header>
 
+	  <div id="resize">
+	    <ul id="menu">
+	      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="current">About</a></li>
+        <li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank">Resume</a></li>
+        <li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael">Contact</a></li>
+	    </ul>
+	  </div>
 
-			<a href="#scroll"><img src="imgs/downIndicator.png" alt="Down Indicator"></a>
-			
-		</section>	
+		<main>
+			<div class="about">
+				<div class="aboutGrid">
+					<p class="aboutText">I’m Michael Rigney, a digital product designer focused on creating experiences made for humans, not machines. I design for how humans think and behave, rather than how they’re expected or to think and behave.</p>
 
-		<section class="content" id="scroll">
-			<a id="skipTo"></a>
-			<footer>
-			<p class="footer">Michael Rigney - ©2019</p>
-			<p class="footer">Made with <span style="color: #F66263">❤</span> in Ann Arbor</p>
-			</footer>
-		</section>
+					<p class="aboutText aboutText2">When I’m not designing, I’m likely helping others build out their ideas at the <a href="http://creatorspace.co/" target="_blank">creator space</a> I co-direct, buried in yet another <a href="http://chrismccormickauthor.com/" target="_blank">book</a>, or jamming on the <a href="https://soundcloud.com/arlos02" target="_blank">guitar</a>.</p>
+
+					<p class="aboutText aboutText3">If you’re interested in chatting feel free to <a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael">reach out</a>! Also here are the design adventures I’ve had so far.</p>
+
+					<img src="imgs/placeHolder.png" class="mePhotograph" alt="Photograph of Michael Rigney">
+
+				</div>
+			</div>
+
+			<div class ="careerExperiences">
+				<div class="topLabels">
+					<div class="leftTopLabel">Tableau</div>
+					<div class="rightTopLabel">Summer 2019</div>
+				</div>
+				<div class="lowerLabel">User Experience Designer</div>
+				<hr>
+			<div>
+
+			<div class ="careerExperiences">
+				<div class="topLabels">
+					<div class="leftTopLabel">Lily Pad</div>
+					<div class="rightTopLabel">Jan-April 2019</div>
+				</div>
+				<div class="lowerLabel">Researcher and Designer</div>
+				<hr>
+			<div>
+
+			<div class ="careerExperiences">
+				<div class="topLabels">
+					<div class="leftTopLabel">Rookie Road</div>
+					<div class="rightTopLabel">Jun-Dec 2018</div>
+				</div>
+				<div class="lowerLabel">Designer</div>
+				<hr>
+			<div>
+
+		</main>
+
+		<footer>
+			<hr>
+			<a href="mailto:mrigs@umich.edu?subject=Reaching%20Out&body=Hi%20Michael,"><div class="reachOut">Reach Out</div></a>
+			<div class="footerLabels">
+				<div class="leftLabel">Michael Rigney - ©2019</div>
+				<div class="rightLabel">Made with<span style="color: #F66263"> ❤ </span>in Ann Arbor</div>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="particles.js"></script>
 	</body>
 </html>
