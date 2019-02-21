@@ -87,8 +87,11 @@ img.meIllustration {
 }
 
 .downIndicator {
+/*  width: 35px;
+  height: 20px;*/
   width: 35px;
-  height: 20px;
+  text-align: center;
+  height: 21px;
   position: absolute;
   left: 0;
   right: 0;
@@ -201,13 +204,13 @@ p.cardType {
   margin-bottom: 70px;
 }
 
-.careerExperiences {
+.careerExperience {
   max-width: 710px;
   margin: 0 auto;
   margin-top: 30px;
 }
 
-.careerExperiences hr {
+.careerExperience hr {
   bottom: 0px;
   margin-top: 30px;
 }
@@ -242,12 +245,12 @@ p.cardType {
 /*footer*/
 
 footer {
-  max-width: 995px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
 footer hr {
-  margin-top: 122px;
+  margin-top: 172px;
   margin-bottom: 0px;
   color: #ECE8E8;
 }
@@ -258,14 +261,14 @@ footer hr {
 }
 
 .leftLabel {
-  margin: 58px 0px 100px 0px;
+  margin: 58px 0px 80px 0px;
   color: #9CA5B0;
   font-family: "circular_book";
   font-size: 14px;
 }
 
 .rightLabel {
-  margin: 58px 0px 100px 0px;
+  margin: 58px 0px 80px 0px;
   color: #9CA5B0;
   font-family: "circular_book";
   font-size: 14px;
@@ -311,11 +314,11 @@ nav {
 
 .logo {
   margin-left: 80px;
-  height: 40px;
+/*  height: 40px;
   width: 40px;
-  border-radius: 50px;
+  border-radius: 50px;*/
   margin-top: 15px;
-  background-color: #333333;
+/*  background-color: #FFFFFF;*/
   display: inline-block;
 }
 
@@ -324,7 +327,7 @@ nav li a {
   position: relative;
   font-size: 16px;
   font-family: "circular_medium";
-  color: #333333;
+  color: #FFFFFF;
 }
 
 nav ul {
@@ -384,6 +387,7 @@ nav #menu li {
   height: 3px;
   margin-bottom: 4px;
   background: #333333;
+/*  border-radius: 20px;*/
   backface-visibility: hidden;
   background-color: #FFFFFF;
   transition: all 0.3s ease-out
@@ -569,7 +573,7 @@ nav #menu li {
   }
 
   footer {
-    width: 705px;
+    max-width: 710px;
   }
 }
 
@@ -594,9 +598,30 @@ nav #menu li {
   .cardGrid {
     grid-template-columns: 250px 250px;
   }
+}
+
+@media only screen and (max-width: 900px) {
+  .mePhotograph {
+    display: none;
+  }
+
+  .aboutGrid {
+    grid-template-columns: auto;
+  }
+
+  .aboutText {
+    margin-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .careerExperiences {
+    margin: 0 80px;
+  }
 
   footer {
-    width: 415px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
 
@@ -647,7 +672,8 @@ nav #menu li {
   }
 
   footer {
-    width: 250px;
+    margin-right: 30px;
+    margin-left: 30px;
     text-align: center;
   }
 
@@ -661,7 +687,7 @@ nav #menu li {
   }
 
   .rightLabel {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 0px;
   }
 
@@ -669,5 +695,14 @@ nav #menu li {
     transition: none;
     margin-top: -24px;
     box-shadow: none;
+  }
+
+  .careerExperiences {
+    margin: 0 30px;
+  }
+
+  .aboutText {
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
