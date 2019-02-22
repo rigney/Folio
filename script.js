@@ -9,6 +9,10 @@ $(function() {
   $("#toggle").click(function() {
     $(this).toggleClass("on");
     $("#resize").toggleClass("active");
+		$("main").toggle("slow", function() {
+		});
+		$("footer").toggle("slow", function() {
+		});
   });
 });
 

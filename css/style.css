@@ -277,6 +277,7 @@ footer hr {
 .reachOut {
   width: 133px;
   height: 45px;
+  border-bottom: 3px solid #E95B5C;
   margin: -24px auto 0px auto;
   margin-top: -24px;
   left: 0; 
@@ -293,9 +294,10 @@ footer hr {
 }
 
 .reachOut:hover {
+  border-bottom: 0px solid #E95B5C;
   transition: all .1s linear;
-  margin-top: -26px;
-  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.10);
+  margin-top: -21px;
+ /* box-shadow: 0 4px 15px 0 rgba(0,0,0,0.10);*/
 }
 
 /*nav*/
@@ -318,7 +320,7 @@ nav {
   width: 40px;
   border-radius: 50px;*/
   margin-top: 15px;
-/*  background-color: #FFFFFF;*/
+  background-color: #000000;
   display: inline-block;
 }
 
@@ -357,6 +359,11 @@ nav #menu li {
   transition: transform ease-in-out 250ms;
 }
 
+.black:hover::before{
+    background: #000000;
+
+}
+
 .underlineOnHover:hover::before {
   transform: scale(1,1);
 }
@@ -367,6 +374,15 @@ nav #menu li {
   height: 2px;
   bottom: -5px;
   background: #FFFFFF;
+  transform: scale(1,1);
+}
+
+#menu li a.currentBlack::before {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  background: #000000;
   transform: scale(1,1);
 }
 
@@ -386,11 +402,13 @@ nav #menu li {
 #toggle .span {
   height: 3px;
   margin-bottom: 4px;
-  background: #333333;
-/*  border-radius: 20px;*/
-  backface-visibility: hidden;
+/*  backface-visibility: hidden;*/
   background-color: #FFFFFF;
   transition: all 0.3s ease-out
+}
+
+#toggle .black {
+  background-color: #333333;
 }
 
 #toggle.on #one {
@@ -419,6 +437,7 @@ nav #menu li {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-out;
+  z-index: -1;
 }
 
 #resize ul {
@@ -520,11 +539,11 @@ nav #menu li {
   transition: box-shadow 300ms ease-in-out
 }
 
-.navbarFixedTop.scrolled .scrolledLogo {
+/*.navbarFixedTop.scrolled .scrolledLogo {
   background-color: #333333;
   transition: box-shadow 300ms ease-in-out
 }
-
+*/
 .navbarFixedTop.scrolled .underlineOnHover::before {
   background: #333333;
 }
@@ -533,9 +552,25 @@ nav #menu li {
   background: #333333;
 }
 
+.navbarFixedTop.scrolled #toggle .span {
+  background-color: #333333;
+}
+
+.navbarFixedTop.scrolled #toggle .span {
+  background-color: #333333;
+}
+
 .navbarFixedTop { 
   transition: background-color 300ms ease-in-out; 
   transition: box-shadow 300ms ease-in-out
+}
+
+.black{
+  color:#333333;
+}
+
+.white{
+  color:#FFFFFF;
 }
 
 /*accounting for different screen sizes*/
