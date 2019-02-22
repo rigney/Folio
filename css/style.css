@@ -140,13 +140,13 @@ p.cardType {
   font-size: 15px;
 }
 
-#cardHover {
+.cardHover {
   position: relative;
   top: 0;
   transition: all ease-in-out 0.25s;
 }
 
-#cardHover:hover {
+.cardHover:hover {
   top: -20px;
   transition: all ease-in-out 0.25s;
 }
@@ -277,9 +277,8 @@ footer hr {
 .reachOut {
   width: 133px;
   height: 45px;
-  border-bottom: 3px solid #E95B5C;
-  margin: -24px auto 0px auto;
-  margin-top: -24px;
+  border-bottom: 3px solid #DB4F50;
+  margin: -25.5px auto 0px auto;
   left: 0; 
   right: 0;
   display: inline-block;
@@ -293,7 +292,15 @@ footer hr {
   transition: all .1s linear;
 }
 
-.reachOut:hover {
+/*.reachOut:hover {
+  height: 45px;
+  border-bottom: 0px solid #E95B5C;
+  transition: all .1s linear;
+  margin-top: -21px;
+}*/
+
+.reachOut:active {
+  height: 45px;
   border-bottom: 0px solid #E95B5C;
   transition: all .1s linear;
   margin-top: -21px;
@@ -338,7 +345,7 @@ nav ul {
   position: relative;
 }
 
-nav #menu li {
+nav .menu li {
   display: inline-block;
   cursor: pointer;
   line-height: 70px;
@@ -368,7 +375,7 @@ nav #menu li {
   transform: scale(1,1);
 }
 
-#menu li a.current::before {
+.menu li a.current::before {
   content: " ";
   width: 100%;
   height: 2px;
@@ -377,7 +384,7 @@ nav #menu li {
   transform: scale(1,1);
 }
 
-#menu li a.currentBlack::before {
+.menu li a.currentBlack::before {
   content: " ";
   width: 100%;
   height: 2px;
@@ -460,7 +467,7 @@ nav #menu li {
   transition: all 0.3s ease-out;
 }
 
-#resize #menu li a {
+#resize .menu li a {
   color: #333333;
 }
 
@@ -516,7 +523,7 @@ nav #menu li {
     opacity: 1;
   }
 
-  nav #menu {
+  nav .menu {
     display: none;
   }
 }
@@ -548,7 +555,7 @@ nav #menu li {
   background: #333333;
 }
 
-.navbarFixedTop.scrolled #menu li a.current::before {
+.navbarFixedTop.scrolled .menu li a.current::before {
   background: #333333;
 }
 

@@ -1,8 +1,13 @@
 $(function () {
-  $(document).scroll(function () {
+  $(document).scroll("load", function () {
     var $nav = $(".navbarFixedTop");
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
   });
+});
+
+jQuery(window).on("load", function(){
+    var $nav = $(".navbarFixedTop");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
 });
 
 $(function() {
