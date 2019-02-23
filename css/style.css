@@ -327,7 +327,6 @@ nav {
   width: 40px;
   border-radius: 50px;*/
   margin-top: 15px;
-  background-color: #000000;
   display: inline-block;
 }
 
@@ -546,11 +545,6 @@ nav .menu li {
   transition: box-shadow 300ms ease-in-out
 }
 
-/*.navbarFixedTop.scrolled .scrolledLogo {
-  background-color: #333333;
-  transition: box-shadow 300ms ease-in-out
-}
-*/
 .navbarFixedTop.scrolled .underlineOnHover::before {
   background: #333333;
 }

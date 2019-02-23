@@ -1,7 +1,16 @@
 $(function () {
   $(document).scroll("load", function () {
     var $nav = $(".navbarFixedTop");
+    var $img = $("#imgOnScroll");
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    
+    // changing img
+    if ($(this).scrollTop() > $nav.height()) {
+    	$img.attr("src","imgs/logoBlack.svg");
+    }
+    else {
+    	$img.attr("src","imgs/logo.svg");
+    }
   });
 });
 
@@ -10,6 +19,8 @@ jQuery(window).on("load", function(){
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
 });
 
+
+// this is the function
 $(function() {
   $("#toggle").click(function() {
     $(this).toggleClass("on");
