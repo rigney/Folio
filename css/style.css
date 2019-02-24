@@ -72,6 +72,7 @@ div.intro {
 p.helloText {
   line-height: 82px;
   font-size: 65px;
+  margin-bottom: 5px;
 }
 p.bioText{
   line-height: 44px;
