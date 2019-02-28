@@ -55,14 +55,6 @@ $(window).on('resize', function(){
   }
 });
 
-// $(window).scroll(function() {
-//   var $nav = $(".navbarFixedTop");
-//   if($(window).scrollTop() > 70) {
-//     $nav.addClass("scrolled");
-//     $img.attr("src","imgs/logoBlack.svg");
-//   }
-// }
-
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
@@ -112,3 +104,12 @@ $(function () {
     scrollTop: $("#scrolledTo").offset().top - 70
   }, 10)
 })});
+
+window.onscroll = function() { myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
