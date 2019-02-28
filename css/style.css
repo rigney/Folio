@@ -30,7 +30,7 @@ img {
   background-color: none;
   width: 100%;
   position: absolute;
-  top: 0px;
+  bottom: 0px;
 }
 
 #particle {
@@ -195,7 +195,7 @@ p.cardType {
   font-family: "circular_bold";
   font-size: 30px;
   text-align: left;
-  display: block;
+/*  display: block;*/
   line-height: 38px;
 }
 
@@ -250,6 +250,113 @@ p.cardType {
   color: #9CA5B0;
   font-family: "circular_book";
   font-size: 14px;
+}
+
+/*content landing*/
+
+.workIntro {
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  background-image: linear-gradient(-180deg, #FCB930 0%, #FB8D42 100%);
+}
+
+.workGrid {
+  margin-top: 139px;
+  display: inline-grid;
+  grid-template-rows: auto;
+  grid-template-columns: 510px 450px;
+  grid-column-gap: 160px;
+  grid-row-gap: 0px;
+}
+
+h1 {
+  max-width: 510px;
+  margin-top: 15px;
+  font-family: "circular_bold";
+  color: #FFFFFF;
+  font-size: 80px;
+  text-align: left;
+  line-height: normal;
+  margin-left: -5px;
+}
+
+.typeOfWork {
+  max-width: 510px;
+  line-height: normal;
+  margin-top: 4px;
+  font-family: "circular_bold";
+  color: #FFFFFF;
+  font-size: 19px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+/*.row2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}*/
+
+/*.row3 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+*/
+/*.row4 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}*/
+
+.date {
+  max-width: 510px;
+  line-height: normal;
+  margin-top: 2px;
+  font-family: "circular_book";
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.descriptionOfWork {
+  max-width: 510px;
+  margin-top: 16px;
+  font-family: "circular_book";
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.workGrid img {
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+p.content {
+  margin-top: 60px;
+  font-family: "circular_book";
+  color: #333333;
+  font-size: 16px;
+  margin-right: 80px;
+  margin-left: 80px;
+  line-height: 25px;
 }
 
 /*footer*/
@@ -611,6 +718,27 @@ nav .menu li {
   .aboutText {
     margin-left: 80px;
   }
+
+  .workGrid {
+    grid-template-columns: auto 610px;
+    grid-column-gap: 80px;
+  }
+
+  h1 {
+    margin-left: 75px;
+  }
+
+  .typeOfWork {
+    margin-left: 80px;
+  }
+
+  .date {
+    margin-left: 80px;
+  }
+
+  .descriptionOfWork {
+    margin-left: 80px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -657,6 +785,34 @@ nav .menu li {
 
   .aboutText {
     margin-right: 80px;
+  }
+
+  .workGrid {
+    grid-template-columns: auto;
+  }
+
+  .workIntro {
+    text-align: left;
+  }
+
+  h1 {
+    margin-right: 80px;
+  }
+
+  .typeOfWork {
+    margin-right: 80px;
+  }
+
+  .date {
+    margin-right: 80px;
+  }
+
+  .descriptionOfWork {
+    margin-right: 80px;
+  }
+
+  .workGrid img {
+    display: none;
   }
 }
 
@@ -748,6 +904,26 @@ nav .menu li {
   }
 
   .aboutText {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  h1 {
+    margin-right: 30px;
+    margin-left: 25px;
+  }
+
+  .typeOfWork {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .date {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .descriptionOfWork {
     margin-right: 30px;
     margin-left: 30px;
   }
