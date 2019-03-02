@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
-		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
-		<link rel="icon" type="image/png" href="imgs/favIcon.png">
 		<title>Michael Rigney's ‘Folio</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/png" href="imgs/favIcon.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
-	<body class="content">
-		<section class="home"> 
-			<a href="#skipTo" class="skipTo">Skip to content</a>
-			<header>
-				<nav class = "navbar-fixed-top">
-				<ul>
-					<li><a href="index.html" class ="current, nav-link">Home</a></li>
-					<li><a href="about.html" class="nav-link">About</a></li>
-						<li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank" class="nav-link">Resume</a></li>
-						<li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael," class="nav-link">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
 
-			<p id="content">Hello! I’m Michael Rigney, a digital product designer focused on creating experiences that are made for humans, not machines. I design for how humans think and behave, rather than how they’re expected or to think and behave. When I’m not designing, I’m likely helping others build out their ideas at the creator space I co-direct, buried in yet another book, or jamming on the guitar. If you’re interested in chatting feel free to reach out! Also here are the design adventures I’ve had so far.</p>
+	<body>
+		<header>
+	    <nav class="navbarFixedTop">
+	      <div class="container"> 
+					<a href="index.html" class="logo"><img src="imgs/logo.svg" alt="Personal Logo" id="imgOnScroll"></a>
+	        <a href="#" id="skipTo" class="skipTo underlineOnHover scrolledItem">Skip to content</a>
+	        <ul class="menu">
+	          <li><a href="index.html" class="underlineOnHover scrolledItem">Home</a></li>
+	          <li><a href="about.html" class="underlineOnHover scrolledItem">About</a></li>
+	          <li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank" class="underlineOnHover scrolledItem">Resume</a></li>
+	          <li><a href="mailto:mrigs@umich.edu?subject=Reaching%20Out&body=Hi%20Michael," class="underlineOnHover scrolledItem">Contact</a></li>
+	        </ul>
+	      </div>
+	      <div class="progressBar" id="myBar"></div>
 
-			<ul>
-				<li>Rookie Road:  June - Dec 2018</li>
-				<li>Tableau: May - Aug 2019</li>
-			</ul>
+	      <div id="toggle">
+			    <div class="span" id="one"></div>
+			    <div class="span" id="two"></div>
+			    <div class="span" id="three"></div>
+	    	</div>
+	    </nav>
+  	</header>
 
+  	<div id="resize">
+	    <ul class="menu">
+	      <li><a href="index.html">Home</a></li>
+        	<li><a href="about.html">About</a></li>
+        	<li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank">Resume</a></li>
+        	<li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael">Contact</a></li>
+	    </ul>
+	  </div>
 
-			<a href="#scroll"><img src="imgs/downIndicator.png" alt="Down Indicator"></a>
-			
-		</section>	
+		<main>
+			<div class="workIntro lilypadBackground">
+				<div class="workGrid">
+					<h1>Lilypad</h1>
+					<p class="typeOfWork hasYInName">Research</p>
+					<div class="date" style="color: #4A51CC">Jan-Apr 2019</div>
+					<div class="descriptionOfWork">Lilypad is a self-management tool that helps intellectually disabled students who are preparing to transition to a regular education classroom improve their behavioral, communication, and social skills.</div>
+					<img src="imgs/imgFill.png" alt="Lilypad Designs"></img>
+				</div>
+					<div id="scrollTo" class="downIndicator"><img src="imgs/downIndicator.svg" alt="Down Indicator"></div>
+			</div>
 
-		<section class="content" id="scroll">
-			<a id="skipTo"></a>
-			<footer>
-			<p class="footer">Michael Rigney - ©2019</p>
-			<p class="footer">Made with <span style="color: #F66263">❤</span> in Ann Arbor</p>
-			</footer>
-		</section>
+			<p class="content" id="scrolledTo">This report provides a heuristic evaluation of Larky’s mobile application. The report includes a brief overview of Larky, the evaluation approach used, an outline of the target users and their motivations, a detailed analysis of the issues that were discovered during the evaluation, and proposed solutions to those issues.</p>
+
+			<p class="content">This evaluation differs from others in that it has been conducted by only one individual. As usability guru Jakob Nielsen states, different people find different usability issues and thus having multiple evaluators improves the effectiveness of this method. Therefore being the sole evaluator, the number of issues presented in this evaluation are by no means complete. Additional evaluations, each conducted by a different individual, will be necessary in order to compose a more thorough list of usability issues in Larky’s mobile application. Additionally, please keep in mind that this evaluation was completed on Feb 24, 2018 and thus may no longer completely reflect the current state of Larky's mobile application.</p>
+		</main>
+
+		<footer>
+			<hr>
+			<a href="mailto:mrigs@umich.edu?subject=Reaching%20Out&body=Hi%20Michael,"><div class="reachOut">Reach Out</div></a>
+			<div class="footerLabels">
+				<div class="leftLabel">Michael Rigney - ©2019</div>
+				<div class="rightLabel">Made with<span style="color: #F66263"> ❤ </span>in Ann Arbor</div>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
