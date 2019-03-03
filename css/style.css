@@ -8,6 +8,23 @@ html {
   overflow: scroll;
 }
 
+#backtoTop {
+  border-radius: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.20);
+/*  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);*/
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 194px;
+  right: 80px;
+}
+
 a {
   text-decoration: none;
 }
@@ -254,11 +271,10 @@ p.cardType {
 
 /*content landing*/
 
-.workIntro {
+#workIntro {
   min-height: 100vh;
   min-width: 100vw;
   text-align: center;
-  background-image: linear-gradient(-180deg, #FCB930 0%, #FB8D42 100%);
 }
 
 .larkyBackground {

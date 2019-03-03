@@ -113,3 +113,30 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+// back to top
+var previousHeight = 0;
+$(window).scroll(function(event){
+  console.log("hi")
+  var heightOfWorkIntro = document.getElementById("workIntro");
+  var currentHeight = $(this).scrollTop();
+  if (currentHeight > previousHeight){
+    // downScroll
+    if (currentHeight > heightOfWorkIntro.clientHeight - 70){
+      $('#backtoTop').fadeIn();
+    }
+  } else {
+      // upscroll 
+      $('#backtoTop').fadeOut();
+  }
+  previousHeight = currentHeight;
+});
+
+$(document).ready(function() {
+    $("#backtoTop").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 10);
+        return false;
+    });
+
+});
