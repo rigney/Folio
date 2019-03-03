@@ -8,21 +8,34 @@ html {
   overflow: scroll;
 }
 
-#backtoTop {
-  border-radius: 30px;
+/*.backToTopContainer {
+  max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
+    position: fixed;
+background-color: blue;
+}
+*/
+/*#backtoTop {
+  margin-left: 80px;
+  right: 80px;
+  position: fixed;
+}*/
+
+.backtoTop {
+  right: 80px;
+  position: fixed;
+/*  position: absolute;*/
+  bottom: 195px;
+  border-radius: 30px;
   width: 55px;
   height: 55px;
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.20);
-/*  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);*/
   overflow: hidden;
-  z-index: 999;
   display: none;
   cursor: pointer;
-  position: fixed;
-  bottom: 194px;
-  right: 80px;
+ /* float: right;*/
+/*  margin-right: 80px;*/
 }
 
 a {
@@ -987,5 +1000,9 @@ nav .menu li {
 
   .homeText {
     margin-top: 80px;
+  }
+
+  #backtoTop {
+    right: 30px;
   }
 }

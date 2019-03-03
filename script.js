@@ -117,7 +117,6 @@ function myFunction() {
 // back to top
 var previousHeight = 0;
 $(window).scroll(function(event){
-  console.log("hi")
   var heightOfWorkIntro = document.getElementById("workIntro");
   var currentHeight = $(this).scrollTop();
   if (currentHeight > previousHeight){
