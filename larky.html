@@ -17,7 +17,7 @@
 		<header>
 	    <nav class="navbarFixedTop">
 	      <div class="container"> 
-			<a href="index.html" class="logo"><img src="imgs/logo.svg" alt="Personal Logo" id="imgOnScroll"></a>
+					<a href="index.html" class="logo"><img src="imgs/logo.svg" alt="Personal Logo" id="imgOnScroll"></a>
 	        <a href="#" id="skipTo" class="skipTo underlineOnHover scrolledItem">Skip to content</a>
 	        <ul class="menu">
 	          <li><a href="index.html" class="underlineOnHover scrolledItem">Home</a></li>
@@ -39,9 +39,9 @@
   	<div id="resize">
 	    <ul class="menu">
 	      <li><a href="index.html">Home</a></li>
-        	<li><a href="about.html">About</a></li>
-        	<li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank">Resume</a></li>
-        	<li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank">Resume</a></li>
+        <li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael">Contact</a></li>
 	    </ul>
 	  </div>
 
@@ -54,13 +54,96 @@
 					<div class="descriptionOfWork">Larky is a mobile shopping application that sends you local discounts and perks from your memberships and loyalty programs.</div>
 					<img src="imgs/imgFill.png" alt="Larky Designs"></img>
 				</div>
-					<div id="scrollTo" class="downIndicator"><img src="imgs/downIndicator.svg" alt="Down Indicator"></div>
+				<div id="scrollTo" class="downIndicator"><img src="imgs/downIndicator.svg" alt="Down Indicator"></div>
 			</div>
 
-			<div id="backToTopContainer"><a id="backtoTop" title="Back to top" href="#"><img src="imgs/backToTop.svg" alt="Back To Top"></a></div>
-			<p class="content" id="scrolledTo">This report provides a heuristic evaluation of Larky’s mobile application. The report includes a brief overview of Larky, the evaluation approach used, an outline of the target users and their motivations, a detailed analysis of the issues that were discovered during the evaluation, and proposed solutions to those issues.</p>
+			<div class="backToTopContainer"><div id="backtoTop" class="backtoTop"><img src="imgs/backToTop.svg" alt="Back To Top"></div></div>
 
-			<p class="content">This evaluation differs from others in that it has been conducted by only one individual. As usability guru Jakob Nielsen states, different people find different usability issues and thus having multiple evaluators improves the effectiveness of this method. Therefore being the sole evaluator, the number of issues presented in this evaluation are by no means complete. Additional evaluations, each conducted by a different individual, will be necessary in order to compose a more thorough list of usability issues in Larky’s mobile application. Additionally, please keep in mind that this evaluation was completed on Feb 24, 2018 and thus may no longer completely reflect the current state of Larky's mobile application.</p>
+			<div class="workContent">
+
+			<h2>Introduction</h2>
+
+			<p class="parContent first" id="scrolledTo">This heuristic evaluation of Larky consists of an overview of the evaluation approach, an outline of the target user, and a detailed analysis of the discovered usability issues.</p>
+
+			<h2>Approach</h2>
+
+			<p class="parContent first">I evaluated Larky against a set of usability heuristics while attempting to complete the core tasks of the application. As the sole evaluator, the list of discovered usability issues is by no means complete. Different people find different usability issues and therefore additional evaluations, each conducted by a separate evaluator following this same approach, are required to make this list exhaustive.</p>
+
+			<h3>Nielsen and Molich's 10 Heuristics</h3>
+
+			<p class="parContent first">Larky was evaluated against <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Nielsen's 10 Heuristics</a>. Initially developed in 1990 by Jakob Nielsen and Rolf Molich, later refined by Nielsen in 1994, these heuristics are well-respected and widely used in heuristic evaluations.</p>
+
+			<dl>
+			  <dt>1. Visibility of system status</dt>
+			  <dd>The system should always keep users informed about what is going on, through appropriate feedback within reasonable time.</dd>
+			  <dt>2. Match between system and the real world</dt>
+			  <dd>The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.</dd>
+			  <dt>3. User control and freedom</dt>
+			  <dd>Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.</dd>
+			  <dt>4. Consistency and standards</dt>
+			  <dd>Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions.</dd>
+			  <dt>5. Error prevention</dt>
+			  <dd>Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.</dd>
+			  <dt>6. Recognition rather than recall</dt>
+			  <dd>Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.</dd>
+			  <dt>7. Flexibility and efficiency of use</dt>
+			  <dd>Accelerators unseen by the novice user may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.</dd>
+			  <dt>8. Aesthetic and minimalist design</dt>
+			  <dd>Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.</dd>
+			  <dt>9. Help users recognize, diagnose, and recover from errors</dt>
+			  <dd>Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution.</dd>
+			  <dt>10. Help and documentation</dt>
+			  <dd>Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large.</dd>
+			</dl>
+
+			<h3>Severity System</h3>
+
+			<p class="parContent first">To better understand how the discovered usability issues impact users, I assigned a severity rating to each issue. To keep my findings in line with Nielsen's methodology, I used his severity rating system.</p>
+
+			<ul class="contentList">
+				<li class="contentListItem"><span class="ratingName">No Issue -</span> May conflict with one of the heuristics, but isn’t a usability issue.</li>
+				<li class="contentListItem"><span class="ratingName">Minimal Issue -</span> Is easy for users to overcome and should be given lowest priority to fix. May be a cosmetic issue only.</li>
+				<li class="contentListItem"><span class="ratingName">Minor Issue -</span> Slightly slows down and irritates users. Should be given low priority to fix.</li>
+				<li class="contentListItem"><span class="ratingName">Major Issue -</span> Is difficult for users to overcome. Causes significant delay and moderate irritation. May occur often and should be given high priority to fix.</li>
+				<li class="contentListItem"><span class="ratingName">Catastrophic Issue -</span> Prevents users from completing a task and causes considerable irritation. Is imperative to fix and should block the release of the product.</li>
+			</ul>
+
+			<h2>Target User</h2>
+
+			<p class="parContent first">To ensure that my analysis was focused and aligned with the frustrations, behaviors, and goals of Larky’s users I created a proto-persona. It was important for me to be able empathize with what a user would be thinking, feeling, and doing throughout each task. </p>
+
+			<h3>Proto-Persona</h3>
+
+			<p class="parContent first">To determine which tasks to evaluate the heuristics against, I had to understand what tasks Sara would  carry out to accomplish her goals. Therefore, I developed user need statements to translate Sara’s behaviors, frustrations, and goals into statements that tasks could be derived from.</p>
+
+			<h3>User Need Statements</h3>
+
+			<p class="parContent first">To determine which tasks to evaluate the heuristics against, I had to understand what tasks Sara would  carry out to accomplish her goals. Therefore, I developed user need statements to translate Sara’s behaviors, frustrations, and goals into statements that tasks could be derived from.</p>
+
+			<div class="subHeader">Situation - Motivation - Outcome</div>
+
+			<p class="parContent first">When I have several memberships, I want their information, including their discounts, to be kept in the same location, so that I always know where to view it.</p>
+
+			<p class="parContent first">When a discount is offered by one of my memberships, I want to know, so that I don’t miss out on its benefits.</p>
+
+			<p class="parContent first">When I know of a discount offered by one of my memberships, I want the details of the discount to be readily available, so that I know when and how to redeem it.</p>
+
+			<p class="parContent first">From these user need statements it became clear that Sara would carry out the following tasks to accomplish her goals. </p>
+
+			<ul class="contentList">
+				<li class="contentListItem">Maintain a list of memberships</li>
+				<li class="contentListItem">View a discount</li>
+				<li class="contentListItem">View the details of a discount</li>
+			</ul>
+
+
+
+			<!-- <p class="parContent">This evaluation differs from others in that it has been conducted by only one individual. As usability guru Jakob Nielsen states, different people find different usability issues and thus having multiple evaluators improves the effectiveness of this method. Therefore being the sole evaluator, the number of issues presented in this evaluation are by no means complete. Additional evaluations, each conducted by a different individual, will be necessary in order to compose a more thorough list of usability issues in Larky’s mobile application. Additionally, please keep in mind that this evaluation was completed on Feb 24, 2018 and thus may no longer completely reflect the current state of Larky's mobile application.</p> -->
+
+			<!-- <iframe src="https://giphy.com/embed/OR2JSeRbfyXgUU5VSt" width="270" height="480" frameBorder="0" class="giphy-embed gifContent" allowFullScreen></iframe><p ><a href="https://giphy.com/gifs/OR2JSeRbfyXgUU5VSt"></a></p> -->
+			<div class="gifContainer"><img class="gifContent" src="imgs/iphone.gif" alt="Iphone Gif"></div>
+
+			</div>
 		</main>
 
 		<footer>

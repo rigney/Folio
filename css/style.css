@@ -395,16 +395,93 @@ h1 {
   grid-row-end: 6;
 }
 
-p.content {
-  padding-top: 60px;
-  margin-left: auto;
+.workContent {
+  margin-top: 60px;
   margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+}
+
+p.parContent {
   font-family: "circular_book";
   color: #333333;
   font-size: 16px;
-  max-width: 650px;
   line-height: 25px;
 }
+
+p.parContent.first {
+  margin-top: 15px;
+}
+
+.gifContainer {
+  text-align: center;
+}
+
+.gifContent {
+  margin-top: 60px;
+  width: 250px;
+  height: 445px;
+}
+
+h2 {
+  margin-top: 45px;
+  color: #333333;
+  font-family: "circular_bold";
+  font-size: 21px;
+/*  font-weight: 100;*/
+}
+
+h3 {
+  margin-top: 45px;
+  color: #333333;
+  font-family: "circular_bold";
+  font-size: 17px;
+  font-weight: 100;
+}
+
+dl {
+  margin-top: 25px;
+}
+
+dt {
+  margin-top: 10px;
+  font-family: "circular_bold";
+  color: #333333;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+dd {
+  font-family: "circular_book";
+  color: #333333;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.contentList {
+  margin-top: 15px;
+  margin-left: 27px;
+}
+
+.contentListItem {
+  font-family: "circular_book";
+  color: #333333;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.ratingName {
+  font-family: "circular_medium";
+}
+
+.subHeader {
+  margin-top: 20px;
+  font-family: "circular_book_italic";
+  font-size: 16px;
+  color: #9CA5B0;
+  font-weight: 100;
+}
+
 
 /*footer*/
 

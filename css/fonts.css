@@ -37,15 +37,3 @@
   font-family: circular_book_italic;
   src: url(../fonts/circularStdBookItalic.otf);
 }
-
-}
-
-@font-face {
-  font-family: circular_book_italic;
-  src: url(../fonts/book_italic.otf);
-}
-
-@font-face {
-  font-family: circular_medium;
-  src: url(../fonts/circular/medium.otf);
-}
