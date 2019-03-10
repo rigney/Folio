@@ -2,10 +2,10 @@ $(function () {
   $(document).scroll("load", function () {
     var $nav = $(".navbarFixedTop");
     var $img = $("#imgOnScroll");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
     
     // changing img
-    if ($(this).scrollTop() > $nav.height()) {
+    if ($(this).scrollTop() > 10) {
     	$img.attr("src","imgs/logoBlack.svg");
     }
     else {
@@ -17,8 +17,8 @@ $(function () {
 jQuery(window).on("load", function(){
     var $nav = $(".navbarFixedTop");
     var $img = $("#imgOnScroll");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    if ($(this).scrollTop() > $nav.height()) {
+    $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
+    if ($(this).scrollTop() > 10) {
       $img.attr("src","imgs/logoBlack.svg");
     }
     else {
