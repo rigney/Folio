@@ -381,7 +381,8 @@ h1 {
 .backtoTop {
   width: 55px;
   height: 55px;
-  bottom: 195px;
+  bottom: 14px;
+/*  bottom: 195px;*/
   right: 80px;
   display: none;
   position: fixed;
