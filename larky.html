@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Michael Rigney's ‘Folio</title>
+		<title>Michael Rigney | Portfolio</title>
 
 		<meta charset="utf-8">
+		<meta name="description" content="A portfolio showcasing Michael Rigney's design work">
+		<meta name="author" content="Michael Rigney">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
@@ -52,7 +54,7 @@
 					<p class="typeOfWork">Heuristic Evaluation</p>
 					<div class="date" style="color: #CF7A2A">Feb 2018</div>
 					<div class="descriptionOfWork">Larky is a mobile shopping application that sends you local discounts and perks from your memberships and loyalty programs.</div>
-					<img src="imgs/imgFill.png" alt="Larky Designs">
+					<img src="imgs/larkyLoadingImg.svg" alt="Larky Designs">
 				</div>
 				<div id="scrollTo" class="downIndicator"><img src="imgs/downIndicator.svg" alt="Down Indicator"></div>
 			</div>
@@ -61,7 +63,219 @@
 
 			<div class="workContent" id="scrolledTo">
 
-				<h2 class="noTopMargin">Introduction</h2>
+				<h2 class="noTopMargin">Executive Summary</h2>
+
+				<p class="parContent first">In total, 31 usability issues were discovered during the heuristic evaluation of Larky. A majority of the issues relate to the unintuitive placement of information and absence of information important to users - the most severe of which prevents users from exiting a screen.</p>
+
+				<table class="first">
+  				<tr>
+	    			<th>Number of Minimal Issues</th>
+	    			<th>Number of Minor Issues</th>
+	    			<th>Number of Major Issues</th>
+	    			<th>Number of Catastrophic Issues</th>
+  				</tr>
+
+  				<tr>
+	   			  <td class="mediumWeight">10</td>
+	    			<td class="mediumWeight">13</td>
+	    			<td class="mediumWeight">7</td>
+	    			<td class="mediumWeight">1</td>
+  				</tr>
+				</table>
+
+				<table>
+					<caption>Minimal Issues</caption>
+  				<tr>
+	    			<th class="mediumWeight width">#</th>
+	    			<th class="mediumWeight">Issue</th>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue2" class="scrollTo">2</a></td>
+	    			<td>Inability to undo the removal of a membership</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue5" class="scrollTo">5</a></td>
+	    			<td>Improper placement of the Add Membership button</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue8" class="scrollTo">8</a></td>
+	    			<td>Uninformative confirmation message</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue11" class="scrollTo">11</a></td>
+	    			<td>Misleading confirmation after adding a membership</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue14" class="scrollTo">14</a></td>
+	    			<td>Ambiguous icons used for the Call button and the Visit Website button</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue15" class="scrollTo">15</a></td>
+	    			<td>Tapping the Remove Membership, Call, and Visit Website buttons requires too much precision from users</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue19" class="scrollTo">19</a></td>
+	    			<td>Membership name is in all caps</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue28" class="scrollTo">28</a></td>
+	    			<td>Inadequate readability of text</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue29" class="scrollTo">29</a></td>
+	    			<td>Insufficient screen background</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue30" class="scrollTo">30</a></td>
+	    			<td>Absence of scroll bar on all screens</td>
+  				</tr>
+				</table>
+
+
+				<table>
+					<caption>Minor Issues</caption>
+  				<tr>
+	    			<th class="mediumWeight width">#</th>
+	    			<th class="mediumWeight">Issue</th>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue1" class="scrollTo">1</a></td>
+	    			<td>Absence of friction in the Remove Membership button</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue3" class="scrollTo">3</a></td>
+	    			<td>Remove Membership label has the perceived affordance of being tappable when it is not</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue4" class="scrollTo">4</a></td>
+	    			<td>Remove Membership button has a negative affordance of being untappable</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue6" class="scrollTo">6</a></td>
+	    			<td>Unnecessary steps required to search for a membership</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue7" class="scrollTo">7</a></td>
+	    			<td>Inadequate error message for no search results</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue9" class="scrollTo">9</a></td>
+	    			<td>Unintuitive sorting of membership categories</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue10" class="scrollTo">10</a></td>
+	    			<td>Unintuitive sorting of memberships</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue18" class="scrollTo">18</a></td>
+	    			<td>Total Perks label is misleading</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue22" class="scrollTo">22</a></td>
+	    			<td>Inappropriate functionality of the Alerts For This Merchant button</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue23" class="scrollTo">23</a></td>
+	    			<td>Absence of membership name when viewing a discount</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue24" class="scrollTo">24</a></td>
+	    			<td>Closest To You button does not have a perceived affordance of being tappable when it is</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue25" class="scrollTo">25</a></td>
+	    			<td>Tapping the Closest To You button gives an unanticipated result</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue26" class="scrollTo">26</a></td>
+	    			<td>Difficult to use the information in the Notes section</td>
+  				</tr>
+				</table>
+
+
+				<table>
+					<caption>Major Issues</caption>
+  				<tr>
+	    			<th class="mediumWeight width">#</th>
+	    			<th class="mediumWeight">Issue</th>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue12" class="scrollTo">12</a></td>
+	    			<td>Inability to go back to a previous screen</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue13" class="scrollTo">13</a></td>
+	    			<td>Tapping the Browse By Category button gives an unintended result</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue16" class="scrollTo">16</a></td>
+	    			<td>Difficult to differentiate the View Discounts As button from the Side Menu button</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue20" class="scrollTo">20</a></td>
+	    			<td>Difficult to interact with discounts on the map</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue21" class="scrollTo">21</a></td>
+	    			<td>Showing Perks For drop-down does not signal which drop-down item is selected</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue27" class="scrollTo">27</a></td>
+	    			<td>All Screens are untitled</td>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue31" class="scrollTo">31</a></td>
+	    			<td>Poor accessibility of Privacy Policy</td>
+  				</tr>
+				</table>
+
+
+				<table>
+					<caption>Catastrophic Issues</caption>
+  				<tr>
+	    			<th class="mediumWeight width">#</th>
+	    			<th class="mediumWeight">Issue</th>
+  				</tr>
+
+  				<tr>
+	   			  <td><a href="#issue17" class="scrollTo">17</a></td>
+	    			<td>Unintuitive navigation</td>
+  				</tr>
+  			</table>
+
+				<hr class="divider">
+
+				<h2>Introduction</h2>
 
 				<p class="parContent first">This heuristic evaluation of Larky consists of an overview of the evaluation approach, an outline of the target user, and a detailed analysis of the discovered usability issues.</p>
 
@@ -175,7 +389,7 @@
 				<h2>Findings</h2>
 
 
-				<h3>1. Absence of friction in the Remove Membership button</h3>
+				<h3 id="issue1">1. Absence of friction in the Remove Membership button</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -188,7 +402,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Require the user to confirm their removal of a membership before the membership is removed. Adding this friction allows users to re-engage with what they are doing and assures them that the decision they are making is actually the decision they want to be making.</p>
 
 
-				<h3>2. Inability to undo the removal of a membership</h3>
+				<h3 id="issue2">2. Inability to undo the removal of a membership</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -199,7 +413,7 @@
 				<p class="parContent"><span class="mediumWeight">Recommendation -</span> After a user removes a membership, briefly provide them with an undo option.</p>
 
 
-				<h3>3.  Remove Membership label has the perceived affordance of being tappable when it is not</h3>
+				<h3 id="issue3">3.  Remove Membership label has the perceived affordance of being tappable when it is not</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -212,7 +426,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Place the Remove Membership label and the x icon in a tappable filled container whose functionality is identical to that of the x icon. Alternatively, remove the x icon, change the Remove Membership label to “Remove”,  and place the Remove Membership label in a tappable filled container whose functionality is identical to that of the x icon.</p>
 
 
-				<h3>4. Remove Membership button has a negative affordance of being untappable</h3>
+				<h3 id="issue4">4. Remove Membership button has a negative affordance of being untappable</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -225,7 +439,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the color of the Remove Membership button to the color of the surrounding buttons.</p>
 
 
-				<h3>5. Improper placement of the Add Membership button </h3>
+				<h3 id="issue5">5. Improper placement of the Add Membership button </h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -238,7 +452,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Replace the Add Membership buttons with a floating action button on the bottom right corner of the screen. Therefore, users will be able to add a membership regardless of their scroll position.</p>
 
 
-				<h3>6. Unnecessary steps required to search for a membership</h3>
+				<h3 id="issue6">6. Unnecessary steps required to search for a membership</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -251,7 +465,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Remove the separate search screen and replace the Search By Name button with a search bar.</p>
 
 
-				<h3>7. Inadequate error message for no search results</h3>
+				<h3 id="issue7">7. Inadequate error message for no search results</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -264,7 +478,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the error message such that it states there are no search results for the search term (i.e. reminds the user of what they searched), asks the user to check for spelling and change how they phrase the search term (i.e. provides an immediate solution), and provides the user with the option to submit a request to have the membership added to Larky (i.e.  provides an alternative solution).</p>
 
 
-				<h3>8. Uninformative confirmation message</h3>
+				<h3 id="issue8">8. Uninformative confirmation message</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -277,7 +491,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the confirmation message to clearly state what the user requested and inform them of next steps. </p>
 
 
-				<h3>9. Unintuitive sorting of membership categories</h3>
+				<h3 id="issue9">9. Unintuitive sorting of membership categories</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -290,7 +504,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Sort the membership categories alphabetically.</p>
 
 
-				<h3>10. Unintuitive sorting of memberships</h3>
+				<h3 id="issue10">10. Unintuitive sorting of memberships</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -303,7 +517,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Sort the memberships alphabetically.</p>
 
 
-				<h3>11. Misleading confirmation after adding a membership</h3>
+				<h3 id="issue11">11. Misleading confirmation after adding a membership</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -316,7 +530,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> If technically feasible, remove the loading indicator. Alternatively, make the loading indicator appear before the check mark appears.</p>
 
 
-				<h3>12. Inability to go back to a previous screen</h3>
+				<h3 id="issue12">12. Inability to go back to a previous screen</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -329,7 +543,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Replace the Home button on the left corner of the top navigation with a Back button.</p>
 
 
-				<h3>13. Tapping the Browse By Category button gives an unintended result</h3>
+				<h3 id="issue13">13. Tapping the Browse By Category button gives an unintended result</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
@@ -342,7 +556,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Fix this bug so that when a user taps the Browse By Category button they are redirected to the list of membership categories.</p>
 
 
-				<h3>14. Ambiguous icons used for the Call button and the Visit Website button </h3>
+				<h3 id="issue14">14. Ambiguous icons used for the Call button and the Visit Website button </h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
@@ -355,7 +569,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Make the Call button the <a href="https://www.google.com/search?biw=1280&bih=624&tbm=isch&sa=1&ei=fNN-XP2nIIm_jgTMoaCQBA&q=call+icon&oq=call+icon&gs_l=img.3..0i67j0l9.3598.7556..7740...0.0..0.129.1051.13j1......1....1..gws-wiz-img.......0i7i30j0i7i5i30j0i8i7i30j0i10.wChG8L5myyk" target="_blank">universal telephone icon</a> and the Visit Website button the <a href="https://www.google.com/search?q=website+icon&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjX96ak4-vgAhXrpYMKHQ80AHkQ_AUIDigB&biw=1280&bih=624" target="_blank">universal website icon</a>.</p>
 
 
-				<h3>15. Tapping the Remove Membership, Call, and Visit Website buttons requires too much precision from users</h3>
+				<h3 id="issue15">15. Tapping the Remove Membership, Call, and Visit Website buttons requires too much precision from users</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
@@ -366,7 +580,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> For each button, increase its visual bounds and extend its touch target beyond its visual bounds. Ensure that there’s a balance between information density and usability.</p>
 
 
-				<h3>16. Difficult to differentiate the View Discounts As button from the Side Menu button</h3>
+				<h3 id="issue16">16. Difficult to differentiate the View Discounts As button from the Side Menu button</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
@@ -379,7 +593,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the appearance of the View Discounts As button so that its distinguishable from the Side Menu button and its purpose is clearly conveyed.</p>
 
 
-				<h3>17. Unintuitive navigation</h3>
+				<h3 id="issue17">17. Unintuitive navigation</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
@@ -392,7 +606,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Make the search bar consistent with the other search bars on Larky and make the View Everywhere button toggle between the maps when tapped. Alternatively, remove the View Everywhere button as it detracts from Larky’s goal of providing local discounts.</p>
 
 
-				<h3>18. Total Perks label is misleading</h3>
+				<h3 id="issue18">18. Total Perks label is misleading</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
@@ -405,7 +619,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Remove the Total Perks label. Users are not concerned with the number of discounts they have, instead they want to know what their discounts are and how to claim them.</p>
 
 
-				<h3>19. Membership name is in all caps</h3>
+				<h3 id="issue19">19. Membership name is in all caps</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
@@ -418,7 +632,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Uncapitalize the membership name except for its first letter.</p>
 
 
-				<h3>20. Difficult to interact with discounts on the map</h3>
+				<h3 id="issue20">20. Difficult to interact with discounts on the map</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
@@ -431,7 +645,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Reduce the number of discounts displayed when a user zooms out and increase the number of discounts displayed when a user zooms in. Therefore, discounts will not be clustered. Alternatively, change the shape of each discount to a pin and reduce its size.</p>
 
 
-				<h3>21. Showing Perks For drop-down does not signal which drop-down item is selected</h3>
+				<h3 id="issue21">21. Showing Perks For drop-down does not signal which drop-down item is selected</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
@@ -444,7 +658,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Display the selected drop-down item next to the Showing Perks For label. Additionally, differentiate the selected drop-down item from the other items when the Showing Perks For drop-down is open.</p>
 
 
-				<h3>22. Inappropriate functionality of the Alerts For This Location button</h3>
+				<h3 id="issue22">22. Inappropriate functionality of the Alerts For This Location button</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
@@ -457,7 +671,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> The label is present regardless of whether the button is pressed. Additionally, the button’s functionality is applied only after it has been released.</p>
 
 
-				<h3>23. Absence of membership name when viewing a discount</h3>
+				<h3 id="issue23">23. Absence of membership name when viewing a discount</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
@@ -471,7 +685,7 @@
 
 
 
-				<h3>24. Closest To You button does not have a perceived affordance of being tappable when it is</h3>
+				<h3 id="issue24">24. Closest To You button does not have a perceived affordance of being tappable when it is</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
@@ -484,7 +698,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Give the Closest To You button its own white filled container and replace its label with a label that has a call to action, such as “Get Directions”.</p>
 
 
-				<h3>25. Tapping the Closest To You button gives an unanticipated result</h3>
+				<h3 id="issue25">25. Tapping the Closest To You button gives an unanticipated result</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
@@ -492,12 +706,12 @@
 
 				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user taps the Closest To You button, they are immediately redirected to their phone’s map application.</p>
 
-				<div class="imageContainer"><img class="interfaceImage" src="" alt="Larky Interface"></div>
+				<div class="imageContainer"><img class="interfaceImage" src="imgs/tappingClosestToYouButton.gif" alt="Larky Interface"></div>
 
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Require the user to confirm that they want to be redirected to their map application before they are redirected.</p>
 
 
-				<h3>26. Difficult to use the information in the Notes section</h3>
+				<h3 id="issue26">26. Difficult to use the information in the Notes section</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
@@ -510,7 +724,7 @@
 				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Make the information in the Notes section copyable. Additionally, make all urls and phone numbers tappable and afford they are tappable (e.g., by underlining them).</p>
 
 
-				<h3>27. All Screens are untitled</h3>
+				<h3 id="issue27">27. All Screens are untitled</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
@@ -521,7 +735,7 @@
 				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Each screen has a descriptive and concise title that helps users orient themselves and understand the screen’s purpose.</p>
 
 
-				<h3>28. Inadequate readability of text</h3>
+				<h3 id="issue28">28. Inadequate readability of text</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
@@ -532,7 +746,7 @@
 				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Increase the size and kerning of the text.</p>
 
 
-				<h3>29. Insufficient screen background</h3>
+				<h3 id="issue29">29. Insufficient screen background</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
@@ -543,7 +757,7 @@
 				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Replace the light blue sky background with a white background, remove all containers, and change the color of white text to black.</p>
 
 
-				<h3>30. Absence of scroll bar on all screens</h3>
+				<h3 id="issue30">30. Absence of scroll bar on all screens</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
@@ -554,7 +768,7 @@
 				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Add a scrollbar to each screen.</p>
 
 
-				<h3>31. Poor accessibility of Privacy Policy</h3>
+				<h3 id="issue31">31. Poor accessibility of Privacy Policy</h3>
 
 				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
@@ -564,6 +778,11 @@
 
 				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Make the privacy policy accessible while logged in. Additionally, increase the color contrast and size of the Privacy Policy button and place it under the Join Now button.</p>
 
+				<hr class="divider">
+
+				<h2>Conclusion</h2>
+
+				<p class="parContent first">Most of the discovered issues are small, however, together they create a user experience that is unintuitive and that forces an unnecessary cognitive load on users. After finishing this evaluation I sent it to the CEO of Larky and was invited to present my findings to the rest of the team. Although I told them in detail how they could improve the application, it was apparent that their resources were limited and that the application was no longer their highest priority. As a designer you must be aware of your constraints and not only know the user value behind your decisions, but also the business value. Therefore, as a next step I would further prioritize the issues based on the resources that would be required to fix them, the value that would be created for users if they were fixed, and the value that would be created for the business if they were fixed.</p>
 			</div>
 		</main>
 

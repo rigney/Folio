@@ -105,6 +105,13 @@ $(function () {
   }, 10)
 })});
 
+$(function () {
+  $('.scrollTo').click(function() {
+  $('html, body').animate({
+    scrollTop: $(this.hash).offset().top - 90
+  }, 10)
+})});
+
 window.onscroll = function() { myFunction()};
 
 function myFunction() {
