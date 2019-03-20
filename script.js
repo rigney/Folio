@@ -1,8 +1,11 @@
+// showing/hiding navbar on scroll
 $(function () {
   $(document).scroll("load", function () {
     var $nav = $(".navbarFixedTop");
     var $img = $("#imgOnScroll");
+    var $height = $("#particle").height() - 71;
     $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
+    $nav.toggleClass("inWork", $(this).scrollTop() > $height);
     
     // changing img
     if ($(this).scrollTop() > 10) {
@@ -14,10 +17,20 @@ $(function () {
   });
 });
 
+// $(function() {
+//   $("#goToWork").click(function() {
+//     var $nav = $(".navbarFixedTop");
+//     $nav.toggleClass("inWork", $(this).scrollTop() > 10);
+//   });
+// });
+
+// showing/hiding navbar on page load
 jQuery(window).on("load", function(){
     var $nav = $(".navbarFixedTop");
     var $img = $("#imgOnScroll");
+    var $height = $("#particle").height() - 71;
     $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
+    $nav.toggleClass("inWork", $(this).scrollTop() > $height);
     if ($(this).scrollTop() > 10) {
       $img.attr("src","imgs/logoBlack.svg");
     }
@@ -26,6 +39,7 @@ jQuery(window).on("load", function(){
     }
 });
 
+// disable/enable scroll for toggling drop down menu
 $(function() {
   $("#toggle").click(function() {
     var $img = $("#imgOnScroll");
@@ -34,7 +48,6 @@ $(function() {
     $("#resize").toggleClass("active");
 
     if ($("#resize").hasClass("active")) {
-      console.log("hi")
       disableScroll()
     }
     else {
@@ -44,12 +57,21 @@ $(function() {
   });
 });
 
+// remove drop down and enable scroll when work link is clicked
+$(function() {
+  $("#goToWork2").click(function() {
+    enableScroll();
+    $("#resize").toggleClass("active");
+    $("#toggle").toggleClass("on");
+  });
+});
+
+// disable/enable scroll on certain width of screen
 $(window).on('resize', function(){
   var win = $(this); //this = window
   if (win.width() > 768) { 
     enableScroll();
   }
-
   if (win.width() < 768 && $("#resize").hasClass("active")) {
     disableScroll();
   }
@@ -91,6 +113,7 @@ function enableScroll() {
     document.onkeydown = null;  
 }
 
+// scroll to content using down indicator
 $(function () {
   $('#scrollTo').click(function() {
   $('html, body').animate({
@@ -98,6 +121,7 @@ $(function () {
   }, 10)
 })});
 
+// scroll to content using tab
 $(function () {
   $('#skipTo').click(function() {
   $('html, body').animate({
@@ -105,6 +129,36 @@ $(function () {
   }, 10)
 })});
 
+// work nav link scroll to work section on home page
+$(function () {
+  $('#goToWork').click(function() {
+  $('html, body').animate({
+    scrollTop: $("#scrolledTo").offset().top - 70
+  }, 10)
+})});
+
+// work nav link scroll to work section on home page
+$(function () {
+  $('#goToWork2').click(function() {
+  $('html, body').animate({
+    scrollTop: $("#scrolledTo").offset().top - 70
+  }, 10)
+})});
+
+// scrolling to work section from page other than home
+jQuery ( document ).ready ( function($) {
+var hash= window.location.hash
+if ( hash == '' || hash == '#' || hash == undefined ) return false;
+      var target = $(hash);
+      target = target.length ? target : $('[name=' + hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').stop().animate({
+          scrollTop: target.offset().top - 70 //offsets for fixed header
+        }, 10);
+      }
+} );
+
+// scrolling to paragraphs in Larky content
 $(function () {
   $('.scrollTo').click(function() {
   $('html, body').animate({
@@ -112,6 +166,7 @@ $(function () {
   }, 10)
 })});
 
+// progress bar
 window.onscroll = function() { myFunction()};
 
 function myFunction() {

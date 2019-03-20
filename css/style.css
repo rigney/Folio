@@ -692,6 +692,7 @@ nav .menu li {
   transition: all 0.3s ease-out;
 }
 
+
 .underlineOnHover::before {
   content: " ";
   width: 100%;
@@ -723,8 +724,6 @@ nav .menu li {
   width: 100%;
   height: 2px;
   bottom: -5px;
-  background: #FFFFFF;
-  transform: scale(1,1);
 }
 
 .menu li a.currentBlack::before {
@@ -779,7 +778,7 @@ nav .menu li {
 #resize {
   width: 100%;
   height: 100%;
-  margin-top: 70px;
+/*  margin-top: 70px;*/
   display: table;
   position: fixed;
   z-index: 3;
@@ -873,9 +872,12 @@ nav .menu li {
 }
 
 .navbarFixedTop.scrolled .underlineOnHover::before, 
-.navbarFixedTop.scrolled .menu li a.current::before, 
 .navbarFixedTop.scrolled #toggle .span, .navbarFixedTop.scrolled #myBar {
   background: #333333;
+}
+
+.navbarFixedTop.inWork .menu li a.current::before {
+  transform: scale(1,1);
 }
 
 .navbarFixedTop { 
