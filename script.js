@@ -167,19 +167,6 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
       }
 });
 
-// // scrolling to work section from page other than home
-// jQuery ( document ).ready ( function($) {
-// var hash= window.location.hash
-// if ( hash == '' || hash == '#' || hash == undefined ) return false;
-//       var target = $(hash);
-//       target = target.length ? target : $('[name=' + hash.slice(1) +']');
-//       if (target.length) {
-//         $('html,body').stop().animate({
-//           scrollTop: target.offset().top - 70 //offsets for fixed header
-//         }, 0);
-//       }
-// });
-
 // scrolling to paragraphs in Larky content
 $(function () {
   $('.scrollTo').click(function() {
@@ -189,34 +176,39 @@ $(function () {
 })});
 
 // progress bar
-window.onscroll = function() { myFunction()};
+if (document.getElementById("myBar") != null) {
+  window.onscroll = function() { myFunction()};
+}
+
 
 function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+};
 
 // back to top
 var previousHeight = 0;
-$(window).scroll(function(event){
-  var heightOfWorkIntro = document.getElementById("workIntro");
-  var currentHeight = $(this).scrollTop();
-  if (currentHeight > previousHeight){
-    // downScroll
-    if (currentHeight > heightOfWorkIntro.clientHeight - 70){
-      $('#backtoTop').fadeIn();
+if (document.getElementById("backToTop") != null) {
+  $(window).scroll(function(event){
+    var heightOfWorkIntro = document.getElementById("workIntro");
+    var currentHeight = $(this).scrollTop();
+    if (currentHeight > previousHeight){
+      // downScroll
+      if (currentHeight > heightOfWorkIntro.clientHeight - 70){
+        $('#backToTop').fadeIn();
+      }
+    } else {
+        // upscroll 
+        $('#backToTop').fadeOut();
     }
-  } else {
-      // upscroll 
-      $('#backtoTop').fadeOut();
-  }
-  previousHeight = currentHeight;
-});
+    previousHeight = currentHeight;
+  });
+}
 
 $(document).ready(function() {
-    $("#backtoTop").click(function(event) {
+    $("#backToTop").click(function(event) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, 10);
         return false;
