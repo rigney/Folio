@@ -5,8 +5,19 @@ $(function () {
     var $img = $("#imgOnScroll");
     var $height = $("#particle").height() - 71;
     $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
-    $nav.toggleClass("inWork", $(this).scrollTop() > $height);
     
+    // showing underline on scroll when work nav link has been clicked
+    if($("#goToWork").data('clicked')) {
+      $nav.toggleClass("inWork", $(this).scrollTop() > 0);
+    }
+    if ($(this).scrollTop() > $height) {
+      $("#goToWork").data('clicked', false);
+      $nav.toggleClass("inWork", $(this).scrollTop() > $height);
+    }
+    if ($(this).scrollTop() <= $height && !$("#goToWork").data('clicked')) {
+      $nav.toggleClass("inWork", $(this).scrollTop() > $height);
+    }
+
     // changing img
     if ($(this).scrollTop() > 10) {
     	$img.attr("src","imgs/logoBlack.svg");
@@ -17,12 +28,10 @@ $(function () {
   });
 });
 
-// $(function() {
-//   $("#goToWork").click(function() {
-//     var $nav = $(".navbarFixedTop");
-//     $nav.toggleClass("inWork", $(this).scrollTop() > 10);
-//   });
-// });
+// clicking work nav link on home page
+$("#goToWork").click(function() {
+  $(this).data('clicked', true);
+});
 
 // showing/hiding navbar on page load
 jQuery(window).on("load", function(){
@@ -137,7 +146,7 @@ $(function () {
   }, 10)
 })});
 
-// work nav link scroll to work section on home page
+// work nav link in drop down scroll to work section on home page
 $(function () {
   $('#goToWork2').click(function() {
   $('html, body').animate({
@@ -146,7 +155,7 @@ $(function () {
 })});
 
 // scrolling to work section from page other than home
-jQuery ( document ).ready ( function($) {
+$(function() {
 var hash= window.location.hash
 if ( hash == '' || hash == '#' || hash == undefined ) return false;
       var target = $(hash);
@@ -154,9 +163,22 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
       if (target.length) {
         $('html,body').stop().animate({
           scrollTop: target.offset().top - 70 //offsets for fixed header
-        }, 10);
+        }, 0);
       }
-} );
+});
+
+// // scrolling to work section from page other than home
+// jQuery ( document ).ready ( function($) {
+// var hash= window.location.hash
+// if ( hash == '' || hash == '#' || hash == undefined ) return false;
+//       var target = $(hash);
+//       target = target.length ? target : $('[name=' + hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').stop().animate({
+//           scrollTop: target.offset().top - 70 //offsets for fixed header
+//         }, 0);
+//       }
+// });
 
 // scrolling to paragraphs in Larky content
 $(function () {
