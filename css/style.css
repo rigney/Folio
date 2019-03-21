@@ -6,6 +6,7 @@ body {
 html {
   scroll-behavior: smooth; /*creates scrolling reaction rahter than jump*/ 
   overflow: scroll; /*content wont be clipped*/
+  overflow-x: hidden;
 }
 
 a {
