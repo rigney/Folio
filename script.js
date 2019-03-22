@@ -1,25 +1,3 @@
-// work content scroll animations
-var moveUpFade = {
-  distance: '40px',
-  origin: 'bottom',
-  duration: 700,
-  delay: 100,
-  easing: 'ease-in-out',
-  opacity: 0.0
-};
-
-var moveUpFade2 = {
-  distance: '40px',
-  origin: 'bottom',
-  duration: 600,
-  delay: 200,
-  easing: 'ease-in-out',
-  opacity: 0.0
-};
-
-ScrollReveal().reveal('.hideMe', moveUpFade);
-ScrollReveal().reveal('.hideMe2', moveUpFade2);
-
 // showing/hiding navbar on scroll
 $(function () {
   $(document).scroll("load", function () {
@@ -248,3 +226,68 @@ $(document).ready(function() {
     });
 
 });
+
+// work content scroll animations
+var moveUpFade = {
+  distance: '40px',
+  origin: 'bottom',
+  duration: 700,
+  delay: 100,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var moveUpFade2 = {
+  distance: '40px',
+  origin: 'bottom',
+  duration: 600,
+  delay: 200,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var introFade1 = {
+  duration: 2000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var introFade2 = {
+  duration: 2000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var introFade3 = {
+  duration: 2000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var introFade4 = {
+  duration: 2000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var introFade5 = {
+  duration: 2000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var introFade6 = {
+  duration: 2000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+
+ScrollReveal().reveal('.hideMe', moveUpFade);
+ScrollReveal().reveal('.hideMe2', moveUpFade2);
+ScrollReveal().reveal('.introFade1', introFade1);
+ScrollReveal().reveal('.introFade2', introFade2);
+ScrollReveal().reveal('.introFade3', introFade3);
+ScrollReveal().reveal('.introFade4', introFade4);
+ScrollReveal().reveal('.introFade5', introFade5);
+ScrollReveal().reveal('.introFade6', introFade6);
