@@ -24,6 +24,15 @@ a {
   position: absolute;
 }
 
+/*html.sr .load-hidden {
+    visibility: hidden;
+}
+
+
+*/
+/*.hideMe {
+
+}*/
 
 /*hyperlink*/
 
@@ -482,6 +491,10 @@ dd.bullet {
   list-style-type: disc;
 }
 
+.margin {
+  margin-bottom: 35px;
+}
+
 .listContent {
   margin-top: 15px;
   margin-left: 27px;
@@ -738,11 +751,11 @@ nav .menu li {
 
 #toggle {
   width: 25px;
-  height: 17px;
+  height: 20px;
   top: 26.5px;
   right: 80px;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
   transition: all 0.3s ease-out;
   visibility: hidden;
@@ -779,7 +792,6 @@ nav .menu li {
 #resize {
   width: 100%;
   height: 100%;
-  margin-top: 70px;
   display: table;
   position: fixed;
   z-index: 3;
@@ -790,7 +802,7 @@ nav .menu li {
 }
 
 #resize ul {
-  display: table-cell;
+  display: block;
   padding-top: 10px;
   /*vertical-align: middle;*/
 }
@@ -806,6 +818,10 @@ nav .menu li {
   text-align: left;
   cursor: pointer;
   transition: all 0.3s ease-out;
+}
+
+#resize .menu {
+  margin-top: -20px;
 }
 
 #resize .menu li a {
@@ -872,8 +888,7 @@ nav .menu li {
   transition: box-shadow 300ms ease-in-out;
 }
 
-.navbarFixedTop.scrolled .underlineOnHover::before, 
-.navbarFixedTop.scrolled #toggle .span, .navbarFixedTop.scrolled #myBar {
+.navbarFixedTop.scrolled .underlineOnHover::before, .navbarFixedTop.scrolled #myBar {
   background: #333333;
 }
 
@@ -884,6 +899,10 @@ nav .menu li {
 .navbarFixedTop { 
   transition: background-color 300ms ease-in-out; 
   transition: box-shadow 300ms ease-in-out
+}
+
+.toggle.scrolled #toggle .span {
+  background: #333333;
 }
 
 /*accounting for different screen sizes*/

@@ -22,6 +22,8 @@
 		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://unpkg.com/scrollreveal@4"></script>
 	</head>
 
 	<body>
@@ -72,11 +74,11 @@
 
 			<div class="workContent" id="scrolledTo">
 
-				<h2 class="noTopMargin">Executive Summary</h2>
+				<h2 class="noTopMargin hideMe">Executive Summary</h2>
 
-				<p class="parContent first">In total, 31 usability issues were discovered during the heuristic evaluation of Larky. A majority of the issues relate to the unintuitive placement of information and absence of information important to users - the most severe of which prevents users from exiting a screen.</p>
+				<p class="parContent first hideMe">In total, 31 usability issues were discovered during the heuristic evaluation of Larky. A majority of the issues relate to the unintuitive placement of information and absence of information important to users - the most severe of which prevents users from exiting a screen.</p>
 
-				<table class="first">
+				<table class="first hideMe">
   				<tr>
 	    			<th>Number of Minimal Issues</th>
 	    			<th>Number of Minor Issues</th>
@@ -92,7 +94,7 @@
   				</tr>
 				</table>
 
-				<table>
+				<table class="hideMe">
 					<caption>Minimal Issues</caption>
   				<tr>
 	    			<th class="mediumWeight width">#</th>
@@ -151,7 +153,7 @@
 				</table>
 
 
-				<table>
+				<table class="hideMe">
 					<caption>Minor Issues</caption>
   				<tr>
 	    			<th class="mediumWeight width">#</th>
@@ -225,7 +227,7 @@
 				</table>
 
 
-				<table>
+				<table class="hideMe">
 					<caption>Major Issues</caption>
   				<tr>
 	    			<th class="mediumWeight width">#</th>
@@ -269,7 +271,7 @@
 				</table>
 
 
-				<table>
+				<table class="hideMe">
 					<caption>Catastrophic Issues</caption>
   				<tr>
 	    			<th class="mediumWeight width">#</th>
@@ -282,23 +284,23 @@
   				</tr>
   			</table>
 
-				<hr class="divider">
+				<hr class="divider hideMe2">
 
-				<h2>Introduction</h2>
+				<h2 class="hideMe">Introduction</h2>
 
-				<p class="parContent first">This heuristic evaluation of Larky consists of an overview of the evaluation approach, an outline of the target user, and a detailed analysis of the discovered usability issues.</p>
+				<p class="parContent first hideMe2">This heuristic evaluation of Larky consists of an overview of the evaluation approach, an outline of the target user, and a detailed analysis of the discovered usability issues.</p>
 
-				<hr class="divider">
+				<hr class="divider hideMe2">
 
-				<h2>Approach</h2>
+				<h2 class="hideMe">Approach</h2>
 
-				<p class="parContent first">I evaluated Larky against a set of usability heuristics while attempting to complete the core tasks of the application. As the sole evaluator, the list of discovered usability issues is by no means complete. Different people find different usability issues and therefore additional evaluations, each conducted by a separate evaluator following this same approach, are required to make this list exhaustive. </p>
+				<p class="parContent first hideMe2">I evaluated Larky against a set of usability heuristics while attempting to complete the core tasks of the application. As the sole evaluator, the list of discovered usability issues is by no means complete. Different people find different usability issues and therefore additional evaluations, each conducted by a separate evaluator following this same approach, are required to make this list exhaustive. </p>
 
-				<h3>Nielsen and Molich's 10 Heuristics</h3>
+				<h3 class="hideMe">Nielsen and Molich's 10 Heuristics</h3>
 
-				<p class="parContent first">Larky was evaluated against <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Nielsen's 10 Heuristics</a>. Initially developed in 1990 by Jakob Nielsen and Rolf Molich, later refined by Nielsen in 1994, these heuristics are well-respected and widely used in heuristic evaluations.</p>
+				<p class="parContent first hideMe2">Larky was evaluated against <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Nielsen's 10 Heuristics</a>. Initially developed in 1990 by Jakob Nielsen and Rolf Molich, later refined by Nielsen in 1994, these heuristics are well-respected and widely used in heuristic evaluations.</p>
 
-				<dl class="first">
+				<dl class="first hideMe2">
 				  <dt>1. Visibility of system status</dt>
 				  <dd>The system should always keep users informed about what is going on, through appropriate feedback within reasonable time.</dd>
 				  <dt>2. Match between system and the real world</dt>
@@ -321,11 +323,11 @@
 				  <dd>Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large.</dd>
 				</dl>
 
-				<h3>Severity System</h3>
+				<h3 class="hideMe">Severity System</h3>
 
-				<p class="parContent first">To better understand how the discovered usability issues impact users, I assigned a severity rating to each issue. To keep my findings in line with Nielsen's methodology, I used his severity rating system.</p>
+				<p class="parContent first hideMe2">To better understand how the discovered usability issues impact users, I assigned a severity rating to each issue. To keep my findings in line with Nielsen's methodology, I used his severity rating system.</p>
 
-				<ul class="listContent">
+				<ul class="listContent hideMe2">
 					<li class="listContentItem"><span class="mediumWeight">No Issue -</span> May conflict with one of the heuristics but isn’t a usability issue.</li>
 					<li class="listContentItem"><span class="mediumWeight">Minimal Issue -</span> Is easy for users to overcome and should be given lowest priority to fix. May be a cosmetic issue only.</li>
 					<li class="listContentItem"><span class="mediumWeight">Minor Issue -</span> Slightly slows down and irritates users. Should be given low priority to fix.</li>
@@ -333,22 +335,24 @@
 					<li class="listContentItem"><span class="mediumWeight">Catastrophic Issue -</span> Prevents users from completing a task and causes considerable irritation. Is imperative to fix and should block the release of the product.</li>
 				</ul>
 
-				<hr class="divider">
+				<hr class="divider hideMe2">
 
-				<h2>Target User</h2>
+				<h2 class="hideMe">Target User</h2>
 
-				<p class="parContent first">To ensure that my analysis was focused and aligned with the frustrations, behaviors, and goals of Larky’s users I created a proto-persona. It was important for me to be able to empathize with what a user would be thinking, feeling, and doing throughout each task.</p>
+				<p class="parContent first hideMe2">To ensure that my analysis was focused and aligned with the frustrations, behaviors, and goals of Larky’s users I created a proto-persona. It was important for me to be able to empathize with what a user would be thinking, feeling, and doing throughout each task.</p>
 
-				<h3>Proto-Persona</h3>
+				<h3 class="hideMe">Proto-Persona</h3>
 
-	    	<img class="protoPersonaIllustration" src="imgs/protoPersona.png" alt="Face of Proto-Persona">
+				<div class="hideMe2">
+		    	<img class="protoPersonaIllustration" src="imgs/protoPersona.png" alt="Face of Proto-Persona">
 
-	    	<div class="protoPersonaIntro">
-				<h3 class="noTopMargin">Sara</h3>
-				<p class="parContent subHeader">A 28 year old High School teacher living in Ann Arbor, MI</p>
+		    	<div class="protoPersonaIntro">
+						<h3 class="noTopMargin">Sara</h3>
+						<p class="parContent subHeader">A 28 year old High School teacher living in Ann Arbor, MI</p>
+					</div>
 				</div>
 
-				<dl class="first">
+				<dl class="first hideMe2">
 				  <dt>Behaviors</dt>
 				  <dd class="bullet">Frequently makes in-store purchases</dd>
 				  <dd class="bullet">Runs weekly errands</dd>
@@ -356,7 +360,7 @@
 				  <dd class="bullet">Often relies on employees or internet searches to know whether her memberships can earn her a discount on the purchase she is making</dd>
 				</dl>
 
-				<dl>
+				<dl class="hideMe2">
 				  <dt>Frustrations</dt>
 				  <dd class="bullet">Constantly misses out on savings opportunities offered by her memberships</dd>
 				  <dd class="bullet">Has no way to track which discounts are offered by her memberships</dd>
@@ -364,434 +368,498 @@
 				  <dd class="bullet">Asking employees or searching the internet to discover the discounts offered by her memberships is time consuming and not always useful</dd>
 				</dl>
 
-				<dl>
+				<dl class="hideMe2">
 				  <dt>Goals</dt>
 				  <dd class="bullet">Is aware of nearby savings opportunities offered by her memberships</dd>
 				  <dd class="bullet">Information regarding her memberships and their offered discounts is reliable and easy to find, track, and store</dd>
 				  <dd class="bullet">Knows how to redeem the discounts offered by her memberships</dd>
 				</dl>
 
-				<p class="parContent first">To determine which tasks against which to evaluate the heuristics I had to understand what tasks Sara would  carry out to accomplish her goals. Therefore, I developed user need statements to translate Sara’s behaviors, frustrations, and goals into statements from which tasks could be derived.</p>
+				<p class="parContent first hideMe2">To determine which tasks against which to evaluate the heuristics I had to understand what tasks Sara would  carry out to accomplish her goals. Therefore, I developed user need statements to translate Sara’s behaviors, frustrations, and goals into statements from which tasks could be derived.</p>
 
-				<h3>User Need Statements</h3>
+				<h3 class="hideMe">User Need Statements</h3>
 
-				<p class="parContent first">To determine which tasks to evaluate the heuristics against, I had to understand what tasks Sara would  carry out to accomplish her goals. Therefore, I developed user need statements to translate Sara’s behaviors, frustrations, and goals into statements that tasks could be derived from.</p>
+				<p class="parContent first hideMe2">To determine which tasks to evaluate the heuristics against, I had to understand what tasks Sara would  carry out to accomplish her goals. Therefore, I developed user need statements to translate Sara’s behaviors, frustrations, and goals into statements that tasks could be derived from.</p>
 
-				<div class="phrase">Situation - Motivation - Outcome</div>
+					<div class="phrase hideMe2">Situation - Motivation - Outcome</div>
 
-				<p class="parContent italic">When I have several memberships I want their information, including their discounts, to be kept in the same location to ensure I always know where to view it.</p>
+					<div class="hideMe2">
+						<p class="parContent italic">When I have several memberships I want their information, including their discounts, to be kept in the same location to ensure I always know where to view it.</p>
 
-				<p class="parContent italic">When a discount is offered by one of my memberships, I want to know, so that I don’t miss out on its benefits.</p>
+						<p class="parContent italic">When a discount is offered by one of my memberships, I want to know, so that I don’t miss out on its benefits.</p>
 
-				<p class="parContent italic">When I know of a discount offered by one of my memberships, I want the details of the discount to be readily available, so that I know when and how to redeem it.</p>
+						<p class="parContent italic">When I know of a discount offered by one of my memberships, I want the details of the discount to be readily available, so that I know when and how to redeem it.</p>
 
-				<p class="parContent">From these user need statements it became clear that Sara would carry out the following tasks to accomplish her goals.</p>
+						<p class="parContent">From these user need statements it became clear that Sara would carry out the following tasks to accomplish her goals.</p>
+					</div>
 
-				<ul class="listContent">
-					<li class="listContentItem">Maintain a list of memberships</li>
-					<li class="listContentItem">View a discount</li>
-					<li class="listContentItem">View the details of a discount</li>
-				</ul>
+					<ul class="listContent hideMe2">
+						<li class="listContentItem">Maintain a list of memberships</li>
+						<li class="listContentItem">View a discount</li>
+						<li class="listContentItem">View the details of a discount</li>
+					</ul>
 
-				<hr class="divider">
+				<hr class="divider hideMe2">
 
-				<h2>Findings</h2>
+				<h2 class="hideMe">Findings</h2>
 
 
-				<h3 id="issue1">1. Absence of friction in the Remove Membership button</h3>
+				<h3 id="issue1" class="hideMe">1. Absence of friction in the Remove Membership button</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Error prevention</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Error prevention</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user taps the Remove Membership button, the membership is immediately removed from their list of memberships.</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user taps the Remove Membership button, the membership is immediately removed from their list of memberships.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/removeMembership.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/removeMembership.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Require the user to confirm their removal of a membership before the membership is removed. Adding this friction allows users to re-engage with what they are doing and assures them that the decision they are making is actually the decision they want to be making.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Require the user to confirm their removal of a membership before the membership is removed. Adding this friction allows users to re-engage with what they are doing and assures them that the decision they are making is actually the decision they want to be making.</p>
 
 
-				<h3 id="issue2">2. Inability to undo the removal of a membership</h3>
+				<h3 id="issue2" class="hideMe">2. Inability to undo the removal of a membership</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> User control and freedom</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> User control and freedom</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> After a user removes a membership, they are unable to undo the removal.</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> After a user removes a membership, they are unable to undo the removal.</p>
 
-				<p class="parContent"><span class="mediumWeight">Recommendation -</span> After a user removes a membership, briefly provide them with an undo option.</p>
+					<p class="parContent"><span class="mediumWeight">Recommendation -</span> After a user removes a membership, briefly provide them with an undo option.</p>
+				</div>
 
 
-				<h3 id="issue3">3.  Remove Membership label has the perceived affordance of being tappable when it is not</h3>
+				<h3 id="issue3" class="hideMe">3.  Remove Membership label has the perceived affordance of being tappable when it is not</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The proximity of the Remove Membership label to the x icon suggests that the label is a component of the Remove Membership button. Therefore, the label has a perceived affordance of being tappable when it is not.</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The proximity of the Remove Membership label to the x icon suggests that the label is a component of the Remove Membership button. Therefore, the label has a perceived affordance of being tappable when it is not.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/removeMembershipLabel.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/removeMembershipLabel.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Place the Remove Membership label and the x icon in a tappable filled container whose functionality is identical to that of the x icon. Alternatively, remove the x icon, change the Remove Membership label to “Remove”,  and place the Remove Membership label in a tappable filled container whose functionality is identical to that of the x icon.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Place the Remove Membership label and the x icon in a tappable filled container whose functionality is identical to that of the x icon. Alternatively, remove the x icon, change the Remove Membership label to “Remove”,  and place the Remove Membership label in a tappable filled container whose functionality is identical to that of the x icon.</p>
 
 
-				<h3 id="issue4">4. Remove Membership button has a negative affordance of being untappable</h3>
+				<h3 id="issue4" class="hideMe">4. Remove Membership button has a negative affordance of being untappable</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The Remove Membership button is always active, however, its grey color gives it a negative affordance of being untappable. </p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The Remove Membership button is always active, however, its grey color gives it a negative affordance of being untappable.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/removeMembershipInactive.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/removeMembershipInactive.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the color of the Remove Membership button to the color of the surrounding buttons.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Change the color of the Remove Membership button to the color of the surrounding buttons.</p>
 
 
-				<h3 id="issue5">5. Improper placement of the Add Membership button </h3>
+				<h3 id="issue5" class="hideMe">5. Improper placement of the Add Membership button </h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real World</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real World</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> A user’s membership list has an Add Membership button above and below it. Therefore, users must scroll to the top or bottom of the list to add a membership.</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> A user’s membership list has an Add Membership button above and below it. Therefore, users must scroll to the top or bottom of the list to add a membership.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/addMemberships.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/addMemberships.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Replace the Add Membership buttons with a floating action button on the bottom right corner of the screen. Therefore, users will be able to add a membership regardless of their scroll position.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Replace the Add Membership buttons with a floating action button on the bottom right corner of the screen. Therefore, users will be able to add a membership regardless of their scroll position.</p>
 
 
-				<h3 id="issue6">6. Unnecessary steps required to search for a membership</h3>
+				<h3 id="issue6" class="hideMe">6. Unnecessary steps required to search for a membership</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> To search for a membership, a user first taps the Search By Name button and is redirected to a search screen.  A user then taps the search bar and begins typing. This process is drawn out.</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> To search for a membership, a user first taps the Search By Name button and is redirected to a search screen.  A user then taps the search bar and begins typing. This process is drawn out.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/search.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/search.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Remove the separate search screen and replace the Search By Name button with a search bar.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Remove the separate search screen and replace the Search By Name button with a search bar.</p>
 
 
-				<h3 id="issue7">7. Inadequate error message for no search results</h3>
+				<h3 id="issue7" class="hideMe">7. Inadequate error message for no search results</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Help users recognize, diagnose, and recover from errors</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Help users recognize, diagnose, and recover from errors</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user searches for a membership and gets no search results, they are  prompted to submit a request to have that membership added to Larky. This is a non-immediate solution and carries the assumption that the search term is not misspelled nor will a variation of the search term produce relevant search results.</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user searches for a membership and gets no search results, they are  prompted to submit a request to have that membership added to Larky. This is a non-immediate solution and carries the assumption that the search term is not misspelled nor will a variation of the search term produce relevant search results.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/errorMessage.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/errorMessage.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the error message such that it states there are no search results for the search term (i.e. reminds the user of what they searched), asks the user to check for spelling and change how they phrase the search term (i.e. provides an immediate solution), and provides the user with the option to submit a request to have the membership added to Larky (i.e.  provides an alternative solution).</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Change the error message such that it states there are no search results for the search term (i.e. reminds the user of what they searched), asks the user to check for spelling and change how they phrase the search term (i.e. provides an immediate solution), and provides the user with the option to submit a request to have the membership added to Larky (i.e.  provides an alternative solution).</p>
 
 
-				<h3 id="issue8">8. Uninformative confirmation message</h3>
+				<h3 id="issue8" class="hideMe">8. Uninformative confirmation message</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> When a user taps the Submit Request button, the confirmation message merely states, “Sent”.  The confirmation message does not mention details of the request nor next steps. Therefore, a user is not reassured that they sent the correct request and that the request will be met.</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> When a user taps the Submit Request button, the confirmation message merely states, “Sent”.  The confirmation message does not mention details of the request nor next steps. Therefore, a user is not reassured that they sent the correct request and that the request will be met.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/requestSent.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/requestSent.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the confirmation message to clearly state what the user requested and inform them of next steps. </p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Change the confirmation message to clearly state what the user requested and inform them of next steps. </p>
 
 
-				<h3 id="issue9">9. Unintuitive sorting of membership categories</h3>
+				<h3 id="issue9" class="hideMe">9. Unintuitive sorting of membership categories</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The list of membership categories is not intuitively sorted. Therefore, a user does not have a consistent process for finding a category and must recall a category’s position in the list.</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The list of membership categories is not intuitively sorted. Therefore, a user does not have a consistent process for finding a category and must recall a category’s position in the list.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/membershipCategories.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/membershipCategories.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Sort the membership categories alphabetically.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Sort the membership categories alphabetically.</p>
 
 
-				<h3 id="issue10">10. Unintuitive sorting of memberships</h3>
+				<h3 id="issue10" class="hideMe">10. Unintuitive sorting of memberships</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> A user’s list of memberships is not intuitively sorted. Therefore, the user does not have a consistent process for finding one of their memberships and must recall the membership’s position in the list.</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> A user’s list of memberships is not intuitively sorted. Therefore, the user does not have a consistent process for finding one of their memberships and must recall the membership’s position in the list.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/listOfMemberships.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/listOfMemberships.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Sort the memberships alphabetically.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Sort the memberships alphabetically.</p>
 
 
-				<h3 id="issue11">11. Misleading confirmation after adding a membership</h3>
+				<h3 id="issue11" class="hideMe">11. Misleading confirmation after adding a membership</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Visibility of system status</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Visibility of system status</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> When a user taps a membership to add it to their membership list the plus icon is replaced with a check mark icon and is briefly followed by a loading indicator. Loading indicators signal that an action is being processed and check marks signal that an action is complete. Therefore, the confirmation that the user receives is misleading.</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> When a user taps a membership to add it to their membership list the plus icon is replaced with a check mark icon and is briefly followed by a loading indicator. Loading indicators signal that an action is being processed and check marks signal that an action is complete. Therefore, the confirmation that the user receives is misleading.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/loadingIndicator.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/loadingIndicator.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> If technically feasible, remove the loading indicator. Alternatively, make the loading indicator appear before the check mark appears.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> If technically feasible, remove the loading indicator. Alternatively, make the loading indicator appear before the check mark appears.</p>
 
 
-				<h3 id="issue12">12. Inability to go back to a previous screen</h3>
+				<h3 id="issue12" class="hideMe">12. Inability to go back to a previous screen</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> User control and freedom</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> User control and freedom</p>
 
-				<p class="parContent"><span class="mediumWeight">Major Issue -</span> When a user taps the Add Memberships button, they are redirected to a different screen and are not provided with an option to go back to the previous screen.</p>
+					<p class="parContent"><span class="mediumWeight">Major Issue -</span> When a user taps the Add Memberships button, they are redirected to a different screen and are not provided with an option to go back to the previous screen.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/noBackButton.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/noBackButton.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Replace the Home button on the left corner of the top navigation with a Back button.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Replace the Home button on the left corner of the top navigation with a Back button.</p>
 
 
-				<h3 id="issue13">13. Tapping the Browse By Category button gives an unintended result</h3>
+				<h3 id="issue13" class="hideMe">13. Tapping the Browse By Category button gives an unintended result</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
 
-				<p class="parContent"><span class="mediumWeight">Major Issue -</span> When a user taps the Browse By Category button they are redirected to a list of memberships for a specific membership category, instead of the list of membership categories.</p>
+					<p class="parContent"><span class="mediumWeight">Major Issue -</span> When a user taps the Browse By Category button they are redirected to a list of memberships for a specific membership category, instead of the list of membership categories.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/bug.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/bug.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Fix this bug so that when a user taps the Browse By Category button they are redirected to the list of membership categories.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Fix this bug so that when a user taps the Browse By Category button they are redirected to the list of membership categories.</p>
 
 
-				<h3 id="issue14">14. Ambiguous icons used for the Call button and the Visit Website button </h3>
+				<h3 id="issue14" class="hideMe">14. Ambiguous icons used for the Call button and the Visit Website button</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> The Call button is a mobile phone icon and the Visit Website button is a desktop icon. The icons do not effectively signal their purpose nor the action that will follow if they are tapped.</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> The Call button is a mobile phone icon and the Visit Website button is a desktop icon. The icons do not effectively signal their purpose nor the action that will follow if they are tapped.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/membershipIcons.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/membershipIcons.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Make the Call button the <a href="https://www.google.com/search?biw=1280&bih=624&tbm=isch&sa=1&ei=fNN-XP2nIIm_jgTMoaCQBA&q=call+icon&oq=call+icon&gs_l=img.3..0i67j0l9.3598.7556..7740...0.0..0.129.1051.13j1......1....1..gws-wiz-img.......0i7i30j0i7i5i30j0i8i7i30j0i10.wChG8L5myyk" target="_blank">universal telephone icon</a> and the Visit Website button the <a href="https://www.google.com/search?q=website+icon&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjX96ak4-vgAhXrpYMKHQ80AHkQ_AUIDigB&biw=1280&bih=624" target="_blank">universal website icon</a>.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Make the Call button the <a href="https://www.google.com/search?biw=1280&bih=624&tbm=isch&sa=1&ei=fNN-XP2nIIm_jgTMoaCQBA&q=call+icon&oq=call+icon&gs_l=img.3..0i67j0l9.3598.7556..7740...0.0..0.129.1051.13j1......1....1..gws-wiz-img.......0i7i30j0i7i5i30j0i8i7i30j0i10.wChG8L5myyk" target="_blank">universal telephone icon</a> and the Visit Website button the <a href="https://www.google.com/search?q=website+icon&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjX96ak4-vgAhXrpYMKHQ80AHkQ_AUIDigB&biw=1280&bih=624" target="_blank">universal website icon</a>.</p>
 
 
-				<h3 id="issue15">15. Tapping the Remove Membership, Call, and Visit Website buttons requires too much precision from users</h3>
+				<h3 id="issue15" class="hideMe">15. Tapping the Remove Membership, Call, and Visit Website buttons requires too much precision from users</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> The visual bounds of the Remove Membership, Call, and Visit Website buttons are small and each button’s touch target does not extend beyond its visual bounds. Therefore, tapping these buttons requires great precision from users.</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> The visual bounds of the Remove Membership, Call, and Visit Website buttons are small and each button’s touch target does not extend beyond its visual bounds. Therefore, tapping these buttons requires great precision from users.</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> For each button, increase its visual bounds and extend its touch target beyond its visual bounds. Ensure that there’s a balance between information density and usability.</p>
+					<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> For each button, increase its visual bounds and extend its touch target beyond its visual bounds. Ensure that there’s a balance between information density and usability.</p>
+				</div>
 
 
-				<h3 id="issue16">16. Difficult to differentiate the View Discounts As button from the Side Menu button</h3>
+				<h3 id="issue16" class="hideMe">16. Difficult to differentiate the View Discounts As button from the Side Menu button</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between systems and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between systems and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Major Issue -</span> The View Discounts As button on the left corner of the top navigation and the Side Menu button on the right corner of the top navigation are too similar in appearance. Users can easily mistake one button for the other.</p>
+					<p class="parContent"><span class="mediumWeight">Major Issue -</span> The View Discounts As button on the left corner of the top navigation and the Side Menu button on the right corner of the top navigation are too similar in appearance. Users can easily mistake one button for the other.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/topNav.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/topNav.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Change the appearance of the View Discounts As button so that its distinguishable from the Side Menu button and its purpose is clearly conveyed.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Change the appearance of the View Discounts As button so that its distinguishable from the Side Menu button and its purpose is clearly conveyed.</p>
 
 
-				<h3 id="issue17">17. Unintuitive navigation</h3>
+				<h3 id="issue17" class="hideMe">17. Unintuitive navigation</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> User control and freedom</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> User control and freedom</p>
 
-				<p class="parContent"><span class="mediumWeight">Catastrophic Issue -</span> When a user taps the View Everywhere button they are redirected to a map that displays local discounts as well as non-local discounts. However, they are unable to return to the previous screen by tapping the View Everywhere button again. To return to the previous screen, the user must tap the search bar and tap the x icon that appears.</p>
+					<p class="parContent"><span class="mediumWeight">Catastrophic Issue -</span> When a user taps the View Everywhere button they are redirected to a map that displays local discounts as well as non-local discounts. However, they are unable to return to the previous screen by tapping the View Everywhere button again. To return to the previous screen, the user must tap the search bar and tap the x icon that appears.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/unintuitiveNavigation.gif" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/unintuitiveNavigation.gif" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Make the search bar consistent with the other search bars on Larky and make the View Everywhere button toggle between the maps when tapped. Alternatively, remove the View Everywhere button as it detracts from Larky’s goal of providing local discounts.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Make the search bar consistent with the other search bars on Larky and make the View Everywhere button toggle between the maps when tapped. Alternatively, remove the View Everywhere button as it detracts from Larky’s goal of providing local discounts.</p>
 
 
-				<h3 id="issue18">18. Total Perks label is misleading</h3>
+				<h3 id="issue18" class="hideMe">18. Total Perks label is misleading</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The Total Perks label on the top of the side menu displays the total number of discounts, both local and non-local, offered by a user’s memberships. It is not immediately clear how the Total Perks is calculated, users are not able to distinguish the amount of local discounts from non-local discounts, and users are not able to distinguish the amount of viewed discounts from unviewed discounts. The Total Perks label is misleading, provides minimal value to users, and does not contain a call to action.</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The Total Perks label on the top of the side menu displays the total number of discounts, both local and non-local, offered by a user’s memberships. It is not immediately clear how the Total Perks is calculated, users are not able to distinguish the amount of local discounts from non-local discounts, and users are not able to distinguish the amount of viewed discounts from unviewed discounts. The Total Perks label is misleading, provides minimal value to users, and does not contain a call to action.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/totalPerks.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/totalPerks.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Remove the Total Perks label. Users are not concerned with the number of discounts they have, instead they want to know what their discounts are and how to claim them.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Remove the Total Perks label. Users are not concerned with the number of discounts they have, instead they want to know what their discounts are and how to claim them.</p>
 
 
-				<h3 id="issue19">19. Membership name is in all caps</h3>
+				<h3 id="issue19" class="hideMe">19. Membership name is in all caps</h3>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> On a discount, the name of the membership that the discount is offered by is in all caps. The light grey color, small size, and placement of the membership name signals its low priority, however, its capitalization does the opposite. Additionally, having the membership name in all caps makes it harder for users to read.</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> On a discount, the name of the membership that the discount is offered by is in all caps. The light grey color, small size, and placement of the membership name signals its low priority, however, its capitalization does the opposite. Additionally, having the membership name in all caps makes it harder for users to read.</p>
+				</div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/membershipName.svg" alt="Larky Interface"></div>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/membershipName.svg" alt="Larky Interface"></div>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Uncapitalize the membership name except for its first letter.</p>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Uncapitalize the membership name except for its first letter.</p>
 
 
-				<h3 id="issue20">20. Difficult to interact with discounts on the map</h3>
+				<h3 id="issue20" class="hideMe">20. Difficult to interact with discounts on the map</h3>
+				
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
+					<p class="parContent"><span class="mediumWeight">Major Issue -</span> On the map, it is difficult for users to recognize the location of discounts and tap certain discounts without zooming in extensively.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Major Issue -</span> On the map, it is difficult for users to recognize the location of discounts and tap certain discounts without zooming in extensively.</p>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/zoomInOnMap.gif" alt="Larky Interface"></div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/zoomInOnMap.gif" alt="Larky Interface"></div>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Reduce the number of discounts displayed when a user zooms out and increase the number of discounts displayed when a user zooms in. Therefore, discounts will not be clustered. Alternatively, change the shape of each discount to a pin and reduce its size.</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Reduce the number of discounts displayed when a user zooms out and increase the number of discounts displayed when a user zooms in. Therefore, discounts will not be clustered. Alternatively, change the shape of each discount to a pin and reduce its size.</p>
 
+				<h3 id="issue21" class="hideMe">21. Showing Perks For drop-down does not signal which drop-down item is selected</h3>
 
-				<h3 id="issue21">21. Showing Perks For drop-down does not signal which drop-down item is selected</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
+					<p class="parContent"><span class="mediumWeight">Major Issue -</span> The Showing Perks For drop-down does not signal which drop-down item is selected, regardless of whether it is open or not. Therefore, users are unaware of how the discounts are currently filtered.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Major Issue -</span> The Showing Perks For drop-down does not signal which drop-down item is selected, regardless of whether it is open or not. Therefore, users are unaware of how the discounts are currently filtered.</p>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/dropDownMenu.gif" alt="Larky Interface"></div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/dropDownMenu.gif" alt="Larky Interface"></div>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Display the selected drop-down item next to the Showing Perks For label. Additionally, differentiate the selected drop-down item from the other items when the Showing Perks For drop-down is open.</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Display the selected drop-down item next to the Showing Perks For label. Additionally, differentiate the selected drop-down item from the other items when the Showing Perks For drop-down is open.</p>
 
+				<h3 id="issue22" class="hideMe">22. Inappropriate functionality of the Alerts For This Location button</h3>
 
-				<h3 id="issue22">22. Inappropriate functionality of the Alerts For This Location button</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When the Alerts For This Location button is pressed, its label disappears until the button is released. This issue is present in the Alerts For This Merchant button as well.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When the Alerts For This Location button is pressed, its label disappears until the button is released. This issue is present in the Alerts For This Merchant button as well.</p>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/alertsForThisLocation.gif" alt="Larky Interface"></div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/alertsForThisLocation.gif" alt="Larky Interface"></div>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> The label is present regardless of whether the button is pressed. Additionally, the button’s functionality is applied only after it has been released.</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> The label is present regardless of whether the button is pressed. Additionally, the button’s functionality is applied only after it has been released.</p>
 
+				<h3 id="issue23" class="hideMe">23. Absence of membership name when viewing a discount</h3>
 
-				<h3 id="issue23">23. Absence of membership name when viewing a discount</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Consistency and standards</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user accesses the details of a discount from the map, they are never presented with the name of the membership that the discount is offered by.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user accesses the details of a discount from the map, they are never presented with the name of the membership that the discount is offered by.</p>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/noMembershipName.gif" alt="Larky Interface"></div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/noMembershipName.gif" alt="Larky Interface"></div>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Add the name of the membership to the discount preview.</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Add the name of the membership to the discount preview.</p>
 
 
+				<h3 id="issue24" class="hideMe">24. Closest To You button does not have a perceived affordance of being tappable when it is</h3>
 
-				<h3 id="issue24">24. Closest To You button does not have a perceived affordance of being tappable when it is</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Match between system and the real world</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The Closest To You button does not have a perceived affordance of being tappable when it is.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The Closest To You button does not have a perceived affordance of being tappable when it is.</p>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/closestToYou.svg" alt="Larky Interface"></div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/closestToYou.svg" alt="Larky Interface"></div>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Give the Closest To You button its own white filled container and replace its label with a label that has a call to action, such as “Get Directions”.</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Give the Closest To You button its own white filled container and replace its label with a label that has a call to action, such as “Get Directions”.</p>
 
+				<h3 id="issue25" class="hideMe">25. Tapping the Closest To You button gives an unanticipated result</h3>
 
-				<h3 id="issue25">25. Tapping the Closest To You button gives an unanticipated result</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Visibility of system status</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Visibility of system status</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user taps the Closest To You button, they are immediately redirected to their phone’s map application.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> When a user taps the Closest To You button, they are immediately redirected to their phone’s map application.</p>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/tappingClosestToYouButton.gif" alt="Larky Interface"></div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/tappingClosestToYouButton.gif" alt="Larky Interface"></div>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Require the user to confirm that they want to be redirected to their map application before they are redirected.</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Require the user to confirm that they want to be redirected to their map application before they are redirected.</p>
 
+				<h3 id="issue26" class="hideMe">26. Difficult to use the information in the Notes section</h3>
 
-				<h3 id="issue26">26. Difficult to use the information in the Notes section</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> View the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Flexibility and efficiency of use</p>
+					<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The information in the Notes section of a discount, such as urls and phone numbers, cannot be copied and is untappable. As a result, unnecessary effort and time is required from users to utilize the information.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Minor Issue -</span> The information in the Notes section of a discount, such as urls and phone numbers, cannot be copied and is untappable. As a result, unnecessary effort and time is required from users to utilize the information.</p>
+				<div class="imageContainer hideMe2"><img class="interfaceImage" src="imgs/notesUncopyable.svg" alt="Larky Interface"></div>
 
-				<div class="imageContainer"><img class="interfaceImage" src="imgs/notesUncopyable.svg" alt="Larky Interface"></div>
+				<p class="parContent belowImage hideMe2"><span class="mediumWeight">Recommendation -</span> Make the information in the Notes section copyable. Additionally, make all urls and phone numbers tappable and afford they are tappable (e.g., by underlining them).</p>
 
-				<p class="parContent belowImage"><span class="mediumWeight">Recommendation -</span> Make the information in the Notes section copyable. Additionally, make all urls and phone numbers tappable and afford they are tappable (e.g., by underlining them).</p>
 
+				<h3 id="issue27" class="hideMe">27. All Screens are untitled</h3>
 
-				<h3 id="issue27">27. All Screens are untitled</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Recognition rather than recall</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Recognition rather than recall</p>
+					<p class="parContent"><span class="mediumWeight">Major Issue -</span> All screens are untitled. Therefore, users are not immediately aware of a screen’s purpose and can easily lose a sense of where they are in Larky.</p>
 
-				<p class="parContent"><span class="mediumWeight">Major Issue -</span> All screens are untitled. Therefore, users are not immediately aware of a screen’s purpose and can easily lose a sense of where they are in Larky.</p>
+					<p class="parContent"><span class="mediumWeight">Recommendation -</span> Each screen has a descriptive and concise title that helps users orient themselves and understand the screen’s purpose.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Each screen has a descriptive and concise title that helps users orient themselves and understand the screen’s purpose.</p>
 
+				<h3 id="issue28" class="hideMe">28. Inadequate readability of text</h3>
 
-				<h3 id="issue28">28. Inadequate readability of text</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Aesthetic and minimalist design</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Aesthetic and minimalist design</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> The small text size and absence of kerning in the text puts a strain on users’ eyes when viewing content.</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> The small text size and absence of kerning in the text puts a strain on users’ eyes when viewing content.</p>
+					<p class="parContent"><span class="mediumWeight">Recommendation -</span> Increase the size and kerning of the text.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Increase the size and kerning of the text.</p>
 
+				<h3 id="issue29" class="hideMe">29. Insufficient screen background</h3>
 
-				<h3 id="issue29">29. Insufficient screen background</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Aesthetic and minimalist design</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Aesthetic and minimalist design</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> Each screen’s background is an image of a light blue sky. As a result, a majority of the content is placed in white filled containers and the content that is placed directly on the background has insufficient color contrast.</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> Each screen’s background is an image of a light blue sky. As a result, a majority of the content is placed in white filled containers and the content that is placed directly on the background has insufficient color contrast.</p>
+					<p class="parContent"><span class="mediumWeight">Recommendation -</span> Replace the light blue sky background with a white background, remove all containers, and change the color of white text to black.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Replace the light blue sky background with a white background, remove all containers, and change the color of white text to black.</p>
 
+				<h3 id="issue30" class="hideMe">30. Absence of scroll bar on all screens</h3>
 
-				<h3 id="issue30">30. Absence of scroll bar on all screens</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Visibility of system status</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Visibility of system status</p>
+					<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> All screens do not have a scroll bar. Therefore, a user has no sense of where they are on a screen.</p>
 
-				<p class="parContent"><span class="mediumWeight">Minimal Issue -</span> All screens do not have a scroll bar. Therefore, a user has no sense of where they are on a screen.</p>
+					<p class="parContent"><span class="mediumWeight">Recommendation -</span> Add a scrollbar to each screen.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Add a scrollbar to each screen.</p>
 
+				<h3 id="issue31" class="hideMe">31. Poor accessibility of Privacy Policy</h3>
 
-				<h3 id="issue31">31. Poor accessibility of Privacy Policy</h3>
+				<div class="hideMe2">
+					<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
 
-				<p class="parContent first"><span class="mediumWeight">Task -</span> Maintain a list of memberships, view a discount, view the details of a discount</p>
+					<p class="parContent"><span class="mediumWeight">Heuristic -</span> Help and documentation</p>
 
-				<p class="parContent"><span class="mediumWeight">Heuristic -</span> Help and documentation</p>
+					<p class="parContent"><span class="mediumWeight">Major Issue -</span> Larky’s privacy policy can only be accessed while creating an account and such access is unnoticeable.</p>
 
-				<p class="parContent"><span class="mediumWeight">Major Issue -</span> Larky’s privacy policy can only be accessed while creating an account and such access is unnoticeable.</p>
+					<p class="parContent"><span class="mediumWeight">Recommendation -</span> Make the privacy policy accessible while logged in. Additionally, increase the color contrast and size of the Privacy Policy button and place it under the Join Now button.</p>
+				</div>
 
-				<p class="parContent"><span class="mediumWeight">Recommendation -</span> Make the privacy policy accessible while logged in. Additionally, increase the color contrast and size of the Privacy Policy button and place it under the Join Now button.</p>
+				<hr class="divider hideMe2">
 
-				<hr class="divider">
+				<h2 class="hideMe">Conclusion</h2>
 
-				<h2>Conclusion</h2>
-
-				<p class="parContent first">Most of the discovered issues are small, however, together they create a user experience that is unintuitive and that forces an unnecessary cognitive load on users. After finishing this evaluation I sent it to the CEO of Larky and was invited to present my findings to the rest of the team. Although I told them in detail how they could improve the application, it was apparent that their resources were limited and that the application was no longer their highest priority. As a designer you must be aware of your constraints and not only know the user value behind your decisions, but also the business value. Therefore, as a next step I would further prioritize the issues based on the resources that would be required to fix them, the value that would be created for users if they were fixed, and the value that would be created for the business if they were fixed.</p>
+				<p class="parContent first hideMe2">Most of the discovered issues are small, however, together they create a user experience that is unintuitive and that forces an unnecessary cognitive load on users. After finishing this evaluation I sent it to the CEO of Larky and was invited to present my findings to the rest of the team. Although I told them in detail how they could improve the application, it was apparent that their resources were limited and that the application was no longer their highest priority. As a designer you must be aware of your constraints and not only know the user value behind your decisions, but also the business value. Therefore, as a next step I would further prioritize the issues based on the resources that would be required to fix them, the value that would be created for users if they were fixed, and the value that would be created for the business if they were fixed.</p>
 			</div>
 		</main>
 

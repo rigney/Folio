@@ -1,3 +1,25 @@
+// work content scroll animations
+var moveUpFade = {
+  distance: '40px',
+  origin: 'bottom',
+  duration: 700,
+  delay: 100,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var moveUpFade2 = {
+  distance: '40px',
+  origin: 'bottom',
+  duration: 600,
+  delay: 200,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+ScrollReveal().reveal('.hideMe', moveUpFade);
+ScrollReveal().reveal('.hideMe2', moveUpFade2);
+
 // showing/hiding navbar on scroll
 $(function () {
   $(document).scroll("load", function () {
@@ -28,6 +50,14 @@ $(function () {
   });
 });
 
+// changes color of toggle on scroll
+$(function () {
+  $(document).scroll("load", function () {
+    var $toggle = $(".toggle");
+    $toggle.toggleClass("scrolled", $(this).scrollTop() > 10);
+  });
+});
+
 // clicking work nav link on home page
 $("#goToWork").click(function() {
   $(this).data('clicked', true);
@@ -38,6 +68,9 @@ jQuery(window).on("load", function(){
     var $nav = $(".navbarFixedTop");
     var $img = $("#imgOnScroll");
     var $height = $("#particle").height() - 71;
+    var $toggle = $(".toggle");
+
+    $toggle.toggleClass("scrolled", $(this).scrollTop() > 10);
     $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
     $nav.toggleClass("inWork", $(this).scrollTop() > $height);
     if ($(this).scrollTop() > 10) {
