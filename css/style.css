@@ -24,16 +24,6 @@ a {
   position: absolute;
 }
 
-/*html.sr .load-hidden {
-    visibility: hidden;
-}
-
-
-*/
-/*.hideMe {
-
-}*/
-
 /*hyperlink*/
 
 p a {
@@ -617,6 +607,29 @@ footer hr {
   color: #9CA5B0;
   font-family: "circular_book";
   font-size: 14px;
+  display: flex;
+}
+
+#heart img{
+  margin: 0px 4px;
+  margin-top: 1px;
+}
+
+@keyframes heartFadeInOut {
+  0% {transform: scale(1);}
+  25% {transform: scale(.97);}
+  35% {transform: scale(.9);}
+  45% {transform: scale(1.1);}
+  55% {transform: scale(.9);}
+  65% {transform: scale(1.1);}
+  75% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+}
+
+#heart img.bottom { 
+  animation-name: heartFadeInOut; 
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 
 .reachOut {

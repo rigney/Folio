@@ -282,6 +282,12 @@ var introFade6 = {
   opacity: 0.0
 };
 
+var heartPulse = {
+  scale: 3
+};
+
+ScrollReveal().reveal('.heartPulse', heartPulse);
+
 
 ScrollReveal().reveal('.hideMe', moveUpFade);
 ScrollReveal().reveal('.hideMe2', moveUpFade2);
