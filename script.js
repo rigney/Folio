@@ -1,3 +1,16 @@
+// scrolling to work section from page other than home
+$(function() {
+  var hash= window.location.hash
+  if ( hash == '' || hash == '#' || hash == undefined ) return false;
+  var target = $(hash);
+  target = target.length ? target : $('[name=' + hash.slice(1) +']');
+  if (target.length) {
+    $('html,body').stop().animate({
+      scrollTop: target.offset().top - 70 //offsets for fixed header
+    }, 0);
+  }
+});
+
 // showing/hiding navbar on scroll
 $(function () {
   $(document).scroll("load", function () {
@@ -163,19 +176,6 @@ $(function () {
     scrollTop: $("#scrolledTo").offset().top - 70
   }, 10)
 })});
-
-// scrolling to work section from page other than home
-$(function() {
-  var hash= window.location.hash
-  if ( hash == '' || hash == '#' || hash == undefined ) return false;
-  var target = $(hash);
-  target = target.length ? target : $('[name=' + hash.slice(1) +']');
-  if (target.length) {
-    $('html,body').stop().animate({
-      scrollTop: target.offset().top - 70 //offsets for fixed header
-    }, 0);
-  }
-});
 
 // scrolling to paragraphs in Larky content
 $(function () {
