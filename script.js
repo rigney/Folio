@@ -1,10 +1,11 @@
 // scrolling to work section from page other than home
-$(function() {
+$(document).ready(function() { 
   var hash= window.location.hash;
   if ( hash == '' || hash == '#' || hash == undefined ) return false;
   var target = $(hash);
   target = target.length ? target : $('[name=' + hash.slice(1) +']');
   if (target.length) {
+    console.log("fuck")
     $('html,body').stop().animate({
       scrollTop: target.offset().top - 70 //offsets for fixed header
     }, 0);
