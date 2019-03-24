@@ -75,8 +75,6 @@ jQuery(window).on("load", function(){
 // disable/enable scroll for toggling drop down menu
 $(function() {
   $("#toggle").click(function() {
-    var $img = $("#imgOnScroll");
-
     $(this).toggleClass("on");
     $("#resize").toggleClass("active");
 
