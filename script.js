@@ -1,6 +1,6 @@
 // scrolling to work section from page other than home
 $(function() {
-  var hash= window.location.hash
+  var hash= window.location.hash;
   if ( hash == '' || hash == '#' || hash == undefined ) return false;
   var target = $(hash);
   target = target.length ? target : $('[name=' + hash.slice(1) +']');
@@ -55,7 +55,7 @@ $("#goToWork").click(function() {
 });
 
 // showing/hiding navbar on page load
-jQuery(window).on("load", function(){
+$(window).on("load", function(){
     var $nav = $(".navbarFixedTop");
     var $img = $("#imgOnScroll");
     var $height = $("#particle").height() - 71;
@@ -79,7 +79,7 @@ $(function() {
     $("#resize").toggleClass("active");
 
     if ($("#resize").hasClass("active")) {
-      disableScroll()
+      disableScroll();
     }
     else {
       enableScroll();
@@ -148,44 +148,51 @@ $(function () {
   $('#scrollTo').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
-})});
+  }, 10);
+  });
+});
 
 // scroll to content using tab
 $(function () {
   $('#skipTo').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
-})});
+  }, 10);
+  });
+});
 
 // work nav link scroll to work section on home page
 $(function () {
   $('#goToWork').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
-})});
+  }, 10);
+  });
+});
 
 // work nav link in drop down scroll to work section on home page
 $(function () {
   $('#goToWork2').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
-})});
+  }, 10);
+  });
+});
 
 // scrolling to paragraphs in Larky content
 $(function () {
   $('.scrollTo').click(function() {
   $('html, body').animate({
     scrollTop: $(this.hash).offset().top - 90
-  }, 10)
-})});
+  }, 10);
+  });
+});
 
 // progress bar
 if (document.getElementById("myBar") != null) {
-  window.onscroll = function() { myFunction()};
+  window.onscroll = function() { 
+    myFunction();
+  };
 }
 
 
@@ -194,20 +201,21 @@ function myFunction() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
-};
+}
 
 // back to top
 var previousHeight = 0;
 if (document.getElementById("backToTop") != null) {
-  $(window).scroll(function(event){
+  $(window).scroll(function(event) {
     var heightOfWorkIntro = document.getElementById("workIntro");
     var currentHeight = $(this).scrollTop();
-    if (currentHeight > previousHeight){
+    if (currentHeight > previousHeight) {
       // downScroll
       if (currentHeight > heightOfWorkIntro.clientHeight - 70){
         $('#backToTop').fadeIn();
       }
-    } else {
+    } 
+    else {
         // upscroll 
         $('#backToTop').fadeOut();
     }
@@ -283,14 +291,14 @@ var heartPulse = {
   scale: 3
 };
 
-ScrollReveal().reveal('.heartPulse', heartPulse);
-
-
-ScrollReveal().reveal('.hideMe', moveUpFade);
-ScrollReveal().reveal('.hideMe2', moveUpFade2);
-ScrollReveal().reveal('.introFade1', introFade1);
-ScrollReveal().reveal('.introFade2', introFade2);
-ScrollReveal().reveal('.introFade3', introFade3);
-ScrollReveal().reveal('.introFade4', introFade4);
-ScrollReveal().reveal('.introFade5', introFade5);
-ScrollReveal().reveal('.introFade6', introFade6);
+// $(function () {
+//   ScrollReveal().reveal('.heartPulse', heartPulse);
+//   ScrollReveal().reveal('.hideMe', moveUpFade);
+//   ScrollReveal().reveal('.hideMe2', moveUpFade2);
+//   ScrollReveal().reveal('.introFade1', introFade1);
+//   ScrollReveal().reveal('.introFade2', introFade2);
+//   ScrollReveal().reveal('.introFade3', introFade3);
+//   ScrollReveal().reveal('.introFade4', introFade4);
+//   ScrollReveal().reveal('.introFade5', introFade5);
+//   ScrollReveal().reveal('.introFade6', introFade6);
+// });
