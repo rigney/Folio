@@ -390,7 +390,7 @@ h1 {
   width: 55px;
   height: 55px;
   bottom: 80px;
-/*  bottom: 195px;*/
+  z-index: 3;
   right: 80px;
   display: none;
   position: fixed;
@@ -676,6 +676,7 @@ nav {
   margin-left: 80px;
   margin-top: 15px;
   display: inline-block;
+  z-index: 5;
 }
 
 nav li a {
