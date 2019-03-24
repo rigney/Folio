@@ -1,6 +1,7 @@
 // scrolling to work section from page other than home
 $(document).ready(function() { 
   var hash= window.location.hash;
+  console.log(window.location.hash)
   if ( hash == '' || hash == '#' || hash == undefined ) return false;
   var target = $(hash);
   target = target.length ? target : $('[name=' + hash.slice(1) +']');
