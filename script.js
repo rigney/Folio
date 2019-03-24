@@ -1,3 +1,20 @@
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Configure
+// menu.
+
+function main() {
+  return 'Hello, World!';
+}
+
+main();
+
 // scrolling to work section from page other than home
 $(function() {
   console.log("fuck this")
@@ -82,7 +99,7 @@ $(function() {
     $("#resize").toggleClass("active");
 
     if ($("#resize").hasClass("active")) {
-      disableScroll()
+      disableScroll();
     }
     else {
       enableScroll();
@@ -151,7 +168,7 @@ $(function () {
   $('#scrollTo').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
+  }, 10);
 })});
 
 // scroll to content using tab
@@ -159,7 +176,7 @@ $(function () {
   $('#skipTo').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
+  }, 10);
 })});
 
 // work nav link scroll to work section on home page
@@ -167,7 +184,7 @@ $(function () {
   $('#goToWork').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
+  }, 10);
 })});
 
 // work nav link in drop down scroll to work section on home page
@@ -175,7 +192,7 @@ $(function () {
   $('#goToWork2').click(function() {
   $('html, body').animate({
     scrollTop: $("#scrolledTo").offset().top - 70
-  }, 10)
+  }, 10);
 })});
 
 // scrolling to paragraphs in Larky content
@@ -183,7 +200,7 @@ $(function () {
   $('.scrollTo').click(function() {
   $('html, body').animate({
     scrollTop: $(this.hash).offset().top - 90
-  }, 10)
+  }, 10);
 })});
 
 // progress bar
@@ -197,7 +214,7 @@ function myFunction() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
-};
+}
 
 // back to top
 var previousHeight = 0;
