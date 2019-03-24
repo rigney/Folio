@@ -1,5 +1,5 @@
 // scrolling to work section from page other than home
-$(document).ready(function() { 
+$(window).bind("load", function() { 
   var hash= window.location.hash;
   console.log(window.location.hash)
   if ( hash == '' || hash == '#' || hash == undefined ) return false;
