@@ -73,7 +73,6 @@ $(function() {
     else {
       enableScroll();
     }
-
   });
 });
 
@@ -167,15 +166,15 @@ $(function () {
 
 // scrolling to work section from page other than home
 $(function() {
-var hash= window.location.hash
-if ( hash == '' || hash == '#' || hash == undefined ) return false;
-      var target = $(hash);
-      target = target.length ? target : $('[name=' + hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').stop().animate({
-          scrollTop: target.offset().top - 70 //offsets for fixed header
-        }, 0);
-      }
+  var hash= window.location.hash
+  if ( hash == '' || hash == '#' || hash == undefined ) return false;
+  var target = $(hash);
+  target = target.length ? target : $('[name=' + hash.slice(1) +']');
+  if (target.length) {
+    $('html,body').stop().animate({
+      scrollTop: target.offset().top - 70 //offsets for fixed header
+    }, 0);
+  }
 });
 
 // scrolling to paragraphs in Larky content
