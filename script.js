@@ -334,7 +334,7 @@ var aboutFade = {
 };
 
 var photographFade = {
-  duration: 2000,
+  duration: 1400,
   delay: 700,
   easing: 'ease-in-out',
   opacity: 0.0
