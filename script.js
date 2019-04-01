@@ -308,10 +308,30 @@ var cardFade = {
 };
 
 var aboutFade = {
-  duration: 2200,
+  duration: 2000,
   easing: 'ease-in-out',
   opacity: 0.0
 };
+
+var aboutFade2 = {
+  duration: 2000,
+  delay: 200,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var aboutFade3 = {
+  duration: 2000,
+  delay: 400,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+// var careerFade = {
+//   duration: 1000,
+//   easing: 'ease-in-out',
+//   opacity: 0.0
+// };
 
 $(function () {
   ScrollReveal().reveal('.hideMe', moveUpFade);
@@ -325,5 +345,12 @@ $(function () {
   ScrollReveal().reveal('.helloText', homeFade1);
   ScrollReveal().reveal('.bioText', homeFade2);
   ScrollReveal().reveal('.cards', cardFade)
-  ScrollReveal().reveal('.aboutGrid', aboutFade)
+  ScrollReveal().reveal('.aboutText', aboutFade)
+  ScrollReveal().reveal('.aboutText2', aboutFade2)
+  ScrollReveal().reveal('.aboutText3', aboutFade3)
+
+  // ScrollReveal().reveal('.aboutGrid', aboutFade)
+  ScrollReveal().reveal('.firstFade', aboutFade)
+  ScrollReveal().reveal('.secondFade', aboutFade)
+  ScrollReveal().reveal('.thirdFade', aboutFade)
 });
