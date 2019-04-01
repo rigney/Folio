@@ -9,6 +9,8 @@ html {
   overflow-x: hidden;
 }
 
+body { min-width: 960px; }
+
 a {
   text-decoration: none;
 }

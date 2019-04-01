@@ -6,7 +6,6 @@ $(window).bind("load", function() {
   var target = $(hash);
   target = target.length ? target : $('[name=' + hash.slice(1) +']');
   if (target.length) {
-    console.log("fuck")
     $('html,body').stop().animate({
       scrollTop: target.offset().top - 70 //offsets for fixed header
     }, 0);
@@ -289,18 +288,28 @@ var introFade6 = {
   opacity: 0.0
 };
 
-var heartPulse = {
-  scale: 3
+var homeFade1 = {
+  duration: 800,
+  easing: 'ease-in-out',
+  opacity: 0.0
 };
 
-// $(function () {
-//   ScrollReveal().reveal('.heartPulse', heartPulse);
-//   ScrollReveal().reveal('.hideMe', moveUpFade);
-//   ScrollReveal().reveal('.hideMe2', moveUpFade2);
-//   ScrollReveal().reveal('.introFade1', introFade1);
-//   ScrollReveal().reveal('.introFade2', introFade2);
-//   ScrollReveal().reveal('.introFade3', introFade3);
-//   ScrollReveal().reveal('.introFade4', introFade4);
-//   ScrollReveal().reveal('.introFade5', introFade5);
-//   ScrollReveal().reveal('.introFade6', introFade6);
-// });
+var homeFade2 = {
+  duration: 1200,
+  delay: 800,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+$(function () {
+  ScrollReveal().reveal('.hideMe', moveUpFade);
+  ScrollReveal().reveal('.hideMe2', moveUpFade2);
+  ScrollReveal().reveal('.introFade1', introFade1);
+  ScrollReveal().reveal('.introFade2', introFade2);
+  ScrollReveal().reveal('.introFade3', introFade3);
+  ScrollReveal().reveal('.introFade4', introFade4);
+  ScrollReveal().reveal('.introFade5', introFade5);
+  ScrollReveal().reveal('.introFade6', introFade6);
+  ScrollReveal().reveal('.helloText', homeFade1);
+  ScrollReveal().reveal('.bioText', homeFade2);
+});
