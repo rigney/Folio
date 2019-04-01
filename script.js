@@ -308,7 +308,7 @@ var cardFade = {
 };
 
 var aboutFade = {
-  duration: 1500,
+  duration: 2200,
   easing: 'ease-in-out',
   opacity: 0.0
 };
