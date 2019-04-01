@@ -296,7 +296,7 @@ var homeFade1 = {
 
 var homeFade2 = {
   duration: 1200,
-  delay: 800,
+  delay: 600,
   easing: 'ease-in-out',
   opacity: 0.0
 };
