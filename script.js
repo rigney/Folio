@@ -301,6 +301,12 @@ var homeFade2 = {
   opacity: 0.0
 };
 
+var cardFade = {
+  duration: 1000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
 $(function () {
   ScrollReveal().reveal('.hideMe', moveUpFade);
   ScrollReveal().reveal('.hideMe2', moveUpFade2);
@@ -312,4 +318,5 @@ $(function () {
   ScrollReveal().reveal('.introFade6', introFade6);
   ScrollReveal().reveal('.helloText', homeFade1);
   ScrollReveal().reveal('.bioText', homeFade2);
+  ScrollReveal().reveal('.cards', cardFade)
 });
