@@ -253,37 +253,35 @@ var moveUpFade2 = {
 };
 
 var introFade1 = {
-  duration: 2000,
+  duration: 1500,
   easing: 'ease-in-out',
   opacity: 0.0
 };
 
 var introFade2 = {
   duration: 2000,
+  delay: 100,
   easing: 'ease-in-out',
   opacity: 0.0
 };
 
 var introFade3 = {
   duration: 2000,
+  delay: 150,
   easing: 'ease-in-out',
   opacity: 0.0
 };
 
 var introFade4 = {
   duration: 2000,
+  delay: 200,
   easing: 'ease-in-out',
   opacity: 0.0
 };
 
 var introFade5 = {
   duration: 2000,
-  easing: 'ease-in-out',
-  opacity: 0.0
-};
-
-var introFade6 = {
-  duration: 2000,
+  delay: 250,
   easing: 'ease-in-out',
   opacity: 0.0
 };
@@ -327,12 +325,6 @@ var aboutFade3 = {
   opacity: 0.0
 };
 
-var aboutFade = {
-  duration: 2000,
-  easing: 'ease-in-out',
-  opacity: 0.0
-};
-
 var photographFade = {
   duration: 1400,
   delay: 700,
@@ -340,11 +332,6 @@ var photographFade = {
   opacity: 0.0
 };
 
-// var careerFade = {
-//   duration: 1000,
-//   easing: 'ease-in-out',
-//   opacity: 0.0
-// };
 
 $(function () {
   ScrollReveal().reveal('.hideMe', moveUpFade);
@@ -354,7 +341,6 @@ $(function () {
   ScrollReveal().reveal('.introFade3', introFade3);
   ScrollReveal().reveal('.introFade4', introFade4);
   ScrollReveal().reveal('.introFade5', introFade5);
-  ScrollReveal().reveal('.introFade6', introFade6);
   ScrollReveal().reveal('.helloText', homeFade1);
   ScrollReveal().reveal('.bioText', homeFade2);
   ScrollReveal().reveal('.cards', cardFade)
@@ -363,8 +349,8 @@ $(function () {
   ScrollReveal().reveal('.aboutText3', aboutFade3)
   ScrollReveal().reveal('.mePhotograph', photographFade)
 
-  // ScrollReveal().reveal('.aboutGrid', aboutFade)
-  // ScrollReveal().reveal('.firstFade', aboutFade)
-  // ScrollReveal().reveal('.secondFade', aboutFade)
-  // ScrollReveal().reveal('.thirdFade', aboutFade)
+  ScrollReveal().reveal('.aboutGrid', aboutFade)
+  ScrollReveal().reveal('.firstFade', aboutFade)
+  ScrollReveal().reveal('.secondFade', aboutFade)
+  ScrollReveal().reveal('.thirdFade', aboutFade)
 });
