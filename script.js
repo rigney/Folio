@@ -295,7 +295,7 @@ var homeFade1 = {
 };
 
 var homeFade2 = {
-  duration: 1200,
+  duration: 1000,
   delay: 600,
   easing: 'ease-in-out',
   opacity: 0.0
