@@ -327,6 +327,19 @@ var aboutFade3 = {
   opacity: 0.0
 };
 
+var aboutFade = {
+  duration: 2000,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
+var photographFade = {
+  duration: 2000,
+  delay: 700,
+  easing: 'ease-in-out',
+  opacity: 0.0
+};
+
 // var careerFade = {
 //   duration: 1000,
 //   easing: 'ease-in-out',
@@ -348,9 +361,10 @@ $(function () {
   ScrollReveal().reveal('.aboutText', aboutFade)
   ScrollReveal().reveal('.aboutText2', aboutFade2)
   ScrollReveal().reveal('.aboutText3', aboutFade3)
+  ScrollReveal().reveal('.mePhotograph', photographFade)
 
   // ScrollReveal().reveal('.aboutGrid', aboutFade)
-  ScrollReveal().reveal('.firstFade', aboutFade)
-  ScrollReveal().reveal('.secondFade', aboutFade)
-  ScrollReveal().reveal('.thirdFade', aboutFade)
+  // ScrollReveal().reveal('.firstFade', aboutFade)
+  // ScrollReveal().reveal('.secondFade', aboutFade)
+  // ScrollReveal().reveal('.thirdFade', aboutFade)
 });
