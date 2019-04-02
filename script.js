@@ -349,8 +349,7 @@ $(function () {
   ScrollReveal().reveal('.aboutText3', aboutFade3)
   ScrollReveal().reveal('.mePhotograph', photographFade)
 
-  ScrollReveal().reveal('.aboutGrid', aboutFade)
-  ScrollReveal().reveal('.firstFade', aboutFade)
-  ScrollReveal().reveal('.secondFade', aboutFade)
-  ScrollReveal().reveal('.thirdFade', aboutFade)
+  ScrollReveal().reveal('.careerFade1', aboutFade)
+  ScrollReveal().reveal('.careerFade2', aboutFade2)
+  ScrollReveal().reveal('.careerFade3', aboutFade3)
 });
