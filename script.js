@@ -235,7 +235,7 @@ $(document).ready(function() {
 
 // work content scroll animations
 var moveUpFade = {
-  distance: '40px',
+  distance: '30px',
   origin: 'bottom',
   duration: 700,
   delay: 100,
@@ -244,7 +244,7 @@ var moveUpFade = {
 };
 
 var moveUpFade2 = {
-  distance: '40px',
+  distance: '30px',
   origin: 'bottom',
   duration: 600,
   delay: 200,
