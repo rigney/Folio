@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="246px" viewBox="0 0 250 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>rookieRoadPreview</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-36.9195751%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#91E262" offset="0%"></stop>
+            <stop stop-color="#13C46C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Finalized" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,0 L242,0 C246.418278,-8.11624501e-16 250,3.581722 250,8 L250,246 L0,246 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="rookieRoadPreview" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>
