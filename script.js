@@ -336,19 +336,22 @@ var photographFade = {
 $(function () {
   ScrollReveal().reveal('.hideMe', moveUpFade);
   ScrollReveal().reveal('.hideMe2', moveUpFade2);
+
   ScrollReveal().reveal('.introFade1', introFade1);
   ScrollReveal().reveal('.introFade2', introFade2);
   ScrollReveal().reveal('.introFade3', introFade3);
   ScrollReveal().reveal('.introFade4', introFade4);
   ScrollReveal().reveal('.introFade5', introFade5);
+
   ScrollReveal().reveal('.helloText', homeFade1);
   ScrollReveal().reveal('.bioText', homeFade2);
+
   ScrollReveal().reveal('.cards', cardFade)
+
   ScrollReveal().reveal('.aboutText', aboutFade)
   ScrollReveal().reveal('.aboutText2', aboutFade2)
   ScrollReveal().reveal('.aboutText3', aboutFade3)
   ScrollReveal().reveal('.mePhotograph', photographFade)
-
   ScrollReveal().reveal('.careerFade1', aboutFade)
   ScrollReveal().reveal('.careerFade2', aboutFade2)
   ScrollReveal().reveal('.careerFade3', aboutFade3)
