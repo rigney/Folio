@@ -26,7 +26,6 @@
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	</head>
 
-
 	<body>
 		<header>
 	    <nav class="navbarFixedTop">
@@ -34,7 +33,7 @@
 					<a href="index.html" class="logo"><img src="imgs/logo.svg" alt="Personal Logo" id="imgOnScroll"></a>
 	        <a href="#" id="skipTo" class="skipTo underlineOnHover scrolledItem">Skip to content</a>
 	        <ul class="menu">
-	          <li><a href="index.html#scrolledTo" class="underlineOnHover scrolledItem">Work</a></li>
+	          <li><a href="index.html#scrolledTo" id="goToWork" class="underlineOnHover scrolledItem">Work</a></li>
 	          <li><a href="about.html" class="underlineOnHover scrolledItem">About</a></li>
 	          <li><a href="https://www.dropbox.com/s/vk8dfmt0mn5iniq/Resume%20Rigney.pdf?dl=0" target="_blank" class="underlineOnHover scrolledItem">Resume</a></li>
 	          <li><a href="mailto:mrigs@umich.edu?subject=Reaching%20Out&body=Hi%20Michael," class="underlineOnHover scrolledItem">Contact</a></li>
@@ -43,10 +42,12 @@
 	      <div class="progressBar" id="myBar"></div>
 	    </nav>
 
-      <div id="toggle">
-		    <div class="span" id="one"></div>
-		    <div class="span" id="two"></div>
-		    <div class="span" id="three"></div>
+      <div class="toggle">
+	  	  <div id="toggle">
+			    <div class="span" id="one"></div>
+			    <div class="span" id="two"></div>
+			    <div class="span" id="three"></div>
+	    	</div>
     	</div>
   	</header>
 
@@ -63,19 +64,23 @@
 		<main>
 			<div class="chanceBackground" id="workIntro">
 				<div class="workGrid">
-					<h1 class="noYInName">Chance</h1>
-					<p class="typeOfWork">Concept</p>
-					<div class="date" style="color: #2571D5">Feb 2018</div>
-					<div class="descriptionOfWork">Chance is a mobile dating application that connects you with people who frequent the same places you do. There is no prediction based matching or profiles - you meet people in a serendipitous way.</div>
-					<img src="imgs/iphone2.svg" alt="Chance Designs">
+					<h1 class="noYInName introFade1">Chance</h1>
+					<p class="typeOfWork introFade2">Concept</p>
+					<div class="date introFade3" style="color: #2571D5">Mar 2019</div>
+					<div class="descriptionOfWork introFade4">Chance is a mobile dating application that connects you with people who frequent the same places you do. There is no prediction based matching or profiles - you meet people in a serendipitous way.</div>
+					<img class="introFade5" src="imgs/iphone2.svg" alt="Chance Designs">
 				</div>
-					<div id="scrollTo" class="downIndicator bounce"><img src="imgs/downIndicator.svg" alt="Down Indicator"></div>
+				<div id="scrollTo" class="downIndicator bounce"><img src="imgs/downIndicator.svg" alt="Down Indicator"></div>
 			</div>
 
-			<div id="backToTopContainer"><a id="backtoTop" title="Back to top" href="#"><img src="imgs/backToTop.svg" alt="Back To Top"></a></div>
-			<p class="content" id="scrolledTo">This report provides a heuristic evaluation of Larky’s mobile application. The report includes a brief overview of Larky, the evaluation approach used, an outline of the target users and their motivations, a detailed analysis of the issues that were discovered during the evaluation, and proposed solutions to those issues.</p>
+			<div class="backToTopContainer"><div id="backToTop" class="backToTop"><img src="imgs/backToTop.svg" alt="Back To Top"></div></div>
 
-			<p class="content">This evaluation differs from others in that it has been conducted by only one individual. As usability guru Jakob Nielsen states, different people find different usability issues and thus having multiple evaluators improves the effectiveness of this method. Therefore being the sole evaluator, the number of issues presented in this evaluation are by no means complete. Additional evaluations, each conducted by a different individual, will be necessary in order to compose a more thorough list of usability issues in Larky’s mobile application. Additionally, please keep in mind that this evaluation was completed on Feb 24, 2018 and thus may no longer completely reflect the current state of Larky's mobile application.</p>
+			<div class="workContent" id="scrolledTo">
+
+				<h2 class="noTopMargin hideMe">Executive Summary</h2>
+
+				<p class="parContent first hideMe">In total, 31 usability issues were discovered during the heuristic evaluation of Larky. A majority of the issues relate to the unintuitive placement of information and absence of information important to users - the most severe of which prevents users from exiting a screen.</p>
+			</div>
 		</main>
 
 		<footer>
