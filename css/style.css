@@ -274,12 +274,20 @@ p.cardType {
   text-align: center;
 }
 
-.workGrid {
+/*.workGrid {
   margin-top: 139px;
   display: inline-grid;
   grid-template-rows: auto;
   grid-template-columns: 510px 450px;
   grid-column-gap: 160px;
+  grid-row-gap: 0px;
+}*/
+
+.workGrid {
+  display: inline-grid;
+  grid-template-rows: auto;
+  grid-template-columns: 510px 570px;
+  grid-column-gap: 40px;
   grid-row-gap: 0px;
 }
 
@@ -316,7 +324,7 @@ p.cardType {
 
 h1 {
   max-width: 510px;
-  margin-top: 15px;
+  margin-top: 145px;
   margin-left: -5px;
   font-family: "circular_bold";
   color: #FFFFFF;
@@ -375,6 +383,7 @@ h1 {
 }
 
 .workGrid img {
+  margin-top: 70px;
   grid-row-start: 1;
   grid-row-end: 6;
 }
@@ -951,11 +960,6 @@ nav .menu li {
     grid-column-gap: 80px;
   }
 
-  .workGrid {
-    grid-template-columns: auto 530px;
-    grid-column-gap: 80px; 
-  }
-
   h1 {
     margin-left: 75px;
   }
@@ -986,17 +990,9 @@ nav .menu li {
   }
 }
 
-@media only screen and (max-width: 972px) {
+@media only screen and (max-width: 1127px) {
   .workGrid {
     grid-template-columns: auto;
-  }
-
-  .workIntro {
-    text-align: left;
-  }
-
-  h1, .typeOfWork, .date, .descriptionOfWork  {
-    margin-right: 80px;
   }
 
   .workGrid img {

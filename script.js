@@ -42,6 +42,12 @@ $(function () {
   });
 });
 
+// $(".card").mouseover(function () {
+//    $("#larkyPreview").attr("src", "imgs/larkyPreviewHover.svg")
+// }).mouseout(function () {
+//     $("#larkyPreview").attr("src", "imgs/larkyPreview.svg")
+// });
+
 // changes color of toggle on scroll
 $(function () {
   $(document).scroll("load", function () {
