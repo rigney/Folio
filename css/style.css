@@ -104,6 +104,12 @@ div.home {
   text-align: left;
 }
 
+h1.homeTitle {
+  margin-bottom: 10px;
+  display: none;
+  font-size: 70px;
+}
+
 p.helloText {
   margin-bottom: 5px;
   line-height: 82px;
@@ -192,6 +198,15 @@ p.cardType {
   margin-top: 55px;
   grid-row-start: 1;
   grid-row-end: 4;
+}
+
+h1.aboutTitle {
+  margin-top: 20px;
+  display: none;
+  color: #333333;
+  font-family: "circular_bold";
+  font-size: 70px;
+  text-align: left;
 }
 
 .aboutGrid {
@@ -322,7 +337,7 @@ p.cardType {
   background-image: linear-gradient(-180deg, #FCB930 0%, #FB8D42 100%);
 }
 
-h1 {
+h1.nameOfWork {
   max-width: 510px;
   margin-top: 145px;
   margin-left: -5px;
@@ -960,7 +975,7 @@ nav .menu li {
     grid-column-gap: 80px;
   }
 
-  h1 {
+  h1.nameOfWork {
     margin-left: 75px;
   }
 
@@ -1110,7 +1125,7 @@ nav .menu li {
     margin: 0 30px;
   }
 
-  h1 {
+  h1.nameOfWork {
     margin-right: 30px;
     margin-left: 25px;
   }
