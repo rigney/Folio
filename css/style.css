@@ -148,11 +148,14 @@ img.meIllustration {
 .card {
   width: 250px;
   height: 350px;
+  top: 0;
+  position: relative;
   border-radius: 8px;
   background-color: #FFFFFF;
   text-align: left;
   box-shadow: 0 15px 20px 0 rgba(0,0,0,0.10);
   transition: all .3s;
+  transition: all ease-in-out 0.25s;
 }
 
 p.cardName {
@@ -166,26 +169,16 @@ p.cardName {
 p.cardType {
   margin-top: 5px;
   margin-left: 28px;
-  color: #9CA5B0;
+  color: #4f5962;
   font-family: "circular_book";
   font-size: 15px;
 }
 
-.cardHover {
-  top: 0;
-  position: relative;
-  transition: all ease-in-out 0.25s;
-}
-
-.cardHover:hover {
-  top: -20px;
-  transition: all ease-in-out 0.25s;
-}
-
 /*for shadow*/
 .card:hover {
+  top: -20px;
+  transition: all ease-in-out 0.25s;
   box-shadow: 0 30px 40px 0 rgba(0,0,0,0.15);
-  transition: all .3s;
 }
 
 /*about*/
