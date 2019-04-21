@@ -524,6 +524,10 @@ dd.bullet {
   line-height: 25px;
 }
 
+.listInList {
+  margin-left: 27px;
+}
+
 .mediumWeight {
   font-family: "circular_medium";
 }
