@@ -434,10 +434,6 @@ h2 {
   font-size: 23px;
 }
 
-h2.noTopMargin {
-  margin-top: 0px;
-}
-
 h3 {
   margin-top: 35px;
   color: #333333;
@@ -447,13 +443,19 @@ h3 {
   line-height: 24px;
 }
 
-h3.noTopMargin {
-  margin-top: 0px;
+h4 {
+  margin-top: 35px;
+  color: #333333;
   font-family: "circular_medium";
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.noTopMargin {
+  margin-top: 0px;
 }
 
 hr.divider {
-  color: #ECE8E8;
   margin-top: 30px;
 }
 
@@ -532,12 +534,6 @@ dd.bullet {
   font-family: "circular_medium";
 }
 
-p.subHeader {
-  margin-top: 3px;
-  font-family: "circular_book";
-  color: #9CA5B0;
-}
-
 table.first {
   margin-top: 20px;
 }
@@ -594,19 +590,45 @@ caption {
   box-shadow: 0 0px 20px 0 rgba(0,0,0,0.15);
 }
 
-.protoPersonaIllustration {
-  margin-top: 20px;
-  display: inline-block;
-  vertical-align: middle;
+.persona {
+  margin-top: 40px;
+  display: flex;
+  align-items: center; 
 }
 
-.protoPersonaIntro {
+div.first {
   margin-top: 25px;
+}
+
+.personaIllustration {
+  max-width: 125px;
+  max-height: 125px;
+}
+
+.personaIntro {
   margin-left: 10px;
   display: inline-block;
-  vertical-align: middle;
+  max-width: 560px;
 }
 
+.personaDemographic {
+  margin-top: 3px;
+  font-family: "circular_book";
+  color: #9CA5B0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.empathyMapImage {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 670px;
+  max-height: 670px;
+}
 
 /*footer*/
 
