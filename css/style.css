@@ -820,7 +820,7 @@ nav .menu li {
   top: 26.5px;
   right: 80px;
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   cursor: pointer;
   transition: all 0.3s ease-out;
   visibility: hidden;
@@ -859,7 +859,7 @@ nav .menu li {
   height: 100%;
   display: table;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   background: #FFFFFF;
   transition: all 0.3s ease-out;
   visibility: hidden;
