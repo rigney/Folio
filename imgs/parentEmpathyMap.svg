@@ -422,8 +422,8 @@
                         <use fill="black" fill-opacity="1" filter="url(#filter-38)" xlink:href="#path-37"></use>
                         <use fill="#FDF1B9" fill-rule="evenodd" xlink:href="#path-37"></use>
                     </g>
-                    <text id="I’m-proud-that-Jake" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" fill="#333333">
-                        <tspan x="5" y="15">I’m proud that </tspan>
+                    <text id="I’m-happy-that-Jake" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" fill="#333333">
+                        <tspan x="5" y="15">I’m happy that </tspan>
                         <tspan x="5" y="28">Jake is trying </tspan>
                         <tspan x="5" y="41">to be </tspan>
                         <tspan x="5" y="54">independent </tspan>
