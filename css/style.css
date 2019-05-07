@@ -84,11 +84,11 @@ img {
 }
 
 .error404 {
+  margin-top: 150px;
   color: #FFFFFF;
   font-family: "circular_bold";
   font-size: 35px;
   line-height: 44px;
-  margin-top: 150px;
   text-align: center;
 }
 
