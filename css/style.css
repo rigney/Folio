@@ -950,6 +950,7 @@ nav .menu li {
 
 @media (max-height: 620px) {
   .img404 {
+    margin-top: 50px;
     width: 275px;
   }
 }
