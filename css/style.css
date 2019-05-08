@@ -948,7 +948,7 @@ nav .menu li {
   transform: scale(1,1);
 }
 
-@media (max-height: 675px) {
+@media (max-height: 575px) {
   .img404 {
     margin-top: 75px;
     width: 275px;
