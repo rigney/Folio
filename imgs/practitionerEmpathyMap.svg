@@ -540,8 +540,8 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-52)" xlink:href="#path-51"></use>
                             <use fill="#FDF1B9" fill-rule="evenodd" xlink:href="#path-51"></use>
                         </g>
-                        <text id="when-a-student-of-mi" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" fill="#333333">
-                            <tspan x="5" y="15">when a </tspan>
+                        <text id="When-a-student-of-mi" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" fill="#333333">
+                            <tspan x="5" y="15">When a </tspan>
                             <tspan x="5" y="28">student of </tspan>
                             <tspan x="5" y="41">mine acts out, </tspan>
                             <tspan x="5" y="54">others are </tspan>
