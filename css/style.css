@@ -661,6 +661,17 @@ div.first {
   height: auto;
 }
 
+.download {
+  width: 55px;
+  height: 55px;
+  bottom: 80px;
+  z-index: 3;
+  right: 80px;
+  position: fixed;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.20);
+}
+
 /*footer*/
 
 footer {
@@ -1203,6 +1214,10 @@ nav .menu li {
   }
 
   #backToTop {
+    right: 30px;
+  }
+
+  .download {
     right: 30px;
   }
 }
