@@ -76,14 +76,14 @@ img {
   top: 100vh;
 }
 
-/*404 error page*/
+/*404 error page & thank you page*/
 
 .center {
   display: flex;
   justify-content: center;
 }
 
-.error404 {
+.actionReceived {
   margin-top: 150px;
   color: #FFFFFF;
   font-family: "circular_bold";
@@ -92,7 +92,7 @@ img {
   text-align: center;
 }
 
-.img404 {
+.actionReceivedImg {
   margin-top: 100px;
 }
 
@@ -967,14 +967,14 @@ nav .menu li {
 }
 
 @media (max-height: 575px) {
-  .img404 {
+  .actionReceivedImg {
     margin-top: 75px;
     width: 275px;
   }
 }
 
 @media (max-height: 500px) {
-  .img404 {
+  .actionReceivedImg {
     display: none;
   }
 }
@@ -1171,7 +1171,7 @@ nav .menu li {
     margin-right: 30px;
   }
 
-  .error404 p {
+  .actionReceived p {
     margin-left: 30px;
     margin-right: 30px;
   }
