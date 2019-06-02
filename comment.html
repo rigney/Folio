@@ -1,0 +1,84 @@
+<!-- Hello there! Welcome to the behind the scenes of my portfolio -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Michael Rigney | Portfolio</title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="A portfolio showcasing Michael Rigney's design work">
+		<meta name="author" content="Michael Rigney">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- fav icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="imgs/favIcons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="imgs/favIcons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="imgs/favIcons/favicon-16x16.png">
+		<link rel="manifest" href="imgs/favIcons/site.webmanifest">
+		<link rel="mask-icon" href="imgs/favIcons/safari-pinned-tab.svg" color="#333333">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	</head>
+
+
+	<body>
+		<header>
+	    <nav class="navbarFixedTop">
+	      <div class="container"> 
+	        <a href="index.html" class="logo scrolledLogo"><img src="imgs/logoBlack.svg" alt="Personal Logo"></a>
+	        <a href="#" id="skipTo" class="skipTo underlineOnHover black">Skip to content</a>
+	        <ul class="menu">
+	          <li><a href="index.html#scrolledTo" class="underlineOnHover black">Work</a></li>
+	          <li><a href="about.html" class="underlineOnHover black">About</a></li>
+	          <li><a href="resume.html" class="underlineOnHover black">Resume</a></li>
+	          <li><a href="mailto:mrigs@umich.edu?subject=Reaching%20Out&body=Hi%20Michael," class="currentBlack underlineOnHover black">Contact</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+
+	    <div class="toggle">
+	  	  <div id="toggle">
+			    <div class="span black" id="one"></div>
+			    <div class="span black" id="two"></div>
+			    <div class="span black" id="three"></div>
+	    	</div>
+    	</div>
+  	</header>
+
+	  <div id="resize">
+  		<a href="index.html" class="logo"><img src="imgs/logoBlack.svg" alt="Personal Logo"></a>
+	    <ul class="menu">
+	      <li><a href="index.html#scrolledTo">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="mailto:mrigs@umich.edu?subject=Let's%20Chat&body=Hi%20Michael" class="current">Contact</a></li>
+	    </ul>
+	  </div>
+
+		<main>
+			<form action="mrigs@umich.edu" method="POST" enctype="multipart/form-data" name="EmailTestForm">Your Name:<br>
+			<input type="text" size="20" name="VisitorName"><br><br>Your Comment:<br>
+			<textarea name="VisitorComment" rows="4" cols="20">
+			</textarea><br><br><input type="submit" value="Email This Form">
+			</form>
+		</main>
+
+		<footer>
+			<hr>
+			<a href="mailto:mrigs@umich.edu?subject=Reaching%20Out&body=Hi%20Michael,"><div class="reachOut">Reach Out</div></a>
+			<div class="footerLabels">
+				<div class="leftLabel">Michael Rigney - ©2019</div>
+				<div class="rightLabel">Handcrafted with<span id="heart"><img class="bottom" src="imgs/heart.svg" alt="Heart"></span>in Ann Arbor</div>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
