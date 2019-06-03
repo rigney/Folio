@@ -725,15 +725,14 @@ button:focus {outline:0;}
 
 .email {
   width: 375px;
-  height: 26px;
+  height: 20px;
   color: #333333;
   resize: none;
   outline-style: none;
   font-family: "circular_book";
   font-size: 17px;
   line-height: 21px;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 10px;
 }
 
 .message {
@@ -744,10 +743,8 @@ button:focus {outline:0;}
   outline-style: none;
   font-family: "circular_book";
   font-size: 17px;
-  line-height: 21px;
-  padding-top: 15px;
-  padding-left: 10px;
-
+  line-height: 23px;
+  padding: 10px 15px;
 }
 
 /*footer*/
