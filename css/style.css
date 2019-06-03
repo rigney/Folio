@@ -672,6 +672,21 @@ div.first {
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.20);
 }
 
+.inputHeader {
+  font-family: "circular_book";
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  margin-left: 80px;
+  padding-top: 105px;
+}
+
+.topMargin {
+  margin-top: 30px;
+}
+
 button:focus {outline:0;}
 
 .send {
@@ -679,10 +694,11 @@ button:focus {outline:0;}
   height: 45px;
   left: 0; 
   right: 0;
-  display: inline-block;
+  margin-top: 45px;
   color: #FFFFFF;
   font-family: "circular_medium";
   text-align: center;
+  display: block;
   font-size: 17px;
   line-height: 41px;
   border-top: 0px;
@@ -698,9 +714,40 @@ button:focus {outline:0;}
 
 .send:active {
   height: 45px;
-  margin-top: -21px;
+  margin-top: 47px;
   border-bottom: 0px solid #E95B5C;
   transition: all .1s linear;
+}
+
+::placeholder {
+  color: #ECE8E8;
+}
+
+.email {
+  width: 375px;
+  height: 26px;
+  color: #333333;
+  resize: none;
+  outline-style: none;
+  font-family: "circular_book";
+  font-size: 17px;
+  line-height: 21px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.message {
+  width: 740px;
+  height: 180px;
+  color: #333333;
+  resize: none;
+  outline-style: none;
+  font-family: "circular_book";
+  font-size: 17px;
+  line-height: 21px;
+  padding-top: 15px;
+  padding-left: 10px;
+
 }
 
 /*footer*/

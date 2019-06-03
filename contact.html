@@ -62,12 +62,15 @@
 	  </div>
 
 		<main>
-			<div class="workContent" id="scrolledTo">
-				<form method="POST" action="https://formspree.io/mrigs@umich.edu">
+			<div class="contact" id="scrolledTo">
+				<form method="POST" class="inputTopMargin" action="https://formspree.io/mrigs@umich.edu">
 				  <input type="hidden" name="_next" placeholder="Your email" value="https://rigney.github.io/Folio/thankYou.html">
-				  <textarea name="message" placeholder="Test Message"></textarea>
 
-				  <textarea name="message" placeholder="Test Message"></textarea>
+					<div class="inputHeader">Email</div>
+				  <textarea name="message" placeholder="Who do I reply to?" class="email"></textarea>
+
+					<div class="inputHeader topMargin">Message</div>
+				  <textarea name="message" placeholder="What’s on your mind?" class="message"></textarea>
 
 				  <button type="submit" class="send">Send</button>
 				</form>
