@@ -672,6 +672,8 @@ div.first {
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.20);
 }
 
+button:focus {outline:0;}
+
 .send {
   width: 133px;
   height: 45px;
@@ -682,11 +684,16 @@ div.first {
   font-family: "circular_medium";
   text-align: center;
   font-size: 17px;
-  line-height: 40px;
+  line-height: 41px;
+  border-top: 0px;
   border-bottom: 3px solid #DB4F50;
+  border-right: 0px;
+  border-left: 0px;
   border-radius: 15px;
   background-color: #F66263;
   transition: all .1s linear;
+  cursor: pointer;
+  outline-style: none;
 }
 
 .send:active {
