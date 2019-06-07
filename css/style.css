@@ -737,12 +737,14 @@ button:focus {outline:0;}
   color: #333333;
   resize: none;
   outline-style: none;
+  outline: none;
   border-color: #ECE8E8;
   font-family: "circular_book";
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   padding: 10px;
   padding-left: 15px;
+  border
 }
 
 .message {
@@ -751,10 +753,11 @@ button:focus {outline:0;}
   color: #333333;
   resize: none;
   outline-style: none;
+  outline: none;
   border-color: #ECE8E8;
   font-family: "circular_book";
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   padding: 10px 15px;
 }
 
