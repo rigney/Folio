@@ -731,6 +731,10 @@ button:focus {outline:0;}
   color: #ECE8E8;
 }
 
+.noShadow {
+  background-clip: padding-box
+}
+
 .email {
   width: 337px;
   height: 20px;
