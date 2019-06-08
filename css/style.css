@@ -737,7 +737,7 @@ button:focus {outline:0;}
   color: #333333;
   resize: none;
   outline-style: none;
-  outline: none;
+  background-clip: padding-box;
   border-color: #ECE8E8;
   font-family: "circular_book";
   font-size: 16px;
@@ -753,7 +753,7 @@ button:focus {outline:0;}
   color: #333333;
   resize: none;
   outline-style: none;
-  outline: none;
+  background-clip: padding-box;
   border-color: #ECE8E8;
   font-family: "circular_book";
   font-size: 16px;
