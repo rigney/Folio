@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>forwardArrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="forwardArrow" transform="translate(-8.123517, -0.123517)" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="downIndicator" transform="translate(9.944444, 9.944444) scale(-1, 1) rotate(45.000000) translate(-9.944444, -9.944444) " points="5.22222222 14.6666667 16.8888889 14.6666667 16.8888889 16.8888889 4.11111111 16.8888889 3 16.8888889 3 3 5.22222222 3"></polygon>
+        </g>
+    </g>
+</svg>

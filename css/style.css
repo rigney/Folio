@@ -496,11 +496,11 @@ p.first {
   margin-top: 15px;
 }
 
-p.belowImage {
+p.belowImage, li.belowImage {
   margin-top: 20px;
 }
 
-p.italic {
+p.italic, li.italic {
   font-family: "circular_book_italic";
 }
 
@@ -654,6 +654,167 @@ div.first {
   max-height: 670px;
 }
 
+.collectionOfImages {
+  display: inline-grid;
+  grid-template-columns: 220px 220px 220px;
+  grid-column-gap: 20px;
+}
+
+.individualImage {
+  margin-top: 20px;
+  box-shadow: 0 15px 20px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 0px 20px 0 rgba(0,0,0,0.15);
+}
+
+.collectionOfDesigns {
+  margin-top: 60px;
+  display: inline-grid;
+  grid-template-columns: 400px 250px;
+  grid-column-gap: 50px;
+}
+
+.collectionOfDesigns2 {
+  margin-top: 60px;
+  display: inline-grid;
+  grid-template-columns: 250px 400px;
+  grid-column-gap: 50px;
+}
+
+.individualDesign {
+  max-width: 250px;
+  box-shadow: 0 0px 20px 0 rgba(0,0,0,0.15);
+}
+
+.tabletDesign {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  box-shadow: 0 0px 20px 0 rgba(0,0,0,0.15);
+}
+
+.individualText {
+  align-self:center;
+}
+
+.notificationTypes {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+}
+
+.notificatonSkeleton {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.components {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+/* slideshow container */
+.slideshow-container {
+  margin-top: 20px;
+  max-width: 330px;
+  position: relative;
+  display: inline-block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+  color: #ffffff;
+  font-family: "circular_medium";
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*dots*/
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #D6D6D6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot2 {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #D6D6D6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #333333;
+}
+
+/*fading animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 /*resume*/
 
@@ -675,6 +836,29 @@ div.first {
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.20);
 }
 
+/*.reachOut {
+  width: 133px;
+  height: 45px;
+  left: 0; 
+  right: 0;
+  margin: -25.5px auto 0px auto;
+  display: inline-block;
+  position: absolute;
+  color: #FFFFFF;
+  font-family: "circular_medium";
+  text-align: center;
+  line-height: 45px;
+  border-bottom: 3px solid #DB4F50;
+  border-radius: 15px;
+  background-color: #F66263;
+  transition: all .1s linear;
+}
+
+.reachOut:active {
+  height: 45px;
+  margin-top: -21px;
+  border-bottom: 0px solid #E95B5C;
+  transition: all .1s linear;*/
 
 /*contact*/
 
@@ -708,7 +892,7 @@ button:focus {outline:0;}
   text-align: center;
   display: block;
   font-size: 17px;
-  line-height: 36px;
+  line-height: 45px;
   border-top: 0px;
   border-bottom: 3px solid #DB4F50;
   border-right: 0px;
@@ -721,7 +905,7 @@ button:focus {outline:0;}
 }
 
 .send:active {
-  height: 40px;
+  height: 45px;
   margin-top: 42px;
   border-bottom: 0px solid #E95B5C;
   transition: all .1s linear;
