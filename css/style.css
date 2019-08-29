@@ -700,24 +700,15 @@ div.first {
   align-self:center;
 }
 
-.notificationTypes {
+.affinity {
   margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   height: auto;
-  max-width: 700px;
-}
-
-.notificatonSkeleton {
-  margin-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto;
-  max-width: 400px;
+  max-width: 350px;
+  max-height: 415px;
 }
 
 .components {
