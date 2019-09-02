@@ -405,17 +405,17 @@ function currentSlide2(n) {
 }
 
 function showSlides2(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("dot2");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  var k;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots2 = document.getElementsByClassName("dot2");
+  if (n > slides2.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (k = 0; k < slides2.length; k++) {
+      slides2[k].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  for (k = 0; k < dots2.length; k++) {
+      dots2[k].className = dots2[k].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides2[slideIndex2-1].style.display = "block";  
+  dots2[slideIndex2-1].className += " active";
 }
