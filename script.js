@@ -34,10 +34,10 @@ $(function () {
 
     // changing img
     if ($(this).scrollTop() > 10) {
-    	$img.attr("src","imgs/logoBlack.svg");
+      $img.attr("src","imgs/logoBlack.svg");
     }
     else {
-    	$img.attr("src","imgs/logo.svg");
+      $img.attr("src","imgs/logo.svg");
     }
   });
 });
