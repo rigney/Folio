@@ -349,6 +349,11 @@ h1.aboutTitle {
   background-image: linear-gradient(-180deg, #91E262 0%, #13C46C 100%);
 }
 
+.venmoBackground {
+  background: #3D95CE; /* fallback for old browsers */
+  background-image: linear-gradient(-180deg, #56CCF2 0%, #3D95CE 100%);
+}
+
 .larkyBackground {
   background: #FB8D42; /* fallback for old browsers */
   background-image: linear-gradient(-180deg, #FCB930 0%, #FB8D42 100%);
@@ -805,7 +810,6 @@ div.first {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 
 /*resume*/
 

@@ -1,0 +1,250 @@
+<!-- Hello there! Welcome to the behind the scenes of my portfolio -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Michael Rigney | Portfolio</title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="A portfolio showcasing Michael Rigney's design work">
+		<meta name="author" content="Michael Rigney">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- fav icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="imgs/favIcons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="imgs/favIcons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="imgs/favIcons/favicon-16x16.png">
+		<link rel="manifest" href="imgs/favIcons/site.webmanifest">
+		<link rel="mask-icon" href="imgs/favIcons/safari-pinned-tab.svg" color="#333333">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="css/htmlReset.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+	    <nav class="navbarFixedTop">
+	      <div class="container"> 
+					<a href="https://michaelrigney.com" class="logo"><img src="imgs/logo.svg" alt="Personal Logo" id="imgOnScroll"></a>
+	        <a href="https://michaelrigney.com/#" id="skipTo" class="skipTo underlineOnHover scrolledItem">Skip to content</a>
+	        <ul class="menu">
+	          <li><a href="https://michaelrigney.com#scrolledTo" id="goToWork" class="underlineOnHover scrolledItem">Work</a></li>
+	          <li><a href="https://michaelrigney.com/about" class="underlineOnHover scrolledItem">About</a></li>
+	          <li><a href="https://michaelrigney.com/resume" class="underlineOnHover scrolledItem">Resume</a></li>
+	          <li><a href="https://michaelrigney.com/contact" class="underlineOnHover scrolledItem">Contact</a></li>
+	        </ul>
+	      </div>
+	      <div class="progressBar" id="myBar"></div>
+	    </nav>
+
+      <div class="toggle">
+	  	  <div id="toggle">
+			    <div class="span" id="one"></div>
+			    <div class="span" id="two"></div>
+			    <div class="span" id="three"></div>
+	    	</div>
+    	</div>
+  	</header>
+
+  	<div id="resize">
+  		<a href="https://michaelrigney.com" class="logo"><img src="imgs/logoBlack.svg" alt="Personal Logo"></a>
+	    <ul class="menu">
+	      <li><a href="https://michaelrigney.com/#scrolledTo">Work</a></li>
+        <li><a href="https://michaelrigney.com/about">About</a></li>
+        <li><a href="https://michaelrigney.com/resume">Resume</a></li>
+        <li><a href="https://michaelrigney.com/contact">Contact</a></li>
+	    </ul>
+	  </div>
+
+		<main>
+			<div class="venmoBackground" id="workIntro">
+				<div class="workGrid">
+					<h1 class="hasYInName introFade1 nameOfWork">Repeat</h1>
+					<p class="typeOfWork introFade2">Concept</p>
+					<div class="date introFade3" style="color: #1D81C2">Sep 2019</div>
+					<div class="descriptionOfWork introFade4">Integrated a repeating transaction feature into Venmo’s payment and request process, using transaction data to schedule future payments and requests.</div>
+					<img class="introFade5 float" src="imgs/repeatIntro.svg" alt="Repeat Designs">
+				</div>
+				<div id="scrollTo" class="downIndicator bounce"><img src="imgs/downIndicator.svg" alt="Down Indicator"></div>
+			</div>
+
+			<div id="backToTop" class="backToTop"><img src="imgs/backToTop.svg" alt="Back To Top"></div>
+
+			<div class="workContent" id="scrolledTo">
+
+				<h2 class="noTopMargin hideMe">Overview</h2>
+
+				<p class="parContent first hideMe">On Venmo, I repeatedly make the same payments and requests, however, the data of a previous transaction is never utilized to auto fill the information of the same transaction made later on. Frustrated by this pain point, I designed a Repeat Transaction feature for Venmo. The Repeat Transaction feature removes the need for users to go through the transaction flow if the payment or request they’re making has already been made before. You can view the feature <a href="#finalDesigns" class="scrollTo">here</a>.</p>
+
+				<hr class="divider hideMe2">
+
+				<h2 class="hideMe">Research</h2>
+
+				<p class="parContent first hideMe2">To begin my research I articulated the user goal that Venmo is centered around.</p>
+
+				<div class="phrase hideMe2">“Effortlessly make payments to and receive payments from other people”</div>
+
+				<p class="parContent hideMe2">A design should be able to adapt to the way it’s being used and capitalize on any redundancy present in the system. From a holistic view Venmo supports its users’ goal, however, the experience does not optimize for users’ previous activity.</p>
+
+				<h3 class="hideMe">Surveying the Problem</h3>
+
+				<p class="parContent first hideMe2">To add greater context to my pain point, I conducted a brief survey around the following research question.</p>
+
+				<ul class="listContent hideMe2">
+					<li class="listContentItem"><span class="mediumWeight">RQ1 -</span> What types of transactions do Venmo users make?</li>
+				</ul>
+
+				<p class="parContent first hideMe2">After surveying a handful of avid Venmo users, I learned that several of them have a set of transactions they repeatedly make. Typically made weekly or monthly, the most notable reoccurring transactions are scheduled bills.</p>
+
+				<ul class="listContent hideMe2">
+					<li class="listContentItem">“Every week I pay my tutor the same amount” - P2</li>
+					<li class="listContentItem">“I usually either use Venmo to pay my roommate money for house bills or to pay people for food and drinks” - P3</li>
+				</ul>
+
+				<h3 class="hideMe">Tackling the Tasks</h3>
+
+				<p class="parContent first hideMe2">To understand how the transaction process could better support repeated transactions, I broke down the flow into its tasks. These tasks play a redundant role in the transaction flow of a payment or request that is identical to a previous transaction; they were the root of my pain point.</p>
+
+				<ul class="listContent hideMe2">
+					<li class="listContentItem">Assert you want to make a transaction</li>
+					<li class="listContentItem">Select recipient(s) of transaction</li>
+					<li class="listContentItem">Specify transaction amount</li>
+					<li class="listContentItem">Add a note to the transaction</li>
+					<li class="listContentItem">Choose the viewing permissions</li>
+					<li class="listContentItem">Specify the type of the transaction</li>
+					<li class="listContentItem">Confirm the transaction</li>
+				</ul>
+
+				<p class="parContent first hideMe2">By leveraging the data of a previous transaction, these tasks could be eliminated for future identical transactions. Doing so would reduce the amount of time users have to spend in the app as well as the cognitive, motor, and visual load put on them.</p>
+
+				<h3 class="hideMe">Solution Criteria</h3>
+
+				<p class="parContent first hideMe2">Beginning to think how the data of previous transactions could actually be utilized, I took a look at the transaction processes of other virtual wallet applications.</p>
+
+				<p class="parContent hideMe2">Following my walkthroughs of their transaction processes, I had enough direction to begin ideating and I drafted the following solution criteria:</p>
+
+				<ul class="listContent hideMe2">
+					<li class="listContentItem">Easily accessible by users</li>
+					<li class="listContentItem">Presented to users at a logical point in the transaction process</li>
+					<li class="listContentItem">Leverages the information of previous transactions</li>
+					<li class="listContentItem">Doesn’t impede the existing transaction process</li>
+				</ul>
+
+				<hr class="divider hideMe2">
+
+				<h2 class="hideMe">Design</h2>
+
+				<p class="parContent first hideMe">Putting pencil to paper, I began to ideate a solutions. </p>
+
+				<div class="imageContainer">
+					<div class="hideMe2 slideshow-container">
+						<div class="mySlides fade">
+						  <img src="imgs/repeatBrainstorm1.png">
+						</div>
+
+						<div class="mySlides fade">
+						  <img src="imgs/repeatBrainstorm2.png">
+						</div>
+
+						<div class="mySlides fade">
+						  <img src="imgs/repeatBrainstorm3.png">
+						</div>
+
+						<div class="mySlides fade">
+						  <img src="imgs/repeatBrainstorm4.png">
+						</div>
+
+						<div class="mySlides fade">
+						  <img src="imgs/repeatBrainstorm5.png">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)"><img src="imgs/backArrow.svg"></a>
+						<a class="next" onclick="plusSlides(1)"><img src="imgs/forwardArrow.svg"></a>	
+					</div>
+				</div>
+
+				<div style="text-align:center" class="hideMe2">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span>
+				  <span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+
+				<p class="parContent belowImage hideMe">Once I’d narrowed my ideas to a single solution, I transferred my sketches into wireframes.</p>
+
+				<div class="collectionOfImages hideMe2">
+					<img class="individualImage" src="imgs/repeatWireframe1.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe2.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe3.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe4.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe5.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe6.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe7.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe8.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe9.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe10.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe11.png" alt="Repeat Wireframe">
+					<img class="individualImage" src="imgs/repeatWireframe12.png" alt="Repeat Wireframe">
+				</div>
+
+				<p id="finalDesigns" class="parContent belowImage hideMe">Content with the flow and functionality of the solution, I moved it into a high-fidelity stage to further visualize and refine it.</p>
+
+				<div class="collectionOfDesigns hideMe2">
+					<div class="individualText">
+						<h3 class="hideMe">Entry Point</h3>
+						<p class="parContent first hideMe">Once a user fills out the necessary transaction info and specifies what type of transaction they’re making, they’re given the option to schedule future instances of the transaction.</p>
+					</div>
+					<video class="individualDesign" src="imgs/entryPoint.mp4" alt="Repeating Entry Point" controls></video>
+				</div>
+
+				<div class="collectionOfDesigns2 hideMe2">
+					<video class="individualDesign" src="imgs/settingRepeatPreferences.mp4" alt="Setting Repeat Preferences" controls></video>
+					<div class="individualText">
+						<h3 class="hideMe">Setting Repeat Preferences</h3>
+						<p class="parContent first individualText hideMe">When a user toggles the Repeat switch on, they can set preferences for the frequency and duration of the reoccurring transaction. After a user has set their repeat preferences, they can confirm the current instance of the transaction as well as its repeat settings.</p>
+					</div>
+				</div>
+
+				<div class="collectionOfDesigns hideMe2">
+					<div class="individualText">
+						<h3 class="hideMe">Updating Repeat Preferences</h3>
+						<p class="parContent first individualText hideMe">Once a repeating transaction has been set up, users can still access and edit its repeat preferences.</p>
+					</div>
+					<video class="individualDesign" src="imgs/updatingRepeatPreferences.mp4" alt="Updating Repeat Preferences" controls></video>
+				</div>
+
+				<div class="collectionOfDesigns2 hideMe2">
+					<video class="individualDesign" src="imgs/removingRepeatingTransaction.mp4" alt="Removing a Repeating Transaction" controls></video>
+					<div class="individualText">
+						<h3 class="hideMe">Deleting a Repeating Transaction</h3>
+						<p class="parContent first individualText hideMe">Repeat transactions will be removed by the system once their duration has been reached, however, users can delete a repeat transaction at any time.</p>
+					</div>
+				</div>
+
+				<hr class="divider hideMe2">
+
+				<h2 class="hideMe belowImage">Conclusion</h2>
+
+				<p class="parContent first hideMe">The greatest challenge in this case study was determining how to integrate the feature into the transaction process without disrupting its flow. I chose to implement the solution on the Confirm screen for two reasons. Firstly, the screen’s vast amount of whitespace allowed me to design around existing elements rather than having to significantly alter their position or size to accommodate the feature. Moreover, surfacing this feature on the Confirm Screen, the end of the transaction flow, ensures that users know the details of their transaction before they attempt to repeat it. If I continued building out this concept, I’d have users walkthrough the various flows to identify unforeseeable gaps in the designs. I’d then use the feedback to direct the next iteration of the feature.</p>
+			</div>
+		</main>
+
+		<footer>
+			<hr>
+			<a href="https://michaelrigney.com/contact"><div class="reachOut">Reach Out</div></a>
+			<div class="footerLabels">
+				<div class="leftLabel">Michael Rigney - ©2019</div>
+				<div class="rightLabel">Handcrafted with<span id="heart"><img class="bottom" src="imgs/heart.svg" alt="heart"></span>in Ann Arbor</div>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
